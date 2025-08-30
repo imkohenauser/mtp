@@ -233,7 +233,7 @@ MTP はまず **注目とフィードバック** が力になります。気軽�
 
 Copyright © 2025 **Kohen**
 
-本プロジェクトは [MIT License](../LICENCE) のもとで公開されています。
+本プロジェクトは [MIT License](../LICENSE) のもとで公開されています。
 
 ---
 
