@@ -1,4 +1,6 @@
+# macOS
 .DS_Store
+
 # VSCode
 .vscode/*
 !.vscode/settings.json
