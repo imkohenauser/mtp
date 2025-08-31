@@ -8,7 +8,7 @@
 SVG/CSS/JS で実装可能な最小構成を想定し、対話を「座標空間」として扱うことで、テキストによる細かな指示を **UI 操作（点＋平均値）** に置き換えます。  
 詳細は 「[コンセプト（日本語原文）](./CONCEPT.md)」 と 「[公式サイト（日本語）](https://imkohenauser.com/mtp-ja)」 をご覧ください。
 
-![Screenshot of MTP](/assets/images/screenshot.svg)
+![Screenshot of MTP](/assets/images/screenshot-ja.svg)
 
 **特徴（Features）**
 
