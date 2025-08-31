@@ -5,6 +5,8 @@
 > 🌐 原文は[日本語](./ja/CONCEPT.md)で記述されています。この英語版は翻訳です。  
 > The original document is written in Japanese. This English version is a translation.
 
+![Overview of Node Regions and Color Distribution](/assets/images/concept-node-color-grid-9x9.svg)
+
 ## Introduction
 
 To understand conversations with generative AI (LLMs), we assume **dialogue as an “information space like a universe.”** In this space, the phenomenon where the model drifts away from the user’s set context and loses consistency can be described as follows:

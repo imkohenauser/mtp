@@ -4,6 +4,8 @@
 
 > 🌐 This document is the original (Japanese). The [ [English](../CONCEPT.md) ] version is a translation.
 
+![Overview of Node Regions and Color Distribution](/assets/images/concept-node-color-grid-9x9.svg)
+
 ## はじめに
 
 生成 AI（LLM）との対話を理解するために、**会話を「宇宙のような情報空間」**と仮定します。ここでは、ユーザーが設定した文脈や前提から生成 AI が逸脱し、一貫性を失う現象を次のように説明します。
