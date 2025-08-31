@@ -96,18 +96,18 @@ MTP’s grid combines the Five Elements with the following four notions from Wes
 
 ### 🌅 Side A: 10 Nodes (1 + 9 in 3×3)
 
-| #   | Node Label | Kanji | Color   | Role              | Keywords                        |
-| --- | ---------- | ----- | ------- | ----------------- | ------------------------------- |
-| 1   | **Start**  | 始    | Chosen  | Gizmo             | Intro, spring, ignition         |
-| 2   | **Open**   | 開    | Yellow  | Top-left node     | Open, release, offer            |
-| 3   | **Power**  | 力    | Red     | Top node          | Thrust, fire, uplift            |
-| 4   | **Return** | 還    | Magenta | Top-right node    | Return, give-back, revenue      |
-| 5   | **Grow**   | 生    | Green   | Left node         | Growth, proliferation, layering |
-| 6   | **Helix**  | 螺    | Clear   | Center node       | Spiral, center, neutrality      |
-| 7   | **Focus**  | 集    | White   | Right node        | Focus, concentration, blank     |
-| 8   | **Enter**  | 入    | Cyan    | Bottom-left node  | Entry, arrival, emergence       |
-| 9   | **Flow**   | 流    | Blue    | Bottom node       | 1/f fluctuation, water, chains  |
-| 10  | **Close**  | 閉    | Purple  | Bottom-right node | Margin, nearness, minor wrap    |
+| #   | Node Label | Kanji | Color       | Role              | Keywords                        |
+| --- | ---------- | ----- | ----------- | ----------------- | ------------------------------- |
+| 1   | **Start**  | 始    | Chosen      | Gizmo             | Intro, spring, ignition         |
+| 2   | **Open**   | 開    | Yellow      | Top-left node     | Open, release, offer            |
+| 3   | **Power**  | 力    | Red         | Top node          | Thrust, fire, uplift            |
+| 4   | **Return** | 還    | Magenta     | Top-right node    | Return, give-back, revenue      |
+| 5   | **Grow**   | 生    | Green       | Left node         | Growth, proliferation, layering |
+| 6   | **Helix**  | 螺    | Transparent | Center node       | Spiral, center, neutrality      |
+| 7   | **Focus**  | 集    | White       | Right node        | Focus, concentration, blank     |
+| 8   | **Enter**  | 入    | Cyan        | Bottom-left node  | Entry, arrival, emergence       |
+| 9   | **Flow**   | 流    | Blue        | Bottom node       | 1/f fluctuation, water, chains  |
+| 10  | **Close**  | 閉    | Purple      | Bottom-right node | Margin, nearness, minor wrap    |
 
 ### 🌌 Side B: 10 Nodes (9 in 3×3 + 1)
 
@@ -117,7 +117,7 @@ MTP’s grid combines the Five Elements with the following four notions from Wes
 | 12  | **Void**     | 虚    | Dark Red     | Top node          | Emptiness, blank, sky            |
 | 13  | **Surge**    | 詰    | Dark Magenta | Top-right node    | Explosion, breaker, thunder      |
 | 14  | **Wither**   | 枯    | Dark Green   | Left node         | Wither, weaken, foliage          |
-| 15  | **Collapse** | 崩    | Semi-clear   | Center node       | Collapse, breakdown, fall        |
+| 15  | **Collapse** | 崩    | Translucent  | Center node       | Collapse, breakdown, fall        |
 | 16  | **Haze**     | 霞    | Gray         | Right node        | Haze, blur, faintness            |
 | 17  | **Drift**    | 漂    | Dark Cyan    | Bottom-left node  | Drift, detachment, float         |
 | 18  | **Abyss**    | 深    | Dark Blue    | Bottom node       | Deep sea, deep crimson, sub-bass |

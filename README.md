@@ -78,18 +78,18 @@ MTP is designed as a classification of 20 nodes, arranged like cassette tape sid
 
 #### 🌅 Side A: 10 Nodes (1 + 9 in 3×3)
 
-| #   | Label      | Kanji | Color   | Role              | Keywords             |
-| --- | ---------- | ----- | ------- | ----------------- | -------------------- |
-| 1   | **Start**  | 始    | chosen  | Gizmo             | Intro, spring, start |
-| 2   | **Open**   | 開    | Yellow  | Top-left node     | Opening, release     |
-| 3   | **Power**  | 力    | Red     | Top node          | Force, fire, uplift  |
-| 4   | **Return** | 還    | Magenta | Top-right node    | Return, cycle, yield |
-| 5   | **Grow**   | 生    | Green   | Left node         | Growth, layering     |
-| 6   | **Helix**  | 螺    | Clear   | Center node       | Spiral, neutral      |
-| 7   | **Focus**  | 集    | White   | Right node        | Focus, blank slate   |
-| 8   | **Enter**  | 入    | Cyan    | Bottom-left node  | Entry, arrival       |
-| 9   | **Flow**   | 流    | Blue    | Bottom node       | Rhythm, water, link  |
-| 10  | **Close**  | 閉    | Purple  | Bottom-right node | Margin, closure      |
+| #   | Label      | Kanji | Color       | Role              | Keywords             |
+| --- | ---------- | ----- | ----------- | ----------------- | -------------------- |
+| 1   | **Start**  | 始    | chosen      | Gizmo             | Intro, spring, start |
+| 2   | **Open**   | 開    | Yellow      | Top-left node     | Opening, release     |
+| 3   | **Power**  | 力    | Red         | Top node          | Force, fire, uplift  |
+| 4   | **Return** | 還    | Magenta     | Top-right node    | Return, cycle, yield |
+| 5   | **Grow**   | 生    | Green       | Left node         | Growth, layering     |
+| 6   | **Helix**  | 螺    | Transparent | Center node       | Spiral, neutral      |
+| 7   | **Focus**  | 集    | White       | Right node        | Focus, blank slate   |
+| 8   | **Enter**  | 入    | Cyan        | Bottom-left node  | Entry, arrival       |
+| 9   | **Flow**   | 流    | Blue        | Bottom node       | Rhythm, water, link  |
+| 10  | **Close**  | 閉    | Purple      | Bottom-right node | Margin, closure      |
 
 #### 🌌 Side B: 10 Nodes (9 in 3×3 + 1)
 
@@ -99,7 +99,7 @@ MTP is designed as a classification of 20 nodes, arranged like cassette tape sid
 | 12  | **Void**     | 虚    | Dark Red     | Top node          | Emptiness, void    |
 | 13  | **Surge**    | 詰    | Dark Magenta | Top-right node    | Explosion, thunder |
 | 14  | **Wither**   | 枯    | Dark Green   | Left node         | Fading, decay      |
-| 15  | **Collapse** | 崩    | Semi-clear   | Center node       | Collapse, fall     |
+| 15  | **Collapse** | 崩    | Translucent  | Center node       | Collapse, fall     |
 | 16  | **Haze**     | 霞    | Gray         | Right node        | Blur, faintness    |
 | 17  | **Drift**    | 漂    | Dark Cyan    | Bottom-left node  | Drift, float       |
 | 18  | **Abyss**    | 深    | Dark Blue    | Bottom node       | Depth, abyss       |
