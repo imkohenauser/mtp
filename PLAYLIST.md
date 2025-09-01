@@ -1,4 +1,4 @@
-[← Back to CONCEPT](./CONCEPT.md)
+[← Back to Main README](./README.md)
 
 # Playlist
 

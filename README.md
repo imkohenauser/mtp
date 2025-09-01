@@ -7,7 +7,7 @@
 It assumes a minimal implementation with SVG/CSS/JS, and treats dialogue as a “coordinate space,” replacing fine-grained textual instructions with **UI operations (points + averages)**.  
 For details, see [Concept](./CONCEPT.md) and the [Official Website](https://imkohenauser.com/mtp).
 
-![Screenshot of MTP](/assets/images/screenshot.svg)
+![Screenshot of MTP](/assets/svg/screenshot.svg)
 
 **Features**
 
@@ -63,7 +63,7 @@ MTP is designed as a classification of 20 nodes, arranged like cassette tape sid
 - **Side A** covers clarity and forward movement. **Side B** provides **depth, reverse aspects, and complementary nuances**.
 - Side B is not “negative,” but an extension of nuance and expression.
 
-![20-node structure](/assets/images/readme-20-node-structure.svg)
+![20-node structure](/assets/svg/readme-20-node-structure.svg)
 
 > [!NOTE]  
 > For detailed definitions of the 20 nodes, see the **“CONCEPT”** doc in this repo or the **official website**.
@@ -118,21 +118,21 @@ On the UI, behavior is adjusted by **coordinate specification**:
 - **Gizmo**: **Average coordinate** of multiple vertices; the session’s center of gravity and main UI handle.
 - **Transformed Gizmo**: The user’s **target coordinate** to directly control output tone/behavior.
 
-![UI operation by coordinates](/assets/images/readme-ui-operation.svg)
+![UI operation by coordinates](/assets/svg/readme-ui-operation.svg)
 
 ### Grid and Abstraction
 
 Internally, states are tracked on a strict grid (e.g., 19×19), while the UI can abstract into **color wheels or simplified palettes**.  
 Grid configuration can adapt to devices or display areas.
 
-![Grid and abstraction](/assets/images/readme-grid-and-abstraction.svg)
+![Grid and abstraction](/assets/svg/readme-grid-and-abstraction.svg)
 
 ### Session State Visualization
 
 User–AI session states (history, phase) can be visualized as **coordinate transitions**.  
 Session drift (deviation from intent) can be spotted at a glance, enabling return to or alignment with past “good states.”
 
-![Session state visualization](/assets/images/readme-visualization-of-session-state.svg)
+![Session state visualization](/assets/svg/readme-visualization-of-session-state.svg)
 
 ---
 
@@ -153,13 +153,13 @@ Controls **attitude, affect, and tone** axes in generated text.
 - _Power × Void_: Strong persuasion (marketing copy)
 - _Return × Focus_: Summaries, executive digests, proposal outlines
 
-![Instant style switching](/assets/images/readme-persona-and-response-style.svg)
+![Instant style switching](/assets/svg/readme-persona-and-response-style.svg)
 
 ### Visualizing ChatGPT Personas
 
 Simple persona styles (e.g., Cynic, Listener, Robot, Nerd) can be mapped, adjusted, and drift-controlled.
 
-![Persona visualization](/assets/images/readme-chatgpts-persona.svg)
+![Persona visualization](/assets/svg/readme-chatgpts-persona.svg)
 
 ### Reasoning Level (Depth and Granularity)
 
@@ -236,4 +236,7 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-[Go to Concept →](./CONCEPT.md)
+[**Go to “Concept” →**](./CONCEPT.md)
+
+↳ [Playlist (optional)](./PLAYLIST.md)  
+↳ [Assets (optional)](./ASSETS.md)

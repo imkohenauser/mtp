@@ -5,7 +5,9 @@
 > 🌐 原文は[日本語](./ja/CONCEPT.md)で記述されています。この英語版は翻訳です。  
 > The original document is written in Japanese. This English version is a translation.
 
-![Overview of Node Regions and Color Distribution](/assets/images/concept-node-color-grid-9x9.svg)
+<p align="center">
+  <img src="./assets/svg/mtp-grid-18×18.svg" width="450" alt="Overview of Node Regions and Color Distribution">
+</p>
 
 ## Introduction
 
@@ -90,7 +92,7 @@ MTP’s grid combines the Five Elements with the following four notions from Wes
 
 > Abstract feelings, when translated into color and labels, become a **structured map of creativity**.
 
-![Integrating East & West](/assets/images/concept-the-five-elements-theory-and-greek-philosophy.svg)
+![Integrating East & West](/assets/svg/concept-the-five-elements-theory-and-greek-philosophy.svg)
 
 ---
 
@@ -126,7 +128,7 @@ MTP’s grid combines the Five Elements with the following four notions from Wes
 | 19  | **Fade**     | 衰    | Dark Purple  | Bottom-right node | Vanish, attenuation, dawn        |
 | 20  | **End**      | 終    | Chosen       | Transformed Gizmo | End, prayer, brake               |
 
-![20-node structure](/assets/images/concept-20-node-structure.svg)
+![20-node structure](/assets/svg/concept-20-node-structure.svg)
 
 ### 🎭 Side B expresses rich nuance
 
@@ -376,3 +378,5 @@ With operable ambiguity, collaboration with generative AI becomes more intuitive
 ---
 
 [**Go to “PLAYLIST” →**](./PLAYLIST.md)
+
+↳ [Assets (optional)](./ASSETS.md)

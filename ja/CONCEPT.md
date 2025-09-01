@@ -4,7 +4,9 @@
 
 > 🌐 This document is the original (Japanese). The [ [English](../CONCEPT.md) ] version is a translation.
 
-![Overview of Node Regions and Color Distribution](/assets/images/concept-node-color-grid-9x9.svg)
+<p align="center">
+  <img src="../assets/svg/mtp-grid-18×18.svg" width="450" alt="Overview of Node Regions and Color Distribution">
+</p>
 
 ## はじめに
 
@@ -89,7 +91,7 @@ MTP のグリッド構造は、東洋の五行思想と、西洋哲学におけ�
 
 > 抽象的な感覚は、色とラベルに翻訳されることで、**構造化された創造性の地図**となります。
 
-![東西思想を統合](/assets/images/concept-the-five-elements-theory-and-greek-philosophy.svg)
+![東西思想を統合](/assets/svg/concept-the-five-elements-theory-and-greek-philosophy.svg)
 
 ---
 
@@ -125,7 +127,7 @@ MTP のグリッド構造は、東洋の五行思想と、西洋哲学におけ�
 | 19  | **Fade**     | 衰       | 暗い紫       | 右下のノード      | 消える・減衰・薄明 |
 | 20  | **End**      | 終       | 選択色       | Transformed Gizmo | 終・祈り・ブレーキ |
 
-![20 ノード構造](/assets/images/concept-20-node-structure.svg)
+![20 ノード構造](/assets/svg/concept-20-node-structure.svg)
 
 ### 🎭 B 面は豊かなニュアンスの表現
 
@@ -343,7 +345,7 @@ A/B 面 20 ノード **1 + 9 + 9 + 1** 構成で、様々なジャンルのプ�
 
 Apple Music と Spotify へ公開しているプレイリストの中から、事例となりそうなものを、ChatGPT によるキュレーション例とわたしの選曲例の解説として紹介しています。
 
-[**「PLAYLIST」**（英語）へ →](../PLAYLIST.md)
+[**「プレイリスト」**（英語）へ →](../PLAYLIST.md)
 
 ---
 
@@ -376,4 +378,6 @@ MTP（Mapping the Prompt）は、単に UI の工夫やインタラクション�
 
 ---
 
-[**「PLAYLIST」**（英語）へ →](../PLAYLIST.md)
+[**「プレイリスト」**（英語）へ →](../PLAYLIST.md)
+
+↳ [「アセット」（英語）（オプション）](../ASSETS.md)

@@ -8,7 +8,7 @@
 SVG/CSS/JS で実装可能な最小構成を想定し、対話を「座標空間」として扱うことで、テキストによる細かな指示を **UI 操作（点＋平均値）** に置き換えます。  
 詳細は 「[コンセプト（日本語原文）](./CONCEPT.md)」 と 「[公式サイト（日本語）](https://imkohenauser.com/mtp-ja)」 をご覧ください。
 
-![Screenshot of MTP](/assets/images/screenshot-ja.svg)
+![Screenshot of MTP](/assets/svg/screenshot-ja.svg)
 
 **特徴（Features）**
 
@@ -64,7 +64,7 @@ MTP は、カセットテープのような A/B 面、それぞれ 10、合計 2
 - **A 面** は明快・前進の性質、**B 面** はその**深みや裏側、補助側面**を担います。
 - ネガティブな意味で B 面を使うのではなく、感覚やニュアンスの拡張として利用します。
 
-![20 ノード構造](/assets/images/readme-20-node-structure.svg)
+![20 ノード構造](/assets/svg/readme-20-node-structure.svg)
 
 > [!NOTE]
 > コンセプトの詳細（20 ノードの定義）は、レポジトリ内の **「CONCEPT」** や **「公式サイト」** の解説ページをご覧ください。
@@ -119,21 +119,21 @@ MTP は、カセットテープのような A/B 面、それぞれ 10、合計 2
 - **Gizmo**: 複数の Vertex の**平均座標**。セッションの重心を示す UI の操作ハンドル。
 - **Transformed Gizmo**: ユーザーが指定／希望する**目標座標**。出力トーン／挙動を直接制御します。
 
-![座標でスタイルを指定](/assets/images/readme-ui-operation.svg)
+![座標でスタイルを指定](/assets/svg/readme-ui-operation.svg)
 
 ### グリッドと抽象化
 
 内部は碁盤のような格子（例：19×19）で厳密に保持しつつ、UI では **色相環や簡略配色** へ抽象化可能。  
 デバイスや表示領域に応じて、格子／グリッド構成を切り替えられます。
 
-![グリッドと抽象化](/assets/images/readme-grid-and-abstraction.svg)
+![グリッドと抽象化](/assets/svg/readme-grid-and-abstraction.svg)
 
 ### セッション状態の可視化
 
 ユーザーと生成 AI のセッション（履歴・位相）を **座標の遷移** として可視化します。  
 セッションのドリフト（意図からのズレ）を目視で捉え、過去の「良かった状態」に戻る・近づける操作が可能です。
 
-![セッション状態の可視化](/assets/images/readme-visualization-of-session-state.svg)
+![セッション状態の可視化](/assets/svg/readme-visualization-of-session-state.svg)
 
 ---
 
@@ -154,13 +154,13 @@ MTP は、カセットテープのような A/B 面、それぞれ 10、合計 2
 - _Power × Void_: 強めの訴求（マーケティングコピー）
 - _Return × Focus_: 要約、エグゼクティブサマリー、提案骨子
 
-![文章スタイルの即時切替](/assets/images/readme-persona-and-response-style.svg)
+![文章スタイルの即時切替](/assets/svg/readme-persona-and-response-style.svg)
 
 ### ChatGPT のペルソナの可視化
 
 _Cynic_、_Listener_、_Robot_、_Nerd_ のような簡易ペルソナ型の会話スタイルを分類・調整し、ドリフト制御を可能にします。
 
-![ペルソナの可視化](/assets/images/readme-chatgpts-persona.svg)
+![ペルソナの可視化](/assets/svg/readme-chatgpts-persona.svg)
 
 ### Reasoning Level（推論の深さ・粒度）
 
@@ -237,4 +237,7 @@ Copyright © 2025 **Kohen**
 
 ---
 
-[コンセプト（日本語原文）へ →](./CONCEPT.md)
+[**「コンセプト（日本語原文）」** へ →](./CONCEPT.md)
+
+↳ [「プレイリスト」（英語）（オプション）](../PLAYLIST.md)  
+↳ [「アセット」（英語）（オプション）](../ASSETS.md)
