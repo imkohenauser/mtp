@@ -5,7 +5,7 @@
 > 🌐 This document is the original (Japanese). The [ [English](../CONCEPT.md) ] version is a translation.
 
 <p align="center">
-  <img src="../assets/svg/mtp-grid-18×18.svg" width="450" alt="Overview of Node Regions and Color Distribution">
+  <img src="../assets/svg/mtp-grid-18x18.svg" width="450" alt="Overview of Node Regions and Color Distribution">
 </p>
 
 ## はじめに

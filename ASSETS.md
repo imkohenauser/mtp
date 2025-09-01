@@ -12,72 +12,72 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side A, Numbered)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3×3-a-num.svg" width="128" alt="MTP Grid 3×3 A Numbered">
+  <img src="./assets/svg/mtp-grid-3x3-a-num.svg" width="128" alt="MTP Grid 3×3 A Numbered">
 </p>
 
 | SVG                                              | PNG                                              |
 | ------------------------------------------------ | ------------------------------------------------ |
-| [SVG](./assets/svg/mtp-grid-3×3-a-num.svg?raw=1) | [PNG](./assets/png/mtp-grid-3×3-a-num.png?raw=1) |
+| [SVG](./assets/svg/mtp-grid-3x3-a-num.svg?raw=1) | [PNG](./assets/png/mtp-grid-3x3-a-num.png?raw=1) |
 
 ---
 
 ### MTP Grid 3×3 (Side B, Numbered)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3×3-b-num.svg" width="128" alt="MTP Grid 3×3 B Numbered">
+  <img src="./assets/svg/mtp-grid-3x3-b-num.svg" width="128" alt="MTP Grid 3×3 B Numbered">
 </p>
 
 | SVG                                              | PNG                                              |
 | ------------------------------------------------ | ------------------------------------------------ |
-| [SVG](./assets/svg/mtp-grid-3×3-b-num.svg?raw=1) | [PNG](./assets/png/mtp-grid-3×3-b-num.png?raw=1) |
+| [SVG](./assets/svg/mtp-grid-3x3-b-num.svg?raw=1) | [PNG](./assets/png/mtp-grid-3x3-b-num.png?raw=1) |
 
 ---
 
 ### MTP Grid 3×3 (Side A)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3×3-a.svg" width="128" alt="MTP Grid 3×3 A">
+  <img src="./assets/svg/mtp-grid-3x3-a.svg" width="128" alt="MTP Grid 3×3 A">
 </p>
 
 | SVG                                          | PNG                                          |
 | -------------------------------------------- | -------------------------------------------- |
-| [SVG](./assets/svg/mtp-grid-3×3-a.svg?raw=1) | [PNG](./assets/png/mtp-grid-3×3-a.png?raw=1) |
+| [SVG](./assets/svg/mtp-grid-3x3-a.svg?raw=1) | [PNG](./assets/png/mtp-grid-3x3-a.png?raw=1) |
 
 ---
 
 ### MTP Grid 3×3 (Side B)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3×3-b.svg" width="128" alt="MTP Grid 3×3 B">
+  <img src="./assets/svg/mtp-grid-3x3-b.svg" width="128" alt="MTP Grid 3×3 B">
 </p>
 
 | SVG                                          | PNG                                          |
 | -------------------------------------------- | -------------------------------------------- |
-| [SVG](./assets/svg/mtp-grid-3×3-b.svg?raw=1) | [PNG](./assets/png/mtp-grid-3×3-b.png?raw=1) |
+| [SVG](./assets/svg/mtp-grid-3x3-b.svg?raw=1) | [PNG](./assets/png/mtp-grid-3x3-b.png?raw=1) |
 
 ---
 
 ### MTP Grid 9×9
 
 <p>
-  <img src="./assets/svg/mtp-grid-9×9.svg" width="128" alt="MTP Grid 9×9">
+  <img src="./assets/svg/mtp-grid-9x9.svg" width="128" alt="MTP Grid 9×9">
 </p>
 
 | SVG                                        | PNG                                        |
 | ------------------------------------------ | ------------------------------------------ |
-| [SVG](./assets/svg/mtp-grid-9×9.svg?raw=1) | [PNG](./assets/png/mtp-grid-9×9.png?raw=1) |
+| [SVG](./assets/svg/mtp-grid-9x9.svg?raw=1) | [PNG](./assets/png/mtp-grid-9x9.png?raw=1) |
 
 ---
 
 ### MTP Grid 18×18
 
 <p>
-  <img src="./assets/svg/mtp-grid-18×18.svg" width="128" alt="MTP Grid 18×18">
+  <img src="./assets/svg/mtp-grid-18x18.svg" width="128" alt="MTP Grid 18×18">
 </p>
 
 | SVG                                          | PNG                                          |
 | -------------------------------------------- | -------------------------------------------- |
-| [SVG](./assets/svg/mtp-grid-18×18.svg?raw=1) | [PNG](./assets/png/mtp-grid-18×18.png?raw=1) |
+| [SVG](./assets/svg/mtp-grid-18x18.svg?raw=1) | [PNG](./assets/png/mtp-grid-18x18.png?raw=1) |
 
 ---
 
