@@ -23,7 +23,7 @@ Some were generated entirely by ChatGPT (experimental curation), while others we
 
 ---
 
-<details>
+<details open>
 <summary>MTP: The Beatles 1+9+9+1</summary>
 
 ### MTP: The Beatles 1+9+9+1
