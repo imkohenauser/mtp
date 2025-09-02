@@ -13,6 +13,16 @@ Node definitions (Start, Open, Power … End) reflect symbolic functions in the 
 
 ---
 
+</div>
+
+| Side A                                                                                         | Side B                                                                                         |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| <img src="./assets/svg/mtp-grid-3x3-a-num-node.svg" width="270" alt="MTP Grid 3×3 A Numbered"> | <img src="./assets/svg/mtp-grid-3x3-b-num-node.svg" width="270" alt="MTP Grid 3×3 B Numbered"> |
+
+↳ [PNG images are available on **Assets**](./ASSETS.md)
+
+---
+
 ## 🗺️ Global Playlists
 
 This section introduces playlists curated with the **MTP 1+9+9+1** framework using global music.  
