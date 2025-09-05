@@ -12,7 +12,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side A, Numbered + Node Labels)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3x3-a-num-node.svg" width="270" alt="MTP Grid 3×3 A Numbered">
+  <img src="./assets/svg/mtp-grid-3x3-a-num-node.svg" width="270" alt="MTP Grid 3×3 (Side A, Numbered + Node Labels)">
 </p>
 
 | SVG                                                             | PNG                                                                       | PNG                                                                       |
@@ -24,7 +24,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side A, Numbered)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3x3-a-num.svg" width="270" alt="MTP Grid 3×3 A Numbered">
+  <img src="./assets/svg/mtp-grid-3x3-a-num.svg" width="270" alt="MTP Grid 3×3 (Side A, Numbered)">
 </p>
 
 | SVG                                                        | PNG                                                                  | PNG                                                                  |
@@ -36,7 +36,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side B, Numbered + Node Labels)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3x3-b-num-node.svg" width="270" alt="MTP Grid 3×3 B Numbered">
+  <img src="./assets/svg/mtp-grid-3x3-b-num-node.svg" width="270" alt="MTP Grid 3×3 (Side B, Numbered + Node Labels)">
 </p>
 
 | SVG                                                             | PNG                                                                       | PNG                                                                       |
@@ -48,7 +48,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side B, Numbered)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3x3-b-num.svg" width="270" alt="MTP Grid 3×3 B Numbered">
+  <img src="./assets/svg/mtp-grid-3x3-b-num.svg" width="270" alt="MTP Grid 3×3 (Side B, Numbered)">
 </p>
 
 | SVG                                                        | PNG                                                                  | PNG                                                                  |
@@ -60,7 +60,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side A)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3x3-a.svg" width="270" alt="MTP Grid 3×3 A">
+  <img src="./assets/svg/mtp-grid-3x3-a.svg" width="270" alt="MTP Grid 3×3 (Side A)">
 </p>
 
 | SVG                                                    | PNG                                                              | PNG                                                              |
@@ -72,7 +72,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 3×3 (Side B)
 
 <p>
-  <img src="./assets/svg/mtp-grid-3x3-b.svg" width="270" alt="MTP Grid 3×3 B">
+  <img src="./assets/svg/mtp-grid-3x3-b.svg" width="270" alt="MTP Grid 3×3 (Side B)">
 </p>
 
 | SVG                                                    | PNG                                                              | PNG                                                              |
@@ -96,7 +96,7 @@ Each table below lists available formats of the project’s visual assets.
 ### MTP Grid 18×18 (Node Labels)
 
 <p>
-  <img src="./assets/svg/mtp-grid-18x18-node.svg" width="270" alt="MTP Grid 18×18">
+  <img src="./assets/svg/mtp-grid-18x18-node.svg" width="270" alt="MTP Grid 18×18 (Node Labels)">
 </p>
 
 | SVG                                                         | PNG                                                                   | PNG                                                                   |
@@ -123,7 +123,7 @@ This diagram may also help make the concept easier to grasp.
 It represents the **cyclic nature of MTP** — each foundational color/node connects into a natural loop, echoing the cycles we see in nature (growth and decay, seasons, day and night).
 
 <p>
-  <img src="./assets/svg/mtp-node-cycling.svg" width="270" alt="MTP Grid 18×18">
+  <img src="./assets/svg/mtp-node-cycling.svg" width="270" alt="MTP Node Cycling">
 </p>
 
 | SVG                                                      | PNG                                                                | PNG                                                                |
