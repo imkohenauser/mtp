@@ -190,6 +190,18 @@ Multi-step reasoning (chain-of-thought) can be visualized and adjusted via **coo
 
 This makes LLM outputs transparent and debuggable via **UI-based, non-verbal instructions**.
 
+### Branching Conversations (Branch into a New Chat)
+
+By combining ChatGPT's new feature _Branching Conversations_ with MTP, it becomes possible to handle conversation branching more intuitively.
+
+MTP maps the flow of each chat (tone and nuance) into 20 nodes and calculates an average color. Visualizing this as a label color on the chat list allows you to:
+
+- Intuitively grasp the relationship between the main chat (trunk) and each branch by color
+- Visually compare differences in conversational tone (logical/emotional, divergent/convergent, etc.)
+- Organize each branch visually to understand "what direction of thought" it represents
+
+This mechanism provides a level of understanding beyond a simple text list, especially for nonlinear exploration and brainstorming.
+
 ---
 
 ## Implementation Policy (Minimal Setup)
