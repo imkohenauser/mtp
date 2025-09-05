@@ -117,6 +117,21 @@ Each table below lists available formats of the project’s visual assets.
 
 ---
 
+### MTP Node Cycling
+
+This diagram may also help make the concept easier to grasp.  
+It represents the **cyclic nature of MTP** — each foundational color/node connects into a natural loop, echoing the cycles we see in nature (growth and decay, seasons, day and night).
+
+<p>
+  <img src="./assets/svg/mtp-node-cycling.svg" width="270" alt="MTP Grid 18×18">
+</p>
+
+| SVG                                                      | PNG                                                                | PNG                                                                |
+| -------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| [Original file](./assets/svg/mtp-node-cycling.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-node-cycling.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-node-cycling.png?raw=1) |
+
+---
+
 ## License
 
 All materials in this repository — including documents, concepts, and image assets (SVG/PNG) —  
