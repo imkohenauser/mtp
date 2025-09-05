@@ -152,6 +152,8 @@ MTP の 3×3 グリッドの配置で HSL カラーホイール（色相環）�
 
 右上の配置は、ギリシャ哲学における「カオス（Chaos）」の概念と結びつき、相反する要素の融合によって予測不能で創造的な結果を生むノードとして規定しています。
 
+![From nature’s spectrum to MTP’s conceptual core colors](/assets/svg/concept-special-node-magenta.svg)
+
 ### 🃏 中央（Helix／Collapse ノード）の役割
 
 中央ノードの **Helix**（A 面）と **Collapse**（B 面）は、他のノードと異なり、バランサーとして、また全体をつなぐ柔軟な役割を持ちます。全体の象徴でもあり、トランプのジョーカーのように特定の役割に限定されず、その場のルールや文脈によって機能が変わるワイルドカード的存在です。

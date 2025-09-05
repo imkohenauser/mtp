@@ -152,6 +152,8 @@ Magenta doesn’t exist on the spectral prism; it emerges from a **nonlinear ble
 
 Its top-right placement connects with the Greek notion of **Chaos**, defining a node that merges opposites to yield unpredictable, creative results.
 
+![From nature’s spectrum to MTP’s conceptual core colors](/assets/svg/concept-special-node-magenta.svg)
+
 ### 🃏 Center nodes (Helix / Collapse)
 
 The **center** nodes—**Helix** (Side A) and **Collapse** (Side B)—act as balancers and flexible connectors. They symbolize the whole, functioning like wild cards whose role shifts with rules and context.
