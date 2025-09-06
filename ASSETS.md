@@ -33,6 +33,18 @@ Each table below lists available formats of the project’s visual assets.
 
 ---
 
+### MTP Grid 1+9 (Side A, Node Labels)
+
+<p>
+  <img src="./assets/svg/mtp-grid-1+9-node.svg" width="270" alt="MTP Grid 1+9 (Side A, Node Labels)">
+</p>
+
+| SVG                                                       | PNG                                                                 | PNG                                                                 |
+| --------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [Original file](./assets/svg/mtp-grid-1+9-node.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-grid-1+9-node.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-grid-1+9-node.png?raw=1) |
+
+---
+
 ### MTP Grid 3×3 (Side B, Numbered + Node Labels)
 
 <p>
@@ -57,6 +69,18 @@ Each table below lists available formats of the project’s visual assets.
 
 ---
 
+### MTP Grid 9+1 (Side B, Node Labels)
+
+<p>
+  <img src="./assets/svg/mtp-grid-9+1-node.svg" width="270" alt="MTP Grid 9+1 (Side B, Node Labels)">
+</p>
+
+| SVG                                                       | PNG                                                                 | PNG                                                                 |
+| --------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [Original file](./assets/svg/mtp-grid-9+1-node.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-grid-9+1-node.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-grid-9+1-node.png?raw=1) |
+
+---
+
 ### MTP Grid 3×3 (Side A)
 
 <p>
@@ -69,6 +93,18 @@ Each table below lists available formats of the project’s visual assets.
 
 ---
 
+### MTP Grid 1+9 (Side A)
+
+<p>
+  <img src="./assets/svg/mtp-grid-1+9.svg" width="270" alt="MTP Grid 1+9 (Side A)">
+</p>
+
+| SVG                                                  | PNG                                                            | PNG                                                            |
+| ---------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| [Original file](./assets/svg/mtp-grid-1+9.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-grid-1+9.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-grid-1+9.png?raw=1) |
+
+---
+
 ### MTP Grid 3×3 (Side B)
 
 <p>
@@ -78,6 +114,18 @@ Each table below lists available formats of the project’s visual assets.
 | SVG                                                    | PNG                                                              | PNG                                                              |
 | ------------------------------------------------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [Original file](./assets/svg/mtp-grid-3x3-b.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-grid-3x3-b.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-grid-3x3-b.png?raw=1) |
+
+---
+
+### MTP Grid 9+1 (Side B)
+
+<p>
+  <img src="./assets/svg/mtp-grid-9+1.svg" width="270" alt="MTP Grid 9+1 (Side B)">
+</p>
+
+| SVG                                                  | PNG                                                            | PNG                                                            |
+| ---------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| [Original file](./assets/svg/mtp-grid-9+1.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-grid-9+1.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-grid-9+1.png?raw=1) |
 
 ---
 
