@@ -58,7 +58,7 @@ In Five Elements thought, everything can be organized into the following five ca
 
 These categories appear in the MTP UI as node labels, hues, and behavioral qualities.
 
-### 🌀 “Wind” in the Four Elements and “Qi” in the Five Elements
+### 🌬️ “Wind” in the Four Elements and “Qi” in the Five Elements
 
 In the Western Four Elements (fire, water, earth, wind), “wind” is explicit.  
 In the Five Elements, a similar role is implicit in **“qi” (氣)** and in **Flow**:
@@ -231,6 +231,33 @@ Below, Beethoven is mapped to **Power** as an example—not a fixed rule. You ca
 | 18  | **Abyss**    | Dmitri Shostakovich      | Dissonance, iron, depth          |
 | 19  | **Fade**     | Jean Sibelius            | Northern, cold, fade             |
 | 20  | **End**      | Igor Stravinsky          | Rhythm, ending, restart          |
+
+### 🌀 Visualizing the Function and Action of Each Node
+
+If we can classify **colors** and **sounds**, then surely we can classify **motion** as well.  
+However, there is little formal representation of “function” or “action” in spatial or structural terms.  
+There are almost no standard models for representing **how things behave**.
+
+For this reason, we referred to:
+
+- **Waveforms in sonar or radar**: as search and detection behaviors
+- **Gesture styles of classical conductors**: as structured, embodied intention
+- And most notably, the **Lissajous curve**, which visualizes time-shifted rotation
+
+Below is a mapping between the phase diagram of the [_Lissajous curve_](https://commons.wikimedia.org/wiki/File:Lissajous_phase.svg) from Wikipedia and a **vertically flipped** arrangement aligned with the MTP 3×3 grid structure.
+
+> In MTP, the “function” of each node can be visualized as a **motion pattern**—based on rotation, slope, and phase.
+
+By interpreting phase rotation as **meaningful motion**,  
+MTP’s classification space becomes not only conceptual, but also **kinesthetic and intuitive**.
+
+Possible extensions:
+
+- Animated node transitions
+- Rhythmic modeling of conducting or form
+- Interactive maps of “intention” or structure
+
+![Lissajous-MTP Grid Mapping](/assets/svg/concept-lissajous-curve.svg)
 
 ---
 
