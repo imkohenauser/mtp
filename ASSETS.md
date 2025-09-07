@@ -165,6 +165,18 @@ Each table below lists available formats of the project’s visual assets.
 
 ---
 
+### MTP Grid 18×18 (Conversation Status)
+
+<p>
+  <img src="./assets/svg/mtp-grid-18x18-conversation-status.svg" width="270" alt="MTP Grid 18×18 (Conversation Status)">
+</p>
+
+| SVG                                                                        | PNG                                                                                  | PNG                                                                                  |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| [Original file](./assets/svg/mtp-grid-18x18-conversation-status.svg?raw=1) | [1,080 × 1,080 pixels](./assets/png/1x/mtp-grid-18x18-conversation-status.png?raw=1) | [2,160 × 2,160 pixels](./assets/png/2x/mtp-grid-18x18-conversation-status.png?raw=1) |
+
+---
+
 ### MTP Node Cycling
 
 This diagram may also help make the concept easier to grasp.  
