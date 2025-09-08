@@ -866,7 +866,19 @@ Songs that symbolize an era, acting as its vortex, may carry sonic traits of spi
 
 ---
 
-## 📝 Notes
+## 📌 Notes
 
 - All playlists are available on **[Apple Music](https://music.apple.com/profile/imkohenauser)** and **[Spotify](https://open.spotify.com/user/31c7mrucu66naekqcs6xmrgfdb6m?si=e501d88807a34ead)**.
 - Node explanations: see **[README](./README.md)** and **[CONCEPT](./CONCEPT.md)**.
+
+---
+
+## 📎 References
+
+Additional prompts and generation logs are available on GitHub and:
+
+[GitHub Discussion #2 – **🎶 MTP Music Mapping Experiments**](../../discussions/2)
+
+For a detailed explanation, see the following article:
+
+[**Mapping the Prompt “MTP”: A New Way to Structure Playlists with AI** – I'm Kohen a User ↗](https://imkohenauser.com/mapping-the-prompt-mtp-a-new-way-to-structure-playlists-with-ai/)
