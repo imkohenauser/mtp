@@ -2,13 +2,13 @@
 
 # Mapping the Prompt（日本語原文）
 
-> 🌐 This document is the original (Japanese). The [ [English](../README.md) ] version is a translation.
-
 **Mapping the Prompt (MTP)** は、生成 AI（LLM）との会話状態を座標として可視化し、意図のすり合わせとプロンプト調整を行うための **軽量・汎用フレームワーク** です。  
 SVG/CSS/JS で実装可能な最小構成を想定し、対話を「座標空間」として扱うことで、テキストによる細かな指示を **UI 操作（点＋平均値）** に置き換えます。  
 詳細は 「[コンセプト（日本語原文）](./CONCEPT.md)」 と 「[公式サイト（日本語）](https://imkohenauser.com/mtp-ja)」 をご覧ください。
 
 ![Screenshot of MTP](/assets/svg/screenshot-ja.svg)
+
+> 🌐 This document is the original (Japanese). The [ [English](../README.md) ] version is a translation.
 
 **特徴（Features）**
 
