@@ -1,0 +1,36 @@
+{
+  "name": "mtp",
+  "version": "1.0.0",
+  "description": "MTP (Mapping the Prompt): a framework for steering LLM output through sliders, grid coordinates, and presets.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "build:grid": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py > public/images/grids/mtp-grid-19x19.svg",
+    "build:grid-37x37": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-37x37 > public/images/grids/mtp-grid-37x37.svg",
+    "build:grid-28x28": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-28x28 > public/images/grids/mtp-grid-28x28.svg",
+    "build:grid-10x10": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-10x10 > public/images/grids/mtp-grid-10x10.svg",
+    "build:grids": "npm run build:grid && npm run build:grid-37x37 && npm run build:grid-28x28 && npm run build:grid-10x10"
+  },
+  "keywords": [
+    "mtp",
+    "mapping-the-prompt"
+  ],
+  "dependencies": {
+    "@astrojs/starlight": "latest",
+    "@fontsource/inter": "latest",
+    "@fontsource/source-serif-4": "latest",
+    "astro": "latest",
+    "starlight-github-alerts": "^0.2.0",
+    "starlight-links-validator": "^0.24.0",
+    "starlight-llms-txt": "^0.8.1",
+    "starlight-scroll-to-top": "^1.0.1",
+    "starlight-theme-flexoki": "^0.2.2"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

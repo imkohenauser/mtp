@@ -1,0 +1,35 @@
+/mtp — MTP (Mapping the Prompt)
+
+Usage:
+  /mtp <args>                      (at start, middle, or end of message)
+  prompt text /mtp <args>          (/mtp may appear anywhere)
+  /mtp <args1> text /mtp <args2>   (multiple tokens are merged)
+  /mtp <command>
+
+Formats:
+  /mtp power:70          slider node:intensity (0 to 100)
+  /mtp power:-30         negative = Side B (opposite pole)
+  /mtp yellow:70         axis color = same as open:70 (see help sliders)
+  /mtp G:10              grid coordinate (column:row; G-10 also accepted)
+  /mtp open:50 flow:30   combined (space or comma separated)
+  /mtp synthesizer       named preset (expands to MTP commands)
+
+Node names (e.g. `power`, `flow`), axis color names (e.g. `yellow`), preset names
+(e.g. `synthesizer`), and grid coordinates (e.g. `G:10` or `G-10`) are case-insensitive.
+`/mtp POWER:70`, `/mtp YELLOW:70`, and `/mtp g:10` work the same as the examples above.
+
+Commands:
+  /mtp help              show this message
+  /mtp help sliders      slider node reference
+  /mtp help grid         grid coordinate reference
+  /mtp help presets      show all presets with expansions
+  /mtp list              list all nodes with structure
+  /mtp list presets      list preset names
+
+Examples:
+  /mtp B:3               Yellow zone, upper area
+  /mtp J:10              Transparent center (neutral)
+  /mtp power:70         strong Power activation
+  /mtp open:50 flow:30   combined steering
+  /mtp strategist        use strategist preset
+

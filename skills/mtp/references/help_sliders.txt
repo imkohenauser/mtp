@@ -1,0 +1,25 @@
+Sliders — Side A / Center / Side B
+
+   Still(-1) ── Yellow      (0) ── Open    (+1)
+    Void(-1) ── Red         (0) ── Power   (+1)
+   Surge(-1) ── Magenta     (0) ── Return  (+1)
+  Wither(-1) ── Green       (0) ── Grow    (+1)
+Collapse(-1) ── Transparent (0) ── Helix   (+1)
+    Haze(-1) ── White       (0) ── Focus   (+1)
+   Drift(-1) ── Cyan        (0) ── Enter   (+1)
+   Abyss(-1) ── Blue        (0) ── Flow    (+1)
+    Fade(-1) ── Purple      (0) ── Close   (+1)
+
+Intensity: 0–100  (e.g. /mtp power:70)
+Negative values activate Side B  (e.g. /mtp power:-40 → Void)
+
+Axis colors (macro zone names) are aliases for the Side A / Side B
+sliders on that axis — same linear mapping as node names:
+  /mtp yellow:100   = /mtp open:100
+  /mtp yellow:-100  = /mtp still:100
+  /mtp yellow:50    = /mtp open:50
+Colors: yellow, red, magenta, green, transparent, white, cyan, blue, purple.
+
+Slider node names are case-insensitive: `/mtp FLOW:70`, `/mtp flow:70`,
+and `/mtp Flow:70` are equivalent. Examples use lowercase node names for
+consistency.

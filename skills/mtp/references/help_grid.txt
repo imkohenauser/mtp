@@ -1,0 +1,108 @@
+Grid — 19×19 lines coordinate system (Scalable Symmetrical Structure)
+
+The MTP grid consists of 19 intersecting lines (A–S columns, 1–19 rows),
+forming an 18×18 cell space. It is geometrically divided into 3×3 macro zones.
+The 19 lines are structured as 4 boundaries and 3 zones of equal size (5 lines each).
+Boundaries act as "gradient layers" blending the semantic characteristics of adjacent zones.
+
+  zone selection + in-zone vector
+
+3×3 color map (macro zones)
+
+    A B C D E F G H I J K L M N O P Q R S
+ 1  +-----------+-----------+-----------+
+ 2  |           |           |           |
+ 3  |  Yellow   |    Red    |  Magenta  |
+ 4  |   (D-4)   |   (J-4)   |   (P-4)   |
+ 5  |           |           |           |
+ 6  |           |           |           |
+ 7  +-----------+-----------+-----------+
+ 8  |           |           |           |
+ 9  |  Green    | Trans.    |  White    |
+10  |   (D-10)  |  (J-10)   |   (P-10)  |
+11  |           |           |           |
+12  |           |           |           |
+13  +-----------+-----------+-----------+
+14  |           |           |           |
+15  |   Cyan    |    Blue   |  Purple   |
+16  |   (D-16)  |  (J-16)   |   (P-16)  |
+17  |           |           |           |
+18  |           |           |           |
+19  +-----------+-----------+-----------+
+
+Symmetrical division (4 boundaries, 3 zones of 5 lines each):
+  Line 1 (A, 1)            : Outer boundary
+  Lines 2–6 (B–F, 2–6)     : Zone 1 (e.g. Yellow / Open)
+  Line 7 (G, 7)            : Inner boundary (transitional gradient)
+  Lines 8–12 (H–L, 8–12)   : Zone 2 (e.g. Transparent / Helix)
+  Line 13 (M, 13)          : Inner boundary (transitional gradient)
+  Lines 14–18 (N–R, 14–18) : Zone 3 (e.g. Purple / Close)
+  Line 19 (S, 19)          : Outer boundary
+
+Node map (Side A / +1):
+  +----------+----------+----------+
+  |   Open   |  Power   |  Return  |
+  +----------+----------+----------+
+  |   Grow   |  Helix   |  Focus   |
+  +----------+----------+----------+
+  |  Enter   |   Flow   |  Close   |
+  +----------+----------+----------+
+
+Node map (Side B / -1):
+  +----------+----------+----------+
+  |   Still  |   Void   |  Surge   |
+  +----------+----------+----------+
+  |  Wither  | Collapse |   Haze   |
+  +----------+----------+----------+
+  |   Drift  |  Abyss   |   Fade   |
+  +----------+----------+----------+
+
+Concept map (5x5, simplified):
+  +----------+----------+----------+----------+----------+
+  |  Still   |    ~     |   Void   |    ~     |  Surge   |
+  +----------+----------+----------+----------+----------+
+  |    ~     |   Open   |  Power   |  Return  |    ~     |
+  +----------+----------+----------+----------+----------+
+  |  Wither  |   Grow   |  Helix   |  Focus   |   Haze   |
+  +----------+----------+----------+----------+----------+
+  |    ~     |  Enter   |   Flow   |  Close   |    ~     |
+  +----------+----------+----------+----------+----------+
+  |  Drift   |    ~     |  Abyss   |    ~     |   Fade   |
+  +----------+----------+----------+----------+----------+
+
+  Note:
+  - This is a conceptual map, not the full 19x19 coordinate grid.
+  - `~` means transition area (no representative node label).
+  - Use actual coordinates for input (e.g. A:1...S:19, or A-1...S-19).
+
+Intensity and polarity (volcano model, Chebyshev distance):
+  Grid center (J-10) = neutral (intensity 0; no constraint)
+  Peak at distance 6 (e.g. D-4, J-4, P-4, D-10, P-10) = Side A maximum (+100)
+  Outer frame (A-1, S-19, etc.) = Side B maximum (-100)
+
+  distance  = max(|x - 10|, |y - 10|)   (Chebyshev, 0–9)
+  Inner (distance ≤ 6):  signed = (distance / 6) * 100   (0 → +100)
+  Outer (distance > 6):  signed = 100 - 200 * (distance - 6) / 3   (+100 → -100)
+  polarity  = +1 if signed >= 0, else -1
+  intensity = abs(signed), clamped to 1–100. If 0, no constraint is emitted.
+
+  The zone (axis) is determined by the macro zone.
+  The eight macro-centers (D-4, J-4, P-4, D-10, P-10, D-16, J-16, P-16) all lie
+  at Chebyshev distance 6 from the center and thus share the same peak intensity.
+
+  Coordinates on boundary lines (e.g. G-7, M-13) use the same
+  distance formula. Each boundary coordinate is assigned to one
+  of the nine macro-zone cells; no cross-zone blending is performed.
+
+Grid coordinates use column:row (e.g. D:16, J:10). Hyphen form (D-16) is also accepted.
+Columns A–S are case-insensitive: `G:10` and `g:10` refer to the same coordinate.
+
+Examples:
+  /mtp J:10   → Transparent, neutral (intensity 0; no constraint)
+  /mtp D:4    → Yellow zone, Side A, intensity 100 (peak)
+  /mtp J:4    → Red zone, Side A, intensity 100 (peak)
+  /mtp G:7    → Transparent, Side A, intensity 50
+  /mtp B:3    → Yellow zone, Side B
+  /mtp A:1    → Yellow zone, Side B, intensity 100 (corner)
+  /mtp S:19   → Purple zone, Side B, intensity 100 (corner)
+  /mtp A:1 S:19 → Combining multiple grid coordinates

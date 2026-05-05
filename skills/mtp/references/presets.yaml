@@ -1,0 +1,13 @@
+# MTP Presets — named combinations of grid coordinates
+#
+# Usage: /mtp synthesizer
+#        /mtp strategist  Summarize this article
+#
+# Each preset maps to a space-separated string of MTP commands.
+# The compiler expands the preset before parsing.
+# Values: space-separated MTP tokens (node:intensity and/or grid coordinates); unescaped double quotes in values are not supported (parsing may break).
+
+synthesizer: "D:16 A:1"
+strategist: "P:16 P:4"
+maverick: "D:4 A:19"
+concierge: "J:13 D:10"

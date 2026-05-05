@@ -1,0 +1,58 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Agents
+.agent/
+.cursor/
+.claude/
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node / npm
+node_modules/
+
+# Astro
+dist/
+.astro/
+
+# Build caches / reports
+coverage/
+*.tsbuildinfo
+
+# Package manager caches
+.npm/
+.pnpm-store/
+
+# Deploy / tooling
+.vercel/
+
+# Environment (secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+.env*.local
+!.env.example
+
