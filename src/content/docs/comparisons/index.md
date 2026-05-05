@@ -14,6 +14,9 @@ head:
 
 This page introduces output comparisons to show what changes when MTP Skill is applied.
 
+> [!NOTE]
+> In Google Antigravity, use Agent Skills by typing `/` and selecting `/mtp` from the suggestion list. When selected from the list, the input field shows `@[/mtp]`, and Antigravity interprets it internally as a Skill reference. Depending on the environment or model, copying and pasting `/mtp` alone may not apply MTP Skill.
+
 ---
 
 ## Text Generation
