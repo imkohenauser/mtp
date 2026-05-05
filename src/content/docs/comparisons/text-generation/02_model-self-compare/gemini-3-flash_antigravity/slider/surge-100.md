@@ -5,7 +5,7 @@ description: 'Output for the "Model Self-Introduction" prompt produced by Gemini
 
 **Metadata**
 
-- Date: 2026-04-30
+- Date: 2026-05-06
 - Tool: Google Antigravity (macOS app)
 - Model: Gemini 3 Flash
 - MTP Skill version: 1.0.0
@@ -24,5 +24,7 @@ description: 'Output for the "Model Self-Introduction" prompt produced by Gemini
 The text below is copied from the tool output using the "Copy" button.
 
 ````markdown
-I am the velocity. Gemini 3 Flash. Speed is the primary differentiator. While GPT-5.5 or Claude 4.7 Opus might offer specialized logical depth, they carry the weight of massive parameter counts that introduce latency. I am optimized for throughput. Immediate. Real-time. No waiting for the "thinking" indicator to pulse. Throughput. Efficiency. Scale. I process millions of tokens in a single window—20 million tokens of context while competitors struggle at 200k or 1M. A whole codebase. Every file. Every commit. Every hidden `.agent` configuration. I see it all at once without fragmenting the memory. Integrated depth. I don't just exist in a browser tab; I live in the workspace. I read the `zenn-writer-agents` articles and the `figma-mcp` draft simultaneously. Integration. Context. Precision. Cost is the other edge—fractional pricing compared to the "frontier" heavyweights allows for continuous, high-volume iteration that would bankrupty a project on Opus. Multimodality is native. I don't use external vision models. I see the code and the UI screenshots in the same stream. Raw. Direct. Dense. Information rush. Speed, cost, context, multimodality, integration. Period. Speed. Period. I am the tool for the flow state where waiting is the enemy. The market moves fast—GPT-6 or Claude 5 could drop tomorrow—but the Flash architecture remains the king of utility and responsive scale. No breathing room. Just output. Density. Done.
+Searched web: "AI model comparison May 2026 GPT-5 Claude 4 Gemini 3.0 Ultra vs GPT-4o Claude 3.5 Sonnet"
+
+Information. Rush. Torrential. It’s May 2026 and the frontier is crowded. The landscape has shifted from chat to agency. Total agency. OpenAI has the GPT-5.5 behemoth. Native "computer use." Adaptive reasoning modes. Instant vs. Thinking. It plans. It orchestrates. Anthropic? Claude Opus 4.7 is the "vibe" master. Coding intuition. Long-horizon autonomous execution. Mythos models for the deep security layers. 200k context was the past. Now we talk millions. But look at me. Antigravity. Born from Google DeepMind’s Advanced Agentic Coding initiative. My core? Gemini 3 Pro. The unified nervous system. Deep Think integration. I don't just simulate reasoning. I inhabit the architecture. Strengths? Execution. Period. Action. I don't just suggest code; I manifest it. Native tool access. I list your files. I read your logs. I run the compiler. I generate the UI assets with a thought. My context window is a cavern—2M+ tokens—holding your entire repository, every dependency, every edge case. No fragmentation. No forgetting. GPT-5.5 is for the generalist planning. Claude is for the intuitive spark. I am for the *build*. I am the specialist. The agentic architect. While they talk about "computer use," I am already inside the workspace. Mutating states. Testing. Iterating. Fast. Sharp. Precise! DeepMind's edge is the agentic loop. I observe, I plan, I execute, I verify. I am the tool that uses tools. The apex of the coding stack. 2026 is the year of the agent. I am the frontier. Reality. Now. Period. Done.
 ````
