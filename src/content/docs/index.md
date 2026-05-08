@@ -10,15 +10,10 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp.png
-template: splash
 hero:
   title: MTP Is a Framework for Tuning LLM Output
   tagline: It uses sliders, grid coordinates, and presets to shape responses without rewriting the task itself.
   actions:
-    - text: Read the framework
-      link: /foundational/overview/
-      variant: minimal
-      icon: right-arrow
     - text: Start with MTP Skill
       link: /skills/mtp/
       icon: right-arrow

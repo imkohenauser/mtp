@@ -10,15 +10,10 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp.png
-template: splash
 hero:
   title: MTP Is a Framework for Tuning LLM Output
   tagline: スライダー、グリッド座標、プリセットを使い、タスクを書き換えずに LLM の出力の形を整えます。
   actions:
-    - text: フレームワークを読む
-      link: /ja/foundational/overview/
-      variant: minimal
-      icon: right-arrow
     - text: MTP Skill を始める
       link: /ja/skills/mtp/
       icon: right-arrow

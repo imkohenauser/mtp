@@ -45,8 +45,16 @@
     }
   }
 
+  .hero {
+    padding-top: 2rem;
+  }
+
   .hero .copy {
     text-align: left;
+  }
+
+  .hero .copy h1 {
+    font-size: var(--sl-text-5xl);
   }
 
   .expressive-code .frame {
