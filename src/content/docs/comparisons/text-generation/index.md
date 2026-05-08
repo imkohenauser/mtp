@@ -49,3 +49,8 @@ Each block below compares text outputs produced with the same prompt and `/mtp <
 ```
 
 [Go to test results for "Design Task: Sightseeing Plan Proposal"](/comparisons/text-generation/03_kyoto-one-day-itinerary/) →
+
+---
+
+> [!NOTE]
+> Text-generation tests are run with prompts written separately for each language. The results are not translations: the English site publishes English prompts and model outputs, while the Japanese site publishes Japanese prompts and model outputs. If you like, you can also browse the Japanese results for comparison.
