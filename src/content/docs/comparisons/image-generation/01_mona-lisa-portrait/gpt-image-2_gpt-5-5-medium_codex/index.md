@@ -1,6 +1,15 @@
 ---
 title: "GPT Image 2 | Mona Lisa Portrait"
 description: 'Compare baseline and MTP Skill slider outputs for the Mona Lisa Portrait prompt with GPT Image 2 via ChatGPT 5.5 (Medium) on Codex.'
+head:
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_01_mona-lisa-portrait_gpt-image-2.png
+  - tag: meta
+    attrs:
+      name: twitter:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_01_mona-lisa-portrait_gpt-image-2.png
 ---
 
 **Metadata**

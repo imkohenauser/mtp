@@ -1,6 +1,15 @@
 ---
 title: "Gemini 3 Pro Image | Geometric Billiards Painting"
 description: 'Compare baseline and MTP Skill slider outputs for the Geometric Billiards Painting prompt with Gemini 3 Pro Image via Gemini 3 Flash on Google Antigravity.'
+head:
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_03_geometric-billiards-painting_gemini-3-pro-image.png
+  - tag: meta
+    attrs:
+      name: twitter:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_03_geometric-billiards-painting_gemini-3-pro-image.png
 ---
 
 **Metadata**

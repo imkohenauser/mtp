@@ -1,6 +1,15 @@
 ---
 title: "GPT Image 2 | Mona Lisa Portrait"
 description: '「モナ・リザのポートレート」プロンプトに対する GPT Image 2 via ChatGPT 5.5 (Medium) (Codex) のベースラインと MTP Skill スライダー出力を比較します。'
+head:
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_01_mona-lisa-portrait_gpt-image-2.png
+  - tag: meta
+    attrs:
+      name: twitter:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_01_mona-lisa-portrait_gpt-image-2.png
 ---
 
 **メタ情報**

@@ -1,6 +1,15 @@
 ---
 title: "Gemini 3 Pro Image | Mona Lisa Portrait"
 description: 'Compare baseline and MTP Skill slider outputs for the Mona Lisa Portrait prompt with Gemini 3 Pro Image via Gemini 3 Flash on Google Antigravity.'
+head:
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_01_mona-lisa-portrait_gemini-3-pro-image.png
+  - tag: meta
+    attrs:
+      name: twitter:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_01_mona-lisa-portrait_gemini-3-pro-image.png
 ---
 
 **Metadata**

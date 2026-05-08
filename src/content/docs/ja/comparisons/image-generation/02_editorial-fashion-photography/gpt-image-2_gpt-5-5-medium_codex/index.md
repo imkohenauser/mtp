@@ -1,6 +1,15 @@
 ---
 title: "GPT Image 2 | Editorial Fashion Photography"
 description: '「ファッション雑誌の写真」プロンプトに対する GPT Image 2 via ChatGPT 5.5 (Medium) (Codex) のベースラインと MTP Skill スライダー出力を比較します。'
+head:
+  - tag: meta
+    attrs:
+      property: og:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_02_editorial-fashion-photography_gpt-image-2.png
+  - tag: meta
+    attrs:
+      name: twitter:image
+      content: https://mappingtheprompt.com/ogp/comparisons_image-generation_02_editorial-fashion-photography_gpt-image-2.png
 ---
 
 **メタ情報**
