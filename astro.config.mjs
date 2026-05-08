@@ -30,7 +30,7 @@ export default defineConfig({
           smoothScroll: true,
           showProgressRing: true,
           borderRadius: '50',
-          progressRingColor: 'var(--sl-color-white)',
+          progressRingColor: 'var(--color-base-400)',
        }),
       ],
       customCss: [

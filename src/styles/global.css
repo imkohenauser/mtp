@@ -94,5 +94,6 @@
     background-color: transparent !important;
     border: none !important;
     color: var(--sl-color-gray-4) !important;
+    box-shadow: none !important;
   }
 }
