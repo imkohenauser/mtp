@@ -50,9 +50,9 @@ result = client.images.generate(
 
 **出力の抜粋**
 
-| ベースライン | `power:100` | `flow:100` |
+| ベースライン | Side A ノード | Side B ノード |
 |----------|----------|----------|
-| <img src="/images/comparisons/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/baseline.png" alt="GPT Image 2 の baseline" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/slider/power-100.png" alt="GPT Image 2 の power:100" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/slider/flow-100.png" alt="GPT Image 2 の flow:100" width="200" loading="lazy" decoding="async"> |
+| <img src="/images/comparisons/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/baseline.png" alt="GPT Image 2 ベースライン" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/slider-a.png" alt="GPT Image 2 サイド A" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/slider-b.png" alt="GPT Image 2 サイド B" width="200" loading="lazy" decoding="async"> |
 
 [「GPT Image 2」の結果比較ページへ](/ja/comparisons/image-generation/02_editorial-fashion-photography/gpt-image-2_gpt-5-5-medium_codex/) →
 
@@ -61,8 +61,8 @@ result = client.images.generate(
 
 **出力の抜粋**
 
-| ベースライン | `power:100` | `flow:100` |
+| ベースライン | Side A ノード | Side B ノード |
 |----------|----------|----------|
-| <img src="/images/comparisons/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/baseline.jpg" alt="Gemini 3 Pro Image の baseline" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/slider/power-100.jpg" alt="Gemini 3 Pro Image の power:100" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/slider/flow-100.jpg" alt="Gemini 3 Pro Image の flow:100" width="200" loading="lazy" decoding="async"> |
+| <img src="/images/comparisons/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/baseline.jpg" alt="Gemini 3 Pro Image ベースライン" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/slider-a.png" alt="Gemini 3 Pro Image サイド A" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/slider-b.png" alt="Gemini 3 Pro Image サイド B" width="200" loading="lazy" decoding="async"> |
 
 [「Gemini 3 Pro Image」の結果比較ページへ](/ja/comparisons/image-generation/02_editorial-fashion-photography/gemini-3-pro-image_gemini-3-flash_antigravity/) →

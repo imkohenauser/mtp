@@ -50,9 +50,9 @@ In the test environment, each result was produced in a fresh agent chat session 
 
 **Sample outputs**
 
-| Baseline | `power:100` | `flow:100` |
+| Baseline | Side A Nodes | Side B nodes |
 |----------|----------|----------|
-| <img src="/images/comparisons/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/baseline.png" alt="GPT Image 2 baseline" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/slider/power-100.png" alt="GPT Image 2 power:100" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/slider/flow-100.png" alt="GPT Image 2 flow:100" width="200" loading="lazy" decoding="async"> |
+| <img src="/images/comparisons/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/baseline.png" alt="GPT Image 2 baseline" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/slider-a.png" alt="GPT Image 2 Side A" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/slider-b.png" alt="GPT Image 2 Side B" width="200" loading="lazy" decoding="async"> |
 
 [Go to comparison page for GPT Image 2](/comparisons/image-generation/03_geometric-billiards-painting/gpt-image-2_gpt-5-5-medium_codex/) →
 
@@ -60,8 +60,8 @@ In the test environment, each result was produced in a fresh agent chat session 
 
 **Sample outputs**
 
-| Baseline | `power:100` | `flow:100` |
+| Baseline | Side A Nodes | Side B nodes |
 |----------|----------|----------|
-| <img src="/images/comparisons/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/baseline.jpg" alt="Gemini 3 Pro Image baseline" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/slider/power-100.jpg" alt="Gemini 3 Pro Image power:100" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/slider/flow-100.jpg" alt="Gemini 3 Pro Image flow:100" width="200" loading="lazy" decoding="async"> |
+| <img src="/images/comparisons/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/baseline.jpg" alt="Gemini 3 Pro Image baseline" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/slider-a.png" alt="Gemini 3 Pro Image Side A" width="200" loading="lazy" decoding="async"> | <img src="/images/comparisons/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/slider-b.png" alt="Gemini 3 Pro Image Side B" width="200" loading="lazy" decoding="async"> |
 
 [Go to comparison page for Gemini 3 Pro Image](/comparisons/image-generation/03_geometric-billiards-painting/gemini-3-pro-image_gemini-3-flash_antigravity/) →
