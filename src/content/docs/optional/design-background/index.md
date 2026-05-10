@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/optional_design-background.png
+lastUpdated: true
 ---
 
 > [!NOTE]
@@ -40,9 +41,9 @@ In implementation, this macro layout expands into a **19×19** coordinate grid. 
 
 Wu Xing directions and hue-cycle corners are combined in one layout. This is **not** offered as the authoritative arrangement for cultural or intellectual history; it is explained as a **mnemonic for which semantic direction each node faces**.
 
-| Design Visualization |
-|------------------|
-| <img src="/images/common/3x3-matrix-abstract-visual-states.png" alt="" loading="lazy" decoding="async" /> _Illustrative moodboard of the nine MTP Side A color nodes. It offers a design-oriented visual interpretation of the 3×3 layout, highlighting the central Transparent node and the surrounding hue relationships._ |
+**Design Visualization**
+![Diagram showing MTP’s design background: a Wu Xing directional mapping on the left and a 3×3 visual moodboard for the nine Side A color nodes on the right.](/images/common/mtp-design-background.png)
+*MTP maps the 3×3 Side A node layout to Wu Xing-inspired semantic directions, then visualizes each node as an elemental moodboard image.*
 
 ---
 

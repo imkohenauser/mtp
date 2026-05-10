@@ -17,6 +17,7 @@ hero:
     - text: Start with MTP Skill
       link: /skills/mtp/
       icon: right-arrow
+lastUpdated: true
 ---
 
 MTP (Mapping the Prompt) is a framework for steering LLM output with grids and sliders instead of long natural-language behavior instructions. It is designed to make the ideas and concepts in a prompt easier to express intuitively, helping the user and the LLM align with fewer instructions.
@@ -69,13 +70,15 @@ The MTP Interactive UI on the roadmap is planned to make sliders and grids avail
 
 The images below show a UI preview of sliders for controlling intensity and a grid for controlling position. They make it easier to see how coordinates such as `J:4` and `D:16` correspond to color and position. The slider view and the grid view both represent the same node system from different angles.
 
-| Slider UI |
-|-----------|
-| <img src="/images/common/mtp-ui-slider--light.png" alt="9 Slider System (light)" class="dark:sl-hidden" width="343" loading="lazy" decoding="async" /><img src="/images/common/mtp-ui-slider--dark.png" alt="9 Slider System (dark)" class="light:sl-hidden" width="343" loading="lazy" decoding="async" /> |
+### Slider
 
-| Grid UI |
-|---------|
-| <img src="/images/common/mtp-ui-grid-coordinate--light.png" alt="19×19 grid system (light)" class="dark:sl-hidden" width="343" loading="lazy" decoding="async" /><img src="/images/common/mtp-ui-grid-coordinate--dark.png" alt="19×19 grid system (dark)" class="light:sl-hidden" width="343" loading="lazy" decoding="async" /> |
+![Diagram explaining MTP slider arguments using /mtp node:intensity. The left panel shows node sliders for Side A and Side B with Power set to 70. The right panel shows node intensity as 3D Chebyshev distance, with labeled directions such as Open, Power, Focus, Flow, Close, Surge, Collapse, and Fade.](/images/common/mtp-slider-arguments-mtp-node-intensity.png)
+*Slider arguments combine a node name with an intensity value, moving from the center toward a Side A or Side B direction in the MTP space.*
+
+### Grid
+
+![Diagram explaining MTP grid arguments using /mtp column:row. The left panel shows a simplified 3×3 color grid projected onto a 19×19 coordinate grid, with example coordinates such as J:4, D:10, P:10, and J:16. The right panel shows RGBA color values across the full 19×19 grid.](/images/common/mtp-grid-arguments-mtp-column-row.png)
+*Grid arguments select a point on the 19×19 MTP coordinate plane, where positions map back to node directions and their RGBA color values.*
 
 In the grid UI, position is intended to be selected as if placing a point on the grid.
 
