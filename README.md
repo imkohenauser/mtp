@@ -22,15 +22,21 @@ MTP moves that behavioral steering into non-verbal parameters such as color, pos
 
 MTP does not change the task itself. It adjusts qualities such as force, flow, depth, structure, openness, and focus.
 
-### Visual examples
+### How MTP arguments map visually
 
-The MTP Interactive UI on the roadmap is planned to make sliders and grids available as visual controls. The UI is not implemented yet; at the current stage, MTP Skill is operated through the `/mtp` command.
+MTP currently works through the `/mtp` command, but its arguments can be understood visually.
 
-The image below shows a UI preview of sliders for controlling intensity and a grid for controlling position. It makes it easier to see how coordinates such as `D:16` and `A:1` correspond to color and position. The slider view and the grid view both represent the same node system from different angles.
+The slider form, `/mtp <node:intensity>`, sets the intensity of a named node such as `power:70` or `flow:100`. The grid form, `/mtp <column:row>`, selects a point on the 19×19 MTP coordinate plane, such as `J:4` or `D:16`.
 
-| Slider (9 axes) | Grid (19×19) |
-|-----------------|---------------|
-| ![9 Slider System](public/images/common/mtp-ui-slider--light.png) | ![19×19 Grid System](public/images/common/mtp-ui-grid-coordinate--light.png) |
+Both forms describe the same underlying node system: sliders express movement by named direction and intensity, while grid coordinates express position.
+
+**MTP Slider Arguments:**
+![MTP Slider Arguments: /mtp <node:intensity>](public/images/common/mtp-slider-arguments-mtp-node-intensity.png)
+
+**MTP Grid Arguments:**
+![MTP Grid Arguments: /mtp <column:row>](public/images/common/mtp-grid-arguments-mtp-column-row.png)
+
+The planned MTP Interactive UI may expose these same controls visually in the future.
 
 ---
 
