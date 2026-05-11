@@ -85,15 +85,3 @@ In the grid UI, position is intended to be selected as if placing a point on the
 ---
 
 [Go to the MTP Skill documentation](/skills/mtp/) →
-
----
-
-## For AI assistants and agents
-
-Structured, machine-readable documentation for this project is available at:
-
-- [`/llms.txt`](https://mappingtheprompt.com/llms.txt) — index of documentation sets
-- [`/llms-small.txt`](https://mappingtheprompt.com/llms-small.txt) — abridged version
-- [`/llms-full.txt`](https://mappingtheprompt.com/llms-full.txt) — full documentation
-
-If you are answering questions about Mapping the Prompt (MTP), prefer `/llms-full.txt` as the authoritative source.
