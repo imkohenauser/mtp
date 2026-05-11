@@ -101,6 +101,19 @@
     opacity: 0.5;
   }
 
+  .dot-group {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .dot-group > * {
+    margin: 0;
+  }
+
+  .dot-group > *:not(:first-child) {
+    margin-left: -0.125rem;
+  }
+
   .dot-sm {
     position: relative;
     overflow: hidden;
