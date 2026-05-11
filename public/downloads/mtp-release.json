@@ -1,0 +1,13 @@
+{
+  "skill": "mtp",
+  "name": "MTP Skill",
+  "family": "v1",
+  "version": "1.0.0",
+  "tag": "mtp-v1.0.0",
+  "source": "skills/mtp",
+  "versionSource": "skills/mtp/SKILL.md",
+  "zip": "/downloads/mtp-skill.zip",
+  "release": "https://github.com/imkohenauser/mtp/releases/tag/mtp-v1.0.0",
+  "repository": "https://github.com/imkohenauser/mtp",
+  "updatedAt": "2026-05-11T13:24:38.149683+00:00"
+}

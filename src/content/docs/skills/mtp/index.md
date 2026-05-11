@@ -50,7 +50,25 @@ MTP Skill does not fully lock the output. It is a layer for connecting constrain
 
 ## Installation
 
-MTP Skill is distributed as an Agent Skill. Ordinarily, Skills are used from developer tools such as IDEs and CLI clients. At the moment, you can also upload a zipped Skill through Claude.ai’s customization settings or the Skills management page in Manus.im, which makes Agent Skills available from web and iOS app surfaces. To use MTP Skill this way, zip the `skills/mtp` directory from the MTP repository and upload it.
+MTP Skill is distributed as an Agent Skill. You can install it from the CLI, or download the official zip and upload it to tools that support zipped Agent Skills.
+
+### Download zipped Skill
+
+You can download the latest packaged MTP Skill as a zip file:
+
+[Download MTP Skill zip](/downloads/mtp-skill.zip) ↓
+
+This zip contains the `mtp` Skill package built from the repository directory `skills/mtp`.
+
+<!-- For versioned packages and release notes, see GitHub Releases:
+
+[View MTP Skill releases on GitHub](https://github.com/imkohenauser/mtp/releases) ↗
+
+MTP Skill release tags use the `mtp-vX.Y.Z` format. The `v1` family label groups MTP-related Skills that share the same major release line.
+
+Release metadata is also available as JSON:
+
+[`/downloads/release.json`](/downloads/release.json) -->
 
 ### Adding from the CLI
 

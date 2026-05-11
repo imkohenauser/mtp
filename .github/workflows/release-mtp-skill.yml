@@ -1,0 +1,133 @@
+name: Release MTP Skill
+
+on:
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: Skill directory name under skills/.
+        required: true
+        default: mtp
+      family:
+        description: Repository-level major family label.
+        required: true
+        default: v1
+
+permissions:
+  contents: write
+
+jobs:
+  release-mtp-skill:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build skill zip and release metadata
+        id: build
+        run: |
+          SKILL="${{ inputs.skill }}"
+          FAMILY="${{ inputs.family }}"
+          VERSION="$(python3 scripts/build_skill_release.py --skill "$SKILL" --family "$FAMILY")"
+
+          echo "skill=${SKILL}" >> "$GITHUB_OUTPUT"
+          echo "family=${FAMILY}" >> "$GITHUB_OUTPUT"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=${SKILL}-v${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "latest_zip=public/downloads/${SKILL}-skill.zip" >> "$GITHUB_OUTPUT"
+          echo "versioned_zip=dist/release-assets/${SKILL}-skill-v${VERSION}.zip" >> "$GITHUB_OUTPUT"
+          echo "release_json=public/downloads/${SKILL}-release.json" >> "$GITHUB_OUTPUT"
+
+      - name: Check whether tag already exists
+        run: |
+          TAG="${{ steps.build.outputs.tag }}"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists."
+            exit 1
+          fi
+
+      - name: Commit generated download files
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          SKILL="${{ steps.build.outputs.skill }}"
+
+          git add "${{ steps.build.outputs.latest_zip }}"
+          git add "${{ steps.build.outputs.release_json }}"
+
+          if [ "$SKILL" = "mtp" ]; then
+            git add public/downloads/release.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No generated download changes to commit."
+            RELEASE_SHA="$(git rev-parse HEAD)"
+          else
+            git commit -m "Release $SKILL Skill ${{ steps.build.outputs.tag }}"
+            RELEASE_SHA="$(git rev-parse HEAD)"
+            git push
+          fi
+
+          echo "release_sha=${RELEASE_SHA}" >> "$GITHUB_OUTPUT"
+
+      - name: Create tag
+        run: |
+          TAG="${{ steps.build.outputs.tag }}"
+          RELEASE_SHA="${{ steps.commit.outputs.release_sha }}"
+          git tag "$TAG" "$RELEASE_SHA"
+          git push origin "$TAG"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SKILL="${{ steps.build.outputs.skill }}"
+          FAMILY="${{ steps.build.outputs.family }}"
+          VERSION="${{ steps.build.outputs.version }}"
+          TAG="${{ steps.build.outputs.tag }}"
+          VERSIONED_ZIP="${{ steps.build.outputs.versioned_zip }}"
+
+          gh release create "$TAG" \
+            "$VERSIONED_ZIP" \
+            --title "${SKILL} Skill ${TAG}" \
+            --notes-file - <<EOF
+          ## ${SKILL} Skill ${TAG}
+
+          This release packages the Agent Skill located at \`skills/${SKILL}\`.
+
+          ### Downloads
+
+          - Latest zip: https://mappingtheprompt.com/downloads/${SKILL}-skill.zip
+          - Versioned asset: ${SKILL}-skill-v${VERSION}.zip
+
+          ### Release family
+
+          ${FAMILY}
+
+          ### Version source
+
+          The release version is read from:
+
+          \`skills/${SKILL}/SKILL.md\`
+
+          ### Install from CLI
+
+          The GitHub CLI \`gh skill\` command is currently a preview feature.
+
+          \`\`\`bash
+          gh skill install imkohenauser/mtp skills/${SKILL}
+          \`\`\`
+
+          \`\`\`bash
+          npx skills add imkohenauser/mtp --skill ${SKILL}
+          \`\`\`
+          EOF
