@@ -16,7 +16,58 @@ export default defineConfig({
         starlightLlmsTxt({
           projectName: 'MTP (Mapping the Prompt)',
           description:
-            'A framework for steering LLM output through sliders, grid coordinates, and presets.',
+            'A framework for steering LLM output through sliders, grid coordinates, and presets. Documentation is authored in English (default); Japanese pages live under `/ja/` on the site.',
+          details: `## How to use this site as context
+
+- **Start here for concepts**: read the *MTP core documentation* set, then optional deep dives if needed.
+- **Benchmarks**: the *Comparisons (landing pages + baselines)* set explains tasks and structure without every per-coordinate model output.
+- **Full evidence**: \`llms-full.txt\` includes all benchmark pages (every slider/grid cell and preset run). Prefer it when you need verbatim model outputs or citations.
+
+## Locales
+
+- Default locale for generated \`llms*.txt\` exports is **English** (\`/\` URLs). Japanese mirrors the same slugs under \`/ja/\` in the web docs.`,
+          optionalLinks: [
+            {
+              label: 'Documentation site (human UI)',
+              url: 'https://mappingtheprompt.com/',
+              description: 'Browse the same content with navigation, search, and both EN/JA locales.',
+            },
+            {
+              label: 'MTP source repository',
+              url: 'https://github.com/imkohenauser/mtp',
+              description: 'Project source and issue tracker.',
+            },
+          ],
+          customSets: [
+            {
+              label: 'MTP core documentation',
+              description:
+                'Foundational concepts, optional background, and the MTP Skill — the minimum to apply MTP in practice.',
+              paths: ['index*', 'foundational/**', 'optional/**', 'skills/**'],
+            },
+            {
+              label: 'Comparisons (landing pages + baselines)',
+              description:
+                'Benchmark section introductions, task landing pages, model-pair indexes, and baseline runs — excludes dense per-coordinate outputs (see complete documentation for those).',
+              paths: ['comparisons/**/index', 'comparisons/**/baseline'],
+            },
+          ],
+          promote: [
+            'index*',
+            'foundational/overview*',
+            'foundational/node-reference*',
+            'foundational/grid-and-coordinate-system*',
+            'foundational/**',
+            'skills/**',
+            'optional/**',
+          ],
+          demote: ['comparisons/**'],
+          exclude: [
+            'comparisons/**/slider/**',
+            'comparisons/**/grid/**',
+            'comparisons/**/preset/**',
+          ],
+          pageSeparator: '\n\n---\n\n',
         }),
         starlightLinksValidator(),
         starlightScrollToTop({
