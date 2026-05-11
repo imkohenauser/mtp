@@ -96,4 +96,123 @@
     color: var(--sl-color-gray-4) !important;
     box-shadow: none !important;
   }
+
+  .opacity-50 {
+    opacity: 0.5;
+  }
+
+  .dot-sm {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .dot-sm::before,
+  .dot-sm::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+  }
+
+  .dot-sm::before {
+    bottom: 0;
+    left: 0;
+  }
+
+  .dot-sm::after {
+    top: 0;
+    right: 0;
+  }
+
+  .bg-j13 {
+    background-color: rgba(80, 132, 192, 0.583);
+  }
+  
+  .bg-open {
+    background-color: var(--color-yellow-400);
+  }
+
+  .bg-power {
+    background-color: var(--color-red-400);
+  }
+
+  .bg-return {
+    background-color: var(--color-magenta-400);
+  }
+
+  .bg-grow {
+    background-color: var(--color-green-400);
+  }
+
+  .bg-helix {
+    background-color: var(--color-paper);
+  }
+
+  .dot-sm.bg-helix::before,
+  .dot-sm.bg-helix::after {
+    background-color: var(--color-base-400);
+  }
+
+  .bg-focus {
+    /* background-color: var(--color-paper); */
+    background-color: var(--color-base-50);
+  }
+
+  .bg-enter {
+    background-color: var(--color-cyan-400);
+  }
+
+  .bg-flow {
+    background-color: var(--color-blue-400);
+  }
+
+  .bg-close {
+    background-color: var(--color-purple-400);
+  }
+  
+  .bg-still {
+    background-color: var(--color-yellow-800);
+  }
+
+  .bg-void {
+    background-color: var(--color-red-800);
+  }
+
+  .bg-surge {
+    background-color: var(--color-magenta-800);
+  }
+
+  .bg-wither {
+    background-color: var(--color-green-800);
+  }
+
+  .bg-collapse {
+    background-color: var(--color-base-800);
+  }
+
+  .dot-sm.bg-collapse::before,
+  .dot-sm.bg-collapse::after {
+    background-color: var(--color-black);
+  }
+
+  .bg-haze {
+    background-color: var(--color-base-800);
+  }
+
+  .bg-drift {
+    background-color: var(--color-cyan-800);
+  }
+
+  .bg-abyss {
+    background-color: var(--color-blue-800);
+  }
+
+  .bg-fade {
+    background-color: var(--color-purple-800);
+  }
 }
