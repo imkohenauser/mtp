@@ -114,15 +114,34 @@
     margin-left: -0.125rem;
   }
 
+  .dot-lg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .dot-md {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .dot-sm {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .dot-lg,
+  .dot-md,
   .dot-sm {
     position: relative;
     overflow: hidden;
     display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
     border-radius: 50%;
   }
 
+  .dot-lg::before,
+  .dot-lg::after,
+  .dot-md::before,
+  .dot-md::after,
   .dot-sm::before,
   .dot-sm::after {
     content: '';
@@ -132,11 +151,15 @@
     background-color: transparent;
   }
 
+  .dot-lg::before,
+  .dot-md::before,
   .dot-sm::before {
     bottom: 0;
     left: 0;
   }
 
+  .dot-lg::after,
+  .dot-md::after,
   .dot-sm::after {
     top: 0;
     right: 0;
@@ -166,6 +189,10 @@
     background-color: var(--color-paper);
   }
 
+  .dot-lg.bg-helix::before,
+  .dot-lg.bg-helix::after,
+  .dot-md.bg-helix::before,
+  .dot-md.bg-helix::after,
   .dot-sm.bg-helix::before,
   .dot-sm.bg-helix::after {
     background-color: var(--color-base-400);
@@ -208,6 +235,10 @@
     background-color: var(--color-base-800);
   }
 
+  .dot-lg.bg-collapse::before,
+  .dot-lg.bg-collapse::after,
+  .dot-md.bg-collapse::before,
+  .dot-md.bg-collapse::after,
   .dot-sm.bg-collapse::before,
   .dot-sm.bg-collapse::after {
     background-color: var(--color-black);

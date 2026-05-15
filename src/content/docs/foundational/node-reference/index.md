@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/foundational_node-reference.png
+lastUpdated: true
 ---
 
 ## Introduction
@@ -52,51 +53,51 @@ The nine nodes are laid out as follows:
 
 ### Primary axes (cross skeleton)
 
-#### Red (Power)
+#### <div class="dot-md bg-power" aria-label="red"></div> Red (Power)
 
 - **Traits:** Assertion, conclusion-first ordering, structural clarity.
 - **Tendency:** Tends toward a more direct, crisp voice; hedging may appear less often than under a neutral setting.
 
-#### Blue (Flow)
+#### <div class="dot-md bg-flow" aria-label="blue"></div> Blue (Flow)
 
 - **Traits:** Continuity, context maintenance, holding multiple viewpoints open.
 - **Tendency:** Makes connections between ideas and topic shifts read more smoothly.
 
-#### Green (Grow)
+#### <div class="dot-md bg-grow" aria-label="green"></div> Green (Grow)
 
 - **Traits:** Gradual unfolding, preserving outline, cautious expansion.
 - **Tendency:** Stays within the stated task frame while, where it fits, favoring flowing prose over bullet lists.
 
-#### White (Focus)
+#### <div class="dot-md bg-focus" aria-label="white"></div> White (Focus)
 
 - **Traits:** Concentration, scrutiny, logical tightness.
 - **Tendency:** Narrows scope for accuracy and tends to curb casual digression.
 
 ### Corner nodes
 
-#### Yellow (Open)
+#### <div class="dot-md bg-open" aria-label="yellow"></div> Yellow (Open)
 
 - **Traits:** Exploration, relaxed stance, breadth of view.
 - **Tendency:** Tends to surface more options or wider, brainstorming-style ideation.
 
-#### Purple (Close)
+#### <div class="dot-md bg-close" aria-label="purple"></div> Purple (Close)
 
 - **Traits:** Convergence, closure, summary.
 - **Tendency:** Tends to pull content toward a single conclusion or a closing stance.
 
-#### Magenta (Return)
+#### <div class="dot-md bg-return" aria-label="magenta"></div> Magenta (Return)
 
 - **Traits:** Contrast, inversion, unsettling the default line.
 - **Tendency:** Where appropriate, easier to add rebuttals, shifts of view, or “on the other hand”-style counterpoint.
 
-#### Cyan (Enter)
+#### <div class="dot-md bg-enter" aria-label="cyan"></div> Cyan (Enter)
 
 - **Traits:** Depth-first bent, specialist stance.
 - **Tendency:** Tends toward domain-specific detail and a perspective that moves inside the subject.
 
 ### Center node
 
-#### Transparent (Helix)
+#### <div class="dot-md bg-helix" aria-label="transparent"></div> Transparent (Helix)
 
 - **Traits:** A neutral go-between bridging extremes.
 - **Tendency:** When paired with strong nodes on the opposite side, works to soften wording and dampen extremity.

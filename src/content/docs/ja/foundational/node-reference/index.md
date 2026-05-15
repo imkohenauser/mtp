@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/ja_foundational_node-reference.png
+lastUpdated: true
 ---
 
 ## はじめに
@@ -52,51 +53,51 @@ head:
 
 ### プライマリー軸（十字の骨格）
 
-#### Red (Power)
+#### <div class="dot-md bg-power" aria-label="red"></div> Red (Power)
 
 - **特徴:** 断定、結論先行の並べ方、構造の明瞭さ。
 - **傾向:** より直接的で歯切れのよい語り口に寄りやすく、中立設定に比べて留保表現が少なめに出ることがあります。
 
-#### Blue (Flow)
+#### <div class="dot-md bg-flow" aria-label="blue"></div> Blue (Flow)
 
 - **特徴:** 連続性、文脈の維持、複数の見方を受け止める姿勢。
 - **傾向:** アイデア同士や話題転換のつながりを、より滑らかに見せやすくなります。
 
-#### Green (Grow)
+#### <div class="dot-md bg-grow" aria-label="green"></div> Green (Grow)
 
 - **特徴:** ゆるやかな展開、輪郭の維持、慎重な広がり。
 - **傾向:** 与えられたタスクの枠組みにとどまりつつ、合う場面では箇条書きよりも流れのある文章になりやすくなります。
 
-#### White (Focus)
+#### <div class="dot-md bg-focus" aria-label="white"></div> White (Focus)
 
 - **特徴:** 集中、精査、論理の引き締まり。
 - **傾向:** スコープを狭めて正確さを重視し、気軽な脱線を抑える方向に働きやすくなります。
 
 ### 四角のノード
 
-#### Yellow (Open)
+#### <div class="dot-md bg-open" aria-label="yellow"></div> Yellow (Open)
 
 - **特徴:** 探索、ゆるやかな構え、視野の広さ。
 - **傾向:** 選択肢を多めに出したり、ブレインストーミング寄りの幅広い発想を促したりしやすくなります。
 
-#### Purple (Close)
+#### <div class="dot-md bg-close" aria-label="purple"></div> Purple (Close)
 
 - **特徴:** 収束、締めくくり、要約。
 - **傾向:** 単一の結論や締めの姿勢へ向けて、内容をまとめる方向に寄りやすくなります。
 
-#### Magenta (Return)
+#### <div class="dot-md bg-return" aria-label="magenta"></div> Magenta (Return)
 
 - **特徴:** 対比、反転、既定路線への揺さぶり。
 - **傾向:** 必要に応じて、反論や見方の切り替え、「一方で」に近い対置を加えやすくなります。
 
-#### Cyan (Enter)
+#### <div class="dot-md bg-enter" aria-label="cyan"></div> Cyan (Enter)
 
 - **特徴:** 深掘り志向、専門家的な構え。
 - **傾向:** 領域固有の細部や、対象の内側に入っていくような視点に寄りやすくなります。
 
 ### 中央のノード
 
-#### Transparent (Helix)
+#### <div class="dot-md bg-helix" aria-label="transparent"></div> Transparent (Helix)
 
 - **特徴:** 極端さのあいだをつなぐ、中立的な媒介。
 - **傾向:** 反対方向の強いノードと組み合わせたとき、言い回しを和らげ、極端さを抑える方向に働きます。
