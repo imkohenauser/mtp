@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/foundational_grid-and-coordinate-system.png
+lastUpdated: true
 ---
 
 MTP (Mapping the Prompt) is a framework for shaping prompt behavior **without** relying on explicit instructive prose, using a **dynamic model with two formal layers: Space and Intensity**. **Space** determines axis and zone from grid position; **Intensity** determines strength, polarity, and tiered constraint extraction (Volcano mapping for coordinates).
@@ -62,15 +63,17 @@ Boundary lines are not sharp partitions; conceptually—like a gradient—they a
 
 The nine macro zones correspond to a hue cycle and also carry a generation transition order, or Z-order. Together they suggest the order in which concepts unfold and which phases processing passes through.
 
-1. **Yellow** (Open: divergence, openness, margin)
-2. **Red** (Power: force, assertion, rise)
-3. **Magenta** (Return: return, flip, cycle)
-4. **Green** (Grow: growth, proliferation, layering)
-5. **Transparent** (Helix: helix, unfold, neutral structure)
-6. **White** (Focus: focus, convergence, precision)
-7. **Cyan** (Enter: entry, landing, structure)
-8. **Blue** (Flow: flow, connection, rhythm)
-9. **Purple** (Close: close, completion, wrap)
+|                                                              | Color           | Node        | Keywords                                      |
+| ------------------------------------------------------------ | --------------- | ----------- | --------------------------------------------- |
+| <div class="dot-sm bg-open" aria-label="yellow"></div>       | **Yellow**      | Open        | divergence, openness, margin                  |
+| <div class="dot-sm bg-power" aria-label="red"></div>         | **Red**         | Power       | force, assertion, rise                        |
+| <div class="dot-sm bg-return" aria-label="magenta"></div>    | **Magenta**     | Return      | return, flip, cycle                           |
+| <div class="dot-sm bg-grow" aria-label="green"></div>        | **Green**       | Grow        | growth, proliferation, layering               |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | **Transparent** | Helix       | helix, unfold, neutral structure              |
+| <div class="dot-sm bg-focus" aria-label="white"></div>       | **White**       | Focus       | focus, convergence, precision                 |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div>        | **Cyan**        | Enter       | entry, landing, structure                     |
+| <div class="dot-sm bg-flow" aria-label="blue"></div>         | **Blue**        | Flow        | flow, connection, rhythm                      |
+| <div class="dot-sm bg-close" aria-label="purple"></div>      | **Purple**      | Close       | close, completion, wrap                       |
 
 ---
 
