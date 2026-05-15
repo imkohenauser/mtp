@@ -42,7 +42,7 @@ export default defineConfig({
       ],
       title: 'MTP Docs',
       logo: {
-        src: './public/images/common/logo.svg',
+        src: './public/logo.svg',
         alt: 'MTP (Mapping the Prompt)',
       },
       head: [

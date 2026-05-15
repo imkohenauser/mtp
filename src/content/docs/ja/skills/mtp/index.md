@@ -134,7 +134,7 @@ npx skills add imkohenauser/mtp --skill mtp
 
 スライダー `power` を強度 `100` で指定しています。この例では、結論先行で断定的な構造の出力に寄ります。
 
-![/mtp node:intensity によるMTP Slider Argumentsを説明する図。左はSide AとSide Bのノードスライダーを示し、Powerが70に設定されている。右はOpen、Power、Focus、Flow、Close、Surge、Collapse、Fadeなどの方向を、3Dチェビシェフ距離として示している。](/images/common/mtp-slider-arguments-mtp-node-intensity.png)
+![/mtp node:intensity によるMTP Slider Argumentsを説明する図。左はSide AとSide Bのノードスライダーを示し、Powerが70に設定されている。右はOpen、Power、Focus、Flow、Close、Surge、Collapse、Fadeなどの方向を、3Dチェビシェフ距離として示している。](/images/pages/mtp-slider-arguments-mtp-node-intensity.png)
 
 **グリッド**
 
@@ -144,7 +144,7 @@ npx skills add imkohenauser/mtp --skill mtp
 
 19×19 グリッド上の 1 点を指定します。位置から軸が決まり、中心からの距離で強度と極性が決まります。（`J:4` は `power:100` とコンパイル結果が同じです。）
 
-![/mtp column:row によるMTP Grid Argumentsを説明する図。左は3×3の色グリッドを19×19座標上に単純化して示し、J:4、D:10、P:10、J:16などの例を表示している。右は19×19全体のRGBA値の分布を示している。](/images/common/mtp-grid-arguments-mtp-column-row.png)
+![/mtp column:row によるMTP Grid Argumentsを説明する図。左は3×3の色グリッドを19×19座標上に単純化して示し、J:4、D:10、P:10、J:16などの例を表示している。右は19×19全体のRGBA値の分布を示している。](/images/pages/mtp-grid-arguments-mtp-column-row.png)
 
 **プリセット**
 

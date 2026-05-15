@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/ja_optional_color-grid-visualization.png
+lastUpdated: true
 ---
 
 このドキュメントで説明するスクリプトは、MTP のカラーグリッドの SVG を出力します。これは、グリッドと座標系で解説した空間モデルと強度モデルを可視化し、将来予定するインタラクティブな生成 UIへ展開するためのものです。
@@ -57,12 +58,12 @@ python3 scripts/mtp_grid_generator.py --grid-37x37
 
 ## MTP Interactive UI プレビュー
 
-予定している **MTP Interactive UI** では、生成された 19×19 の SVG カラーグリッドを中央の座標面として使います。以下の画像は、グリッドを中央に配置し、周囲に座標ラベルを加えたライト / ダークの UI プレビューです。
+予定している **MTP Interactive UI** では、生成された 19×19 の SVG カラーグリッドを中央の座標面として使います。以下の画像は、グリッドを中央に配置し、周囲に座標ラベルを加えた UI プレビューです。現在は、グリッド座標と色の対応関係を確認するために掲載しています。
 
-| ライト | ダーク |
-| :---: | :---: |
-| <img src="../../../images/common/mtp-ui-grid--light.png" alt="MTP Interactive UI のグリッドプレビュー（ライトモード）" width="320" loading="lazy" decoding="async"> | <img src="../../../images/common/mtp-ui-grid--dark.png" alt="MTP Interactive UI のグリッドプレビュー（ダークモード）" width="320" loading="lazy" decoding="async"> |
+| バリエーション A | バリエーション B | バリエーション C |
+| :---: | :---: | :---: |
+| <img src="../../../images/pages/mtp-ui-grid-guide--a.png" alt="MTP Interactive UI バリエーション A" width="320" loading="lazy" decoding="async"> | <img src="../../../images/pages/mtp-ui-grid-guide--b.png" alt="MTP Interactive UI バリエーション B" width="320" loading="lazy" decoding="async"> | <img src="../../../images/pages/mtp-ui-grid-guide--c.png" alt="MTP Interactive UI バリエーション C" width="320" loading="lazy" decoding="async"> |
 
-この UI プレビューの中央にある画像は、`scripts/mtp_grid_generator.py` から既定の `mtp-grid-19x19.svg` として生成されたものです。UI フレーム側で列ラベル `A`–`S` と行ラベル `1`–`19` を加えているため、同じ表示を `/mtp <column:row>` の位置確認用シートとしても利用できます。
+この UI プレビュー A の中央にある画像は、`scripts/mtp_grid_generator.py` から既定の `mtp-grid-19x19.svg` として生成されたものです。UI フレーム側で列ラベル `A`–`S` と行ラベル `1`–`19` を加えているため、同じ表示を `/mtp <column:row>` の位置確認用シートとしても利用できます。
 
 たとえば、`J:10` はニュートラルな中心を示し、`J:4`、`D:16`、`P:16` のような座標は、ラベル付きグリッド上で位置を確認してから `/mtp` に渡せます。

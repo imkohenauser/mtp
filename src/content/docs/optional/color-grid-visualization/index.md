@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/optional_color-grid-visualization.png
+lastUpdated: true
 ---
 
 The script described in this document outputs an SVG of MTP’s **color grid**. It visualizes the spatial and intensity models explained in Grid and Coordinate System, and is intended as a basis for a planned interactive generative UI.
@@ -57,12 +58,12 @@ python3 scripts/mtp_grid_generator.py --grid-37x37
 
 ## MTP Interactive UI preview
 
-The planned **MTP Interactive UI** uses the generated 19×19 SVG color grid as the central coordinate surface. The images below show light and dark UI previews with the grid placed in the middle and coordinate labels around the frame.
+In the planned **MTP Interactive UI**, the generated 19×19 SVG color grid serves as the central coordinate surface. The images below are UI previews with the grid centered and coordinate labels around the frame; they are included for now to verify how grid coordinates map to colors.
 
-| Light | Dark |
-| :---: | :---: |
-| <img src="../../images/common/mtp-ui-grid--light.png" alt="MTP Interactive UI grid preview in light mode" width="320" loading="lazy" decoding="async"> | <img src="../../images/common/mtp-ui-grid--dark.png" alt="MTP Interactive UI grid preview in dark mode" width="320" loading="lazy" decoding="async"> |
+| Variant A | Variant B | Variant C |
+| :---: | :---: | :---: |
+| <img src="../../images/pages/mtp-ui-grid-guide--a.png" alt="MTP Interactive UI preview, variant A" width="320" loading="lazy" decoding="async"> | <img src="../../images/pages/mtp-ui-grid-guide--b.png" alt="MTP Interactive UI preview, variant B" width="320" loading="lazy" decoding="async"> | <img src="../../images/pages/mtp-ui-grid-guide--c.png" alt="MTP Interactive UI preview, variant C" width="320" loading="lazy" decoding="async"> |
 
-The center image in this UI preview is generated from `scripts/mtp_grid_generator.py` as the default `mtp-grid-19x19.svg`. The UI frame adds column labels `A`–`S` and row labels `1`–`19`, so the same view can also be used as a reference sheet for locating `/mtp <column:row>` inputs.
+The image at the center of UI preview A is the default `mtp-grid-19x19.svg` output from `scripts/mtp_grid_generator.py`. Column labels `A`–`S` and row labels `1`–`19` are added by the UI frame, so the same layout can also be used as a reference sheet for checking `/mtp <column:row>` positions.
 
-For example, `J:10` marks the neutral center, while coordinates such as `J:4`, `D:16`, or `P:16` can be read directly from the labeled grid before being passed to `/mtp`.
+For example, `J:10` marks the neutral center, while coordinates such as `J:4`, `D:16`, or `P:16` can be read from the labeled grid before being passed to `/mtp`.

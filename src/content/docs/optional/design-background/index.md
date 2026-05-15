@@ -42,7 +42,7 @@ In implementation, this macro layout expands into a **19×19** coordinate grid. 
 Wu Xing directions and hue-cycle corners are combined in one layout. This is **not** offered as the authoritative arrangement for cultural or intellectual history; it is explained as a **mnemonic for which semantic direction each node faces**.
 
 **Design Visualization**
-![Diagram showing MTP’s design background: a Wu Xing directional mapping on the left and a 3×3 visual moodboard for the nine Side A color nodes on the right.](/images/common/mtp-design-background.png)
+![Diagram showing MTP’s design background: a Wu Xing directional mapping on the left and a 3×3 visual moodboard for the nine Side A color nodes on the right.](/images/pages/mtp-design-background.png)
 *MTP maps the 3×3 Side A node layout to Wu Xing-inspired semantic directions, then visualizes each node as an elemental moodboard image.*
 
 ---

@@ -31,10 +31,10 @@ The slider form, `/mtp <node:intensity>`, sets the intensity of a named node suc
 Both forms describe the same underlying node system: sliders express movement by named direction and intensity, while grid coordinates express position.
 
 **MTP Slider Arguments:**
-![MTP Slider Arguments: /mtp <node:intensity>](public/images/common/mtp-slider-arguments-mtp-node-intensity.png)
+![MTP Slider Arguments: /mtp <node:intensity>](public/images/pages/mtp-slider-arguments-mtp-node-intensity.png)
 
 **MTP Grid Arguments:**
-![MTP Grid Arguments: /mtp <column:row>](public/images/common/mtp-grid-arguments-mtp-column-row.png)
+![MTP Grid Arguments: /mtp <column:row>](public/images/pages/mtp-grid-arguments-mtp-column-row.png)
 
 The planned MTP Interactive UI may expose these same controls visually in the future.
 

@@ -134,7 +134,7 @@ Besides node names, you can refer to **axis colors** (for example, `yellow:70` r
 This sets slider `power` to intensity `100`. The output tends toward a decisive, conclusions-first shape.
 The three modes can be used alone or combined. Typical patterns:
 
-![Diagram explaining MTP slider arguments using /mtp node:intensity. The left panel shows node sliders for Side A and Side B with Power set to 70. The right panel shows node intensity as 3D Chebyshev distance, with labeled directions such as Open, Power, Focus, Flow, Close, Surge, Collapse, and Fade.](/images/common/mtp-slider-arguments-mtp-node-intensity.png)
+![Diagram explaining MTP slider arguments using /mtp node:intensity. The left panel shows node sliders for Side A and Side B with Power set to 70. The right panel shows node intensity as 3D Chebyshev distance, with labeled directions such as Open, Power, Focus, Flow, Close, Surge, Collapse, and Fade.](/images/pages/mtp-slider-arguments-mtp-node-intensity.png)
 
 **Grid**
 
@@ -144,7 +144,7 @@ The three modes can be used alone or combined. Typical patterns:
 
 This selects a single point on the 19×19 grid. The compiler derives axis and intensity from distance and polarity from position. (`J:4` compiles the same as `power:100`.)
 
-![Diagram explaining MTP grid arguments using /mtp column:row. The left panel shows a simplified 3×3 color grid projected onto a 19×19 coordinate grid, with example coordinates such as J:4, D:10, P:10, and J:16. The right panel shows RGBA color values across the full 19×19 grid.](/images/common/mtp-grid-arguments-mtp-column-row.png)
+![Diagram explaining MTP grid arguments using /mtp column:row. The left panel shows a simplified 3×3 color grid projected onto a 19×19 coordinate grid, with example coordinates such as J:4, D:10, P:10, and J:16. The right panel shows RGBA color values across the full 19×19 grid.](/images/pages/mtp-grid-arguments-mtp-column-row.png)
 
 **Preset**
 
