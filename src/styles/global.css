@@ -2,6 +2,7 @@
 @layer starlight, flexoki, site;
 
 @layer site {
+  /* Design tokens */
   :root {
     --sl-font: 'Inter', ui-sans-serif, system-ui, sans-serif;
     --sl-font-serif: 'Source Serif 4', 'Times New Roman', Georgia, serif;
@@ -9,18 +10,19 @@
     --syntax-border: 1px solid var(--color-base-200);
     --syntax-header-background: var(--color-base-100);
     --syntax-background: var(--color-base-50);
-    --syntax-purple: #5e409d;
-    --syntax-green: #66800b;
+    --syntax-purple: var(--color-purple-600);
+    --syntax-green: var(--color-green-600);
   }
 
   :root[data-theme='dark'] {
     --syntax-border: 1px solid var(--color-base-800);
     --syntax-header-background: var(--color-base-900);
     --syntax-background: var(--color-base-950);
-    --syntax-purple: #8b7ec8;
-    --syntax-green: #879a39;
+    --syntax-purple: var(--color-purple-400);
+    --syntax-green: var(--color-green-400);
   }
 
+  /* Typography */
   .sl-markdown-content :is(strong, b) {
     font-weight: 700;
   }
@@ -45,6 +47,7 @@
     }
   }
 
+  /* Homepage */
   .hero {
     padding-top: 2rem;
   }
@@ -57,6 +60,7 @@
     font-size: var(--sl-text-5xl);
   }
 
+  /* Starlight overrides */
   .sl-markdown-content :is(th:first-child):not(:where(.not-content *)) {
     white-space: nowrap;
   }
@@ -108,21 +112,23 @@
   }
 
   .action-button {
-    padding: 0.5rem 1rem !important;
-    outline-offset: var(--sl-outline-offset-inside) !important;
-    border-radius: 0.5rem !important;
     border: none !important;
     border-bottom: 1px solid var(--sl-color-hairline-shade) !important;
+    border-radius: 0.5rem !important;
+    outline-offset: var(--sl-outline-offset-inside) !important;
+    padding: 0.5rem 1rem !important;
     background-color: var(--sl-color-gray-7, var(--sl-color-gray-6)) !important;
     box-shadow: var(--sl-flexoki-emboss-shadow) !important;
     color: var(--sl-color-text) !important;
     font-size: var(--sl-text-xs) !important;
   }
 
+  /* Utilities */
   .opacity-50 {
     opacity: 0.5;
   }
 
+  /* MTP dots */
   .dot-group {
     display: flex;
     align-items: flex-start;
@@ -137,35 +143,28 @@
   }
 
   .dot-lg {
-    width: 1rem;
-    height: 1rem;
+    --dot-size: 1rem;
   }
 
   .dot-md {
-    width: 0.75rem;
-    height: 0.75rem;
+    --dot-size: 0.75rem;
   }
 
   .dot-sm {
-    width: 0.5rem;
-    height: 0.5rem;
+    --dot-size: 0.5rem;
   }
 
-  .dot-lg,
-  .dot-md,
-  .dot-sm {
+  :is(.dot-lg, .dot-md, .dot-sm) {
     position: relative;
-    overflow: hidden;
     display: inline-block;
+    width: var(--dot-size);
+    height: var(--dot-size);
+    overflow: hidden;
     border-radius: 50%;
   }
 
-  .dot-lg::before,
-  .dot-lg::after,
-  .dot-md::before,
-  .dot-md::after,
-  .dot-sm::before,
-  .dot-sm::after {
+  :is(.dot-lg, .dot-md, .dot-sm)::before,
+  :is(.dot-lg, .dot-md, .dot-sm)::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -173,24 +172,16 @@
     background-color: transparent;
   }
 
-  .dot-lg::before,
-  .dot-md::before,
-  .dot-sm::before {
+  :is(.dot-lg, .dot-md, .dot-sm)::before {
     bottom: 0;
     left: 0;
   }
 
-  .dot-lg::after,
-  .dot-md::after,
-  .dot-sm::after {
+  :is(.dot-lg, .dot-md, .dot-sm)::after {
     top: 0;
     right: 0;
   }
 
-  .bg-j13 {
-    background-color: rgba(80, 132, 192, 0.583);
-  }
-  
   .bg-open {
     background-color: var(--color-yellow-400);
   }
@@ -207,21 +198,7 @@
     background-color: var(--color-green-400);
   }
 
-  .bg-helix {
-    background-color: var(--color-paper);
-  }
-
-  .dot-lg.bg-helix::before,
-  .dot-lg.bg-helix::after,
-  .dot-md.bg-helix::before,
-  .dot-md.bg-helix::after,
-  .dot-sm.bg-helix::before,
-  .dot-sm.bg-helix::after {
-    background-color: var(--color-base-400);
-  }
-
   .bg-focus {
-    /* background-color: var(--color-paper); */
     background-color: var(--color-base-50);
   }
 
@@ -236,7 +213,16 @@
   .bg-close {
     background-color: var(--color-purple-400);
   }
-  
+
+  .bg-helix {
+    background-color: var(--color-paper);
+  }
+
+  :is(.dot-lg, .dot-md, .dot-sm).bg-helix::before,
+  :is(.dot-lg, .dot-md, .dot-sm).bg-helix::after {
+    background-color: var(--color-base-400);
+  }
+
   .bg-still {
     background-color: var(--color-yellow-800);
   }
@@ -253,19 +239,6 @@
     background-color: var(--color-green-800);
   }
 
-  .bg-collapse {
-    background-color: var(--color-base-800);
-  }
-
-  .dot-lg.bg-collapse::before,
-  .dot-lg.bg-collapse::after,
-  .dot-md.bg-collapse::before,
-  .dot-md.bg-collapse::after,
-  .dot-sm.bg-collapse::before,
-  .dot-sm.bg-collapse::after {
-    background-color: var(--color-black);
-  }
-
   .bg-haze {
     background-color: var(--color-base-800);
   }
@@ -280,5 +253,18 @@
 
   .bg-fade {
     background-color: var(--color-purple-800);
+  }
+
+  .bg-collapse {
+    background-color: var(--color-base-800);
+  }
+
+  :is(.dot-lg, .dot-md, .dot-sm).bg-collapse::before,
+  :is(.dot-lg, .dot-md, .dot-sm).bg-collapse::after {
+    background-color: var(--color-black);
+  }
+
+  .bg-j13 {
+    background-color: rgba(80, 132, 192, 0.583);
   }
 }
