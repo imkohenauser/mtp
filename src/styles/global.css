@@ -97,6 +97,12 @@
     box-shadow: none !important;
   }
 
+  .starlight-image-zoom-control {
+    background-color: transparent;
+    border: 2px solid var(--sl-color-gray-4) !important;
+    color: var(--sl-color-gray-4);
+  }
+
   .opacity-50 {
     opacity: 0.5;
   }

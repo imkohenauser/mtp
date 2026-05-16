@@ -5,6 +5,7 @@ import starlightGitHubAlerts from 'starlight-github-alerts';
 import starlightLlmsTxt from 'starlight-llms-txt';
 import starlightLinksValidator from 'starlight-links-validator';
 import starlightScrollToTop from 'starlight-scroll-to-top';
+import starlightImageZoom from 'starlight-image-zoom';
 
 export default defineConfig({
   site: 'https://mappingtheprompt.com',
@@ -32,6 +33,7 @@ export default defineConfig({
           borderRadius: '50',
           progressRingColor: 'var(--color-base-400)',
        }),
+        starlightImageZoom(),
       ],
       customCss: [
         '@fontsource/source-serif-4/400.css',
