@@ -1,24 +1,141 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
+
 import starlight from '@astrojs/starlight';
 import starlightThemeFlexoki from 'starlight-theme-flexoki';
 import starlightGitHubAlerts from 'starlight-github-alerts';
-import starlightLlmsTxt from 'starlight-llms-txt';
 import starlightLinksValidator from 'starlight-links-validator';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 import starlightImageZoom from 'starlight-image-zoom';
+import starlightPageActions from 'starlight-page-actions';
+
+/** Production origin; used by Astro `site`, copied Markdown links, and generated llms.txt files. */
+const site = 'https://mappingtheprompt.com';
+const projectRoot = path.dirname(fileURLToPath(import.meta.url));
+const docsSourceRoot = path.join(projectRoot, 'src/content/docs');
+
+const llmsTxtProjectName = 'MTP (Mapping the Prompt)';
+const llmsTxtDescription = 'A framework for steering LLM output through sliders, grid coordinates, and presets.';
+const llmsTxtDetails =
+  'Raw Markdown copies are published for AI assistants and chat tools when rendered documentation pages cannot be fetched or processed directly.';
+
+const llmsTxtSourceDirectories = [
+  'src/content/docs/foundational',
+  'src/content/docs/optional',
+  'src/content/docs/skills',
+];
+
+const llmsTxtComparisonSourcePages = [
+  'src/content/docs/comparisons/index.md',
+  'src/content/docs/comparisons/text-generation/index.md',
+  'src/content/docs/comparisons/text-generation/01_origins-of-language/index.md',
+  'src/content/docs/comparisons/text-generation/02_model-self-compare/index.md',
+  'src/content/docs/comparisons/text-generation/03_kyoto-one-day-itinerary/index.md',
+  'src/content/docs/comparisons/image-generation/index.md',
+  'src/content/docs/comparisons/image-generation/01_mona-lisa-portrait/index.md',
+  'src/content/docs/comparisons/image-generation/02_editorial-fashion-photography/index.md',
+  'src/content/docs/comparisons/image-generation/03_geometric-billiards-painting/index.md',
+];
+
+function toUrlPath(filePath) {
+  return filePath.split(path.sep).join('/');
+}
+
+function toSiteUrl(filePath) {
+  return `${site}/${toUrlPath(filePath)}`;
+}
+
+function collectSourceMarkdownFiles(relativeDir) {
+  const absoluteDir = path.join(projectRoot, relativeDir);
+
+  if (!fs.existsSync(absoluteDir)) return [];
+
+  return fs
+    .readdirSync(absoluteDir, { withFileTypes: true })
+    .flatMap((entry) => {
+      const entryRelativePath = path.join(relativeDir, entry.name);
+
+      if (entry.isDirectory()) return collectSourceMarkdownFiles(entryRelativePath);
+      if (!entry.isFile() || !entry.name.endsWith('.md')) return [];
+
+      return [toUrlPath(entryRelativePath)];
+    })
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function unique(values) {
+  return [...new Set(values)];
+}
+
+function getLlmsTxtSourcePages() {
+  return unique([
+    'src/content/docs/index.md',
+    ...llmsTxtSourceDirectories.flatMap((dir) => collectSourceMarkdownFiles(dir)),
+    ...llmsTxtComparisonSourcePages,
+  ]);
+}
+
+function sourcePageToMarkdownFile(sourcePage) {
+  const sourcePath = path.join(projectRoot, sourcePage);
+  const docsRelativePath = toUrlPath(path.relative(docsSourceRoot, sourcePath));
+  const docsPathWithoutExtension = docsRelativePath.replace(/\.md$/, '');
+
+  if (docsPathWithoutExtension === 'index') return 'index.md';
+  if (docsPathWithoutExtension.endsWith('/index')) {
+    return `${docsPathWithoutExtension.slice(0, -'/index'.length)}.md`;
+  }
+
+  return `${docsPathWithoutExtension}.md`;
+}
+
+function buildLlmsTxt(distPath) {
+  const sections = getLlmsTxtSourcePages().map((sourcePage) => {
+    const markdownFile = sourcePageToMarkdownFile(sourcePage);
+    const markdownPath = path.join(distPath, markdownFile);
+
+    if (!fs.existsSync(markdownPath)) {
+      throw new Error(`Missing generated Markdown file for ${sourcePage}: ${markdownFile}`);
+    }
+
+    const content = fs.readFileSync(markdownPath, 'utf-8').trim();
+
+    return `---\n\nSource file: ${sourcePage}\nURL: ${toSiteUrl(markdownFile)}\n\n${content}`;
+  });
+
+  return `# ${llmsTxtProjectName}
+> ${llmsTxtDescription}
+
+${llmsTxtDetails}
+
+${sections.join('\n\n')}
+`;
+}
+
+/** Writes the project llms.txt after starlight-page-actions has copied per-page Markdown. */
+function writeLlmsTxt() {
+  return {
+    name: 'write-llms-txt',
+    hooks: {
+      'astro:build:done': ({ dir }) => {
+        const distPath = fileURLToPath(dir);
+
+        fs.rmSync(path.join(distPath, 'llms-small.txt'), { force: true });
+        fs.rmSync(path.join(distPath, 'llms-full.txt'), { force: true });
+        fs.writeFileSync(path.join(distPath, 'llms.txt'), buildLlmsTxt(distPath), 'utf-8');
+      },
+    },
+  };
+}
 
 export default defineConfig({
-  site: 'https://mappingtheprompt.com',
+  site,
   integrations: [
     starlight({
       plugins: [
         starlightThemeFlexoki({ accentColor: 'blue' }),
         starlightGitHubAlerts(),
-        starlightLlmsTxt({
-          projectName: 'MTP (Mapping the Prompt)',
-          description:
-            'A framework for steering LLM output through sliders, grid coordinates, and presets.',
-        }),
         starlightLinksValidator(),
         starlightScrollToTop({
           position: 'right',
@@ -34,6 +151,14 @@ export default defineConfig({
           progressRingColor: 'var(--color-base-400)',
        }),
         starlightImageZoom(),
+        starlightPageActions({
+          baseUrl: site,
+          actions: {
+            chatgpt: false,
+            claude: false,
+            markdown: false,
+          },
+        }),
       ],
       customCss: [
         '@fontsource/source-serif-4/400.css',
@@ -226,5 +351,6 @@ export default defineConfig({
         },
       ],
     }),
+    writeLlmsTxt(),
   ],
 });

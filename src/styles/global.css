@@ -103,6 +103,18 @@
     color: var(--sl-color-gray-4);
   }
 
+  .action-button {
+    padding: 0.5rem 1rem !important;
+    outline-offset: var(--sl-outline-offset-inside) !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    border-bottom: 1px solid var(--sl-color-hairline-shade) !important;
+    background-color: var(--sl-color-gray-7, var(--sl-color-gray-6)) !important;
+    box-shadow: var(--sl-flexoki-emboss-shadow) !important;
+    color: var(--sl-color-text) !important;
+    font-size: var(--sl-text-xs) !important;
+  }
+
   .opacity-50 {
     opacity: 0.5;
   }
