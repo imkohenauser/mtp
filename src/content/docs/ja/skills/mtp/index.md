@@ -128,14 +128,16 @@ npx skills add imkohenauser/mtp --skill mtp
 /mtp strategist ドキュメントの内容を要約してください
 ```
 
-プリセットは、解釈前にあらかじめ定義された座標列へ展開されます。現在のプリセットは次の 4 種類です。
+プリセットは、解釈前にあらかじめ定義された座標列へ展開されます。  
+現在のプリセットは次の 4 種類です。  
+各プリセットは 2 組の座標で構成されています。各座標には、近い位置にあるノードがあります。以下の表では、プリセットごとの展開結果と、各座標に近いノードを示します。位置関係は、上の「MTP Grid Argumentsを説明する図」で視覚的に確認できます。
 
-| 色 | プリセット | 展開 |
-| --- | --- | --- |
-| <div class="dot-sm bg-close" aria-label="purple"></div><div class="dot-sm bg-return" aria-label="magenta"></div> | `strategist` | `P:16 P:4` |
-| <div class="dot-sm bg-enter" aria-label="cyan"></div><div class="dot-sm bg-still" aria-label="yellow"></div> | `synthesizer` | `D:16 A:1` |
-| <div class="dot-sm bg-open" aria-label="yellow"></div><div class="dot-sm bg-drift" aria-label="cyan"></div> | `maverick` | `D:4 A:19` |
-| <div class="dot-sm bg-j13" aria-label="blue"></div><div class="dot-sm bg-grow" aria-label="green"></div> | `concierge` | `J:13 D:10` |
+| 色 | プリセット | 展開 | 近いノード |
+| --- | --- | --- | --- |
+| <div class="dot-sm bg-close" aria-label="purple"></div><div class="dot-sm bg-return" aria-label="magenta"></div> | `strategist` | `P:16 P:4` | `close, return` |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div><div class="dot-sm bg-still" aria-label="yellow"></div> | `synthesizer` | `D:16 A:1` | `enter, still` |
+| <div class="dot-sm bg-open" aria-label="yellow"></div><div class="dot-sm bg-drift" aria-label="cyan"></div> | `maverick` | `D:4 A:19` | `open, drift` |
+| <div class="dot-sm bg-j13" aria-label="blue"></div><div class="dot-sm bg-grow" aria-label="green"></div> | `concierge` | `J:13 D:10` | `helix/flow, grow` |
 
 定義は `references/presets.yaml` にあります。
 

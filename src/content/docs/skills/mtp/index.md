@@ -128,14 +128,16 @@ This selects a single point on the 19×19 grid. The compiler derives axis and in
 /mtp strategist Please summarize the document.
 ```
 
-Presets expand to predefined coordinate sets before interpretation. The current presets are:
+Presets expand to predefined coordinate sequences before interpretation. The current presets are:
 
-| Color | Preset | Expansion |
-| --- | --- | --- |
-| <div class="dot-sm bg-close" aria-label="purple"></div><div class="dot-sm bg-return" aria-label="magenta"></div> | `strategist` | `P:16 P:4` |
-| <div class="dot-sm bg-enter" aria-label="cyan"></div><div class="dot-sm bg-still" aria-label="yellow"></div> | `synthesizer` | `D:16 A:1` |
-| <div class="dot-sm bg-open" aria-label="yellow"></div><div class="dot-sm bg-drift" aria-label="cyan"></div> | `maverick` | `D:4 A:19` |
-| <div class="dot-sm bg-j13" aria-label="blue"></div><div class="dot-sm bg-grow" aria-label="green"></div> | `concierge` | `J:13 D:10` |
+Each preset consists of two coordinates. Each coordinate is positioned near a node. The table below shows each preset, its expanded coordinates, and the nearby nodes. Their positions can be checked visually in the "MTP Grid Arguments" diagram above.
+
+| Color | Preset | Expansion | Nearby nodes |
+| --- | --- | --- | --- |
+| <div class="dot-sm bg-close" aria-label="purple"></div><div class="dot-sm bg-return" aria-label="magenta"></div> | `strategist` | `P:16 P:4` | `close, return` |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div><div class="dot-sm bg-still" aria-label="yellow"></div> | `synthesizer` | `D:16 A:1` | `enter, still` |
+| <div class="dot-sm bg-open" aria-label="yellow"></div><div class="dot-sm bg-drift" aria-label="cyan"></div> | `maverick` | `D:4 A:19` | `open, drift` |
+| <div class="dot-sm bg-j13" aria-label="blue"></div><div class="dot-sm bg-grow" aria-label="green"></div> | `concierge` | `J:13 D:10` | `helix/flow, grow` |
 
 Definitions are maintained in `references/presets.yaml`.
 
