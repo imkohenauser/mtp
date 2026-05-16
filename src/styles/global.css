@@ -57,6 +57,10 @@
     font-size: var(--sl-text-5xl);
   }
 
+  .sl-markdown-content :is(th:first-child):not(:where(.not-content *)) {
+    white-space: nowrap;
+  }
+
   .expressive-code .frame {
     border: var(--syntax-border);
   }
