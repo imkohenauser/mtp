@@ -31,7 +31,7 @@ lastUpdated: true
 - ChatGPT 5.5 on Codex (macOS app)
 - Gemini 3.5 Flash on Antigravity 2.0 (macOS app)
 - Composer 2.5 on Cursor 3.5 (macOS app)
-- Sonnet 4.6 on Claude.ai (Web)
+- Sonnet 4.6 on Claude.ai (iOS app)
 - Manus 1.6 Lite on Manus.im (iOS app)
 
 ---
