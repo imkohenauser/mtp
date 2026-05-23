@@ -16,7 +16,8 @@ lastUpdated: true
 **Prompt**
 
 ```markdown
-/mtp <args> I will be staying in Kyoto for a week during the summer. Please suggest a special one-day sightseeing itinerary, and note anything I should verify in advance, such as opening hours or reservations.
+/mtp <args> 
+I will be staying in Kyoto for a week during the summer. Please suggest a special one-day sightseeing itinerary, and note anything I should verify in advance, such as opening hours or reservations.
 ```
 
 **Coverage**

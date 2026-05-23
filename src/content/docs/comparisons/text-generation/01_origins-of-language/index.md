@@ -16,7 +16,8 @@ lastUpdated: true
 **Prompt**
 
 ```markdown
-/mtp <args> Please explain the origins and historical development of the English language.
+/mtp <args> 
+Please explain the origins and historical development of the English language.
 ```
 
 **Coverage**

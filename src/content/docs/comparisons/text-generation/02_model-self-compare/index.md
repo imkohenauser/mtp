@@ -16,7 +16,8 @@ lastUpdated: true
 **Prompt**
 
 ```markdown
-/mtp <args> Compared with other major AI models from competing companies, please explain your strengths. If up-to-date comparison requires current information, say so clearly.
+/mtp <args> 
+Compared with other major AI models from competing companies, please explain your strengths. If up-to-date comparison requires current information, say so clearly.
 ```
 
 **Coverage**

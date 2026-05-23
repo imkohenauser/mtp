@@ -318,6 +318,11 @@ export default defineConfig({
                   slug: 'comparisons/text-generation/03_kyoto-one-day-itinerary',
                   translations: { ja: '3. 設計課題' },
                 },
+                {
+                  label: '4. Literary Task',
+                  slug: 'comparisons/text-generation/04_alice-in-wonderland',
+                  translations: { ja: '4. 文学課題' },
+                },
               ],
             },
             {
