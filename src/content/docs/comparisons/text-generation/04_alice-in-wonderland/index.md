@@ -36,7 +36,62 @@ Tell the story of Alice’s Adventures in Wonderland by Lewis Carroll in a way t
 
 ---
 
-## Output Comparison
+## How to read this comparison
+
+This page is not just a list of generated outputs. It compares how MTP Skill changes output direction, structure, and narrative style for the same literary introduction task.
+
+The English and Japanese pages are not translations of each other. The English page uses an English prompt, while the Japanese page uses a Japanese prompt, and the tests were run independently in each language. The comparison is designed to be read by observing how outputs shift from the baseline within each language, rather than by matching English and Japanese text line by line.
+
+The baseline shows each model's natural output tendency without MTP Skill applied. Slider, grid, and preset outputs show how an MTP control direction is layered on top of each model's own writing habits.
+
+## What changes from the baseline?
+
+The following MTP arguments are representative examples that are easy to compare in this test. For each output, compare both the difference from the baseline and the differences between models using the same argument.
+
+| MTP argument | Main effect | What to compare |
+| ---------------------- | ---------------- | ---------------------- |
+| `power:50 / power:100` | Increases intensity, assertion, and pressure on the reader | Difference from baseline; strength difference between 50 and 100 |
+| `J:16` | Strengthens flow, immersion, and continuous narration | Whether the output slips more naturally into the story than the baseline |
+| `D:10` | Expands into background, reasons, applications, and interpretation | Whether the output becomes more layered and hierarchical than the baseline |
+| `concierge` | Combines guidance and expansion | Whether the output works as a guide that leads the reader into the work |
+
+## Execution environments and Skill execution
+
+This comparison includes both developer-oriented macOS agent environments and mobile iOS app environments. In each environment, `/mtp` was invoked as a slash command, and compiler execution was confirmed in the logs.
+
+| Model | Host | Environment | Skill execution |
+| ---------------- | ----------- | ----------- | --------------------------------------------------------------------- |
+| ChatGPT 5.5 | Codex | macOS app | CLI-installed MTP Skill invoked through a slash command; compiler execution confirmed in logs |
+| Gemini 3.5 Flash | Antigravity | macOS app | CLI-installed MTP Skill invoked through a slash command; compiler execution confirmed in logs |
+| Composer 2.5 | Cursor | macOS app | CLI-installed MTP Skill invoked through a slash command; compiler execution confirmed in logs |
+| Sonnet 4.6 | Claude.ai | iOS app | ZIP-installed MTP Skill invoked through a slash command; compiler execution confirmed in logs |
+| Manus 1.6 Lite | Manus.im | iOS app | ZIP-installed MTP Skill invoked through a slash command; compiler execution confirmed in the task log |
+
+The macOS environments used a CLI-installed Skill, while the iOS environments used a ZIP-installed Skill. In all environments, the `/mtp` argument was compiled through the Skill workflow before the final output was generated, rather than treated as a plain text token. This shows that MTP can function as a portable output-shaping layer across both developer tools and mobile AI apps.
+
+## Language-specific testing
+
+The English and Japanese pages share the same comparison design. Both cover the baseline, slider `:100`, slider `:50`, grid, and preset ranges, and both use the same five models.
+
+However, this is not a translation comparison intended to check whether the English and Japanese outputs say the same thing. A useful reading path is to first compare the baseline and MTP-controlled outputs within either the English or Japanese page, then check the same argument in the other language to see whether it plays a similar role.
+
+## Cross-model consistency
+
+MTP Skill does not erase model-specific writing habits. Gemini tends to structure outputs, Sonnet tends to produce literary-critical prose, Composer often writes like an edited article, and Manus tends toward accessible promotional explanation. However, the same MTP arguments still shift outputs in broadly consistent directions while preserving those model differences.
+
+## Representative observations
+
+`power` increases persuasive pressure on the reader. `power:50` tends toward a stronger recommendation, while `power:100` increases declarative, imperative, and defiant language.
+
+`J:16` moves the output toward flowing narration. Instead of foregrounding headings or analysis, it strengthens the path that draws the reader into the story. `J:16` has the same interpretation as the node argument `flow:100`.
+
+`D:10` grows the output. It adds background, reasons, applications, and reading paths, shifting the result from a simple introduction toward a more layered explanation.
+
+`concierge` combines guidance and expansion. It expands to `J:13 D:10`, which is close to `flow:50 grow:100`: a moderately flowing narrative direction combined with strong layered expansion. It tends to produce an output that works like a guide leading the reader into the work.
+
+---
+
+## Output Comparison List
 
 In the test environment, each result was produced in a fresh agent chat session without special user settings or cross-chat memory.
 
@@ -155,4 +210,3 @@ Output when using MTP Skill presets (`/mtp <preset>`).
 | <div class="dot-group"><div class="dot-sm bg-enter" aria-label="cyan"></div><div class="dot-sm bg-still" aria-label="yellow"></div></div> | [synthesizer](/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/preset/synthesizer/) | [synthesizer](/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/preset/synthesizer/) | [synthesizer](/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/preset/synthesizer/) | [synthesizer](/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/preset/synthesizer/) | [synthesizer](/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/preset/synthesizer/) |
 | <div class="dot-group"><div class="dot-sm bg-open" aria-label="yellow"></div><div class="dot-sm bg-drift" aria-label="cyan"></div></div> | [maverick](/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/preset/maverick/) | [maverick](/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/preset/maverick/) | [maverick](/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/preset/maverick/) | [maverick](/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/preset/maverick/) | [maverick](/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/preset/maverick/) |
 | <div class="dot-group"><div class="dot-sm bg-j13" aria-label="blue"></div><div class="dot-sm bg-grow" aria-label="green"></div></div> | [concierge](/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/preset/concierge/) | [concierge](/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/preset/concierge/) | [concierge](/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/preset/concierge/) | [concierge](/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/preset/concierge/) | [concierge](/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/preset/concierge/) |
-
