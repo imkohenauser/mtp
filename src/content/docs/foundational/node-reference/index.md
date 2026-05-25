@@ -33,6 +33,10 @@ This section briefly organizes **how each axis relates** within the taxonomy.
 - **Corners (Yellow, Magenta, Cyan, Purple):** Transitional **gradient** regions that connect **adjacent nodes** of the cross.
 - **Center (Transparent):** A **neutral node** placed between opposing directions.
 
+![MTP coordinate system and node layout diagram showing the unified Side A/B color and node map, plus coordinate pairs such as D:4 and A:19.](/images/pages/mtp-coordinate-system-and-node-layout.png)
+
+*The node layout can be read both as a 3x3 Side A / Side B map and as coordinate positions on the 19x19 grid.*
+
 ---
 
 ## Per-node characteristics
@@ -104,6 +108,14 @@ The nine nodes are laid out as follows:
 
 ---
 
+## Side A / Side B
+
+As an output tendency, Side A often appears as a force that moves the response forward. In an introduction, for example, it may invite the reader in, add reasons, structure the material, sharpen focus, or carry the text toward a conclusion.
+
+Side B is not simply a weaker Side A. As the inverted pole of the same axis, it often shifts output away from construction toward reduction, away from clarity toward ambiguity, away from expansion toward descent, and away from closure toward afterimage. Side B is not the "bad" or "low" side; it functions as the shadow or reverse face of the axis.
+
+---
+
 ## Side B nodes
 
 Under the **Chebyshev-based radial rule**, coordinates on the **outer perimeter frame** flip to **Side B** for that zone. In constraint design, Side B is expressed as an **inverted pole** of the same axis — a **paired opposite** in a yin–yang sense (for example, Power → Void, Focus → Haze, Grow → Wither).
@@ -127,4 +139,3 @@ That order is **not** a third parameter space or a dedicated “motion” layer.
 **Named sliders** (`power:100`, `flow:70`) are an easy starting point when meaning should stay readable; **grid coordinates** suit cases where the visible message should remain short.
 
 **Named presets** expand to fixed coordinate sequences defined in `skills/mtp/references/presets.yaml`; they can be applied to reproducible multi-step blends.
-
