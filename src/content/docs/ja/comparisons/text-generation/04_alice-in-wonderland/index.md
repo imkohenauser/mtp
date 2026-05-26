@@ -100,9 +100,13 @@ MTP Skill は、モデル固有の文体を消すものではありません。G
 
 各モデルの出力部分だけを統合した、AI 分析用ページです。
 
-| ChatGPT 5.5 | Gemini 3.5 Flash | Composer 2.5 | Sonnet 4.6 | Manus 1.6 Lite |
-| --- | --- | --- | --- | --- |
-| [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/) |
+| モデル | 出力統合ページ | 出力統合ファイル |
+| --- | --- | --- |
+| ChatGPT 5.5 | [HTMLページ](/ja/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/) | [Raw Markdown](/ja/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex.md) |
+| Gemini 3.5 Flash | [HTMLページ](/ja/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/) | [Raw Markdown](/ja/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity.md) |
+| Composer 2.5 | [HTMLページ](/ja/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/) | [Raw Markdown](/ja/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5.md) |
+| Sonnet 4.6 | [HTMLページ](/ja/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/) | [Raw Markdown](/ja/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai.md) |
+| Manus 1.6 Lite | [HTMLページ](/ja/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/) | [Raw Markdown](/ja/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im.md) |
 <!-- AUTO-GENERATED: model-output-indexes:end -->
 
 ### ベースライン

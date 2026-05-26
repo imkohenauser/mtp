@@ -43,9 +43,11 @@ lastUpdated: true
 
 各モデルの出力部分だけを統合した、AI 分析用ページです。
 
-| ChatGPT 5.5 | Gemini 3 Flash | Sonnet 4.6 |
+| モデル | 出力統合ページ | 出力統合ファイル |
 | --- | --- | --- |
-| [統合出力](/ja/comparisons/text-generation/02_model-self-compare/gpt-5-5-medium_codex/) | [統合出力](/ja/comparisons/text-generation/02_model-self-compare/gemini-3-flash_antigravity/) | [統合出力](/ja/comparisons/text-generation/02_model-self-compare/sonnet-4-6_claude-code/) |
+| ChatGPT 5.5 | [HTMLページ](/ja/comparisons/text-generation/02_model-self-compare/gpt-5-5-medium_codex/) | [Raw Markdown](/ja/comparisons/text-generation/02_model-self-compare/gpt-5-5-medium_codex.md) |
+| Gemini 3 Flash | [HTMLページ](/ja/comparisons/text-generation/02_model-self-compare/gemini-3-flash_antigravity/) | [Raw Markdown](/ja/comparisons/text-generation/02_model-self-compare/gemini-3-flash_antigravity.md) |
+| Sonnet 4.6 | [HTMLページ](/ja/comparisons/text-generation/02_model-self-compare/sonnet-4-6_claude-code/) | [Raw Markdown](/ja/comparisons/text-generation/02_model-self-compare/sonnet-4-6_claude-code.md) |
 <!-- AUTO-GENERATED: model-output-indexes:end -->
 
 ### ベースライン

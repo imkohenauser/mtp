@@ -100,9 +100,13 @@ In the test environment, each result was produced in a fresh agent chat session 
 
 These pages combine only the output sections for each model, making them easier to inspect manually or analyze with an AI assistant.
 
-| ChatGPT 5.5 | Gemini 3.5 Flash | Composer 2.5 | Sonnet 4.6 | Manus 1.6 Lite |
-| --- | --- | --- | --- | --- |
-| [Integrated output](/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/) | [Integrated output](/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/) | [Integrated output](/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/) | [Integrated output](/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/) | [Integrated output](/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/) |
+| Model | Integrated output page | Integrated output file |
+| --- | --- | --- |
+| ChatGPT 5.5 | [HTML page](/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/) | [Raw Markdown](/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex.md) |
+| Gemini 3.5 Flash | [HTML page](/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/) | [Raw Markdown](/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity.md) |
+| Composer 2.5 | [HTML page](/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/) | [Raw Markdown](/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5.md) |
+| Sonnet 4.6 | [HTML page](/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/) | [Raw Markdown](/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai.md) |
+| Manus 1.6 Lite | [HTML page](/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/) | [Raw Markdown](/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im.md) |
 <!-- AUTO-GENERATED: model-output-indexes:end -->
 
 ### Baseline

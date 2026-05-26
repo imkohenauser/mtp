@@ -414,6 +414,12 @@ def route_for(case_dir: Path, model_dir: Path) -> str:
     return f"/{case_route}/{model_dir.name}/"
 
 
+def markdown_route_for(case_dir: Path, model_dir: Path) -> str:
+    """Published Raw Markdown path for a model's integrated index page."""
+    case_route = case_dir.relative_to(DOCS_ROOT).as_posix()
+    return f"/{case_route}/{model_dir.name}.md"
+
+
 def render_parent_link_block(
     case_dir: Path,
     model_dirs: list[Path],
@@ -423,17 +429,22 @@ def render_parent_link_block(
     if is_japanese:
         heading = "### モデル別統合出力"
         description = "各モデルの出力部分だけを統合した、AI 分析用ページです。"
-        link_text = "統合出力"
+        model_header = "モデル"
+        html_header = "出力統合ページ"
+        markdown_header = "出力統合ファイル"
+        html_link_text = "HTMLページ"
+        markdown_link_text = "Raw Markdown"
     else:
         heading = "### Integrated outputs by model"
         description = (
             "These pages combine only the output sections for each model, making them easier "
             "to inspect manually or analyze with an AI assistant."
         )
-        link_text = "Integrated output"
-
-    headers = [escape_table_cell(model_names[model_dir.name]) for model_dir in model_dirs]
-    links = [f"[{link_text}]({route_for(case_dir, model_dir)})" for model_dir in model_dirs]
+        model_header = "Model"
+        html_header = "Integrated output page"
+        markdown_header = "Integrated output file"
+        html_link_text = "HTML page"
+        markdown_link_text = "Raw Markdown"
 
     lines = [
         MARKER_START,
@@ -441,10 +452,15 @@ def render_parent_link_block(
         "",
         description,
         "",
-        "| " + " | ".join(headers) + " |",
-        "| " + " | ".join("---" for _ in headers) + " |",
-        "| " + " | ".join(links) + " |",
+        f"| {model_header} | {html_header} | {markdown_header} |",
+        "| --- | --- | --- |",
     ]
+
+    for model_dir in model_dirs:
+        model_name = escape_table_cell(model_names[model_dir.name])
+        html_link = f"[{html_link_text}]({route_for(case_dir, model_dir)})"
+        markdown_link = f"[{markdown_link_text}]({markdown_route_for(case_dir, model_dir)})"
+        lines.append(f"| {model_name} | {html_link} | {markdown_link} |")
 
     lines.append(MARKER_END)
     return "\n".join(lines)
