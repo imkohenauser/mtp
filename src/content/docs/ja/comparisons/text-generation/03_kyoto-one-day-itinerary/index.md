@@ -38,6 +38,16 @@ lastUpdated: true
 
 テスト環境では、特別なユーザー設定や、横断的なチャット会話の記憶を含まない状態で、それぞれ、新しいエージェントチャットセッションを開始してテストを行った結果です。
 
+<!-- AUTO-GENERATED: model-output-indexes:start -->
+### モデル別統合出力
+
+各モデルの出力部分だけを統合した、AI 分析用ページです。
+
+| ChatGPT 5.5 | Gemini 3 Flash | Sonnet 4.6 |
+| --- | --- | --- |
+| [統合出力](/ja/comparisons/text-generation/03_kyoto-one-day-itinerary/gpt-5-5-medium_codex/) | [統合出力](/ja/comparisons/text-generation/03_kyoto-one-day-itinerary/gemini-3-flash_antigravity/) | [統合出力](/ja/comparisons/text-generation/03_kyoto-one-day-itinerary/sonnet-4-6_claude-code/) |
+<!-- AUTO-GENERATED: model-output-indexes:end -->
+
 ### ベースライン
 
 MTP Skill を適用せずに、プロンプトをそのまま入力した場合の出力です。

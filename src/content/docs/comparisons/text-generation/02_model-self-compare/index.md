@@ -38,6 +38,16 @@ Compared with other major AI models from competing companies, please explain you
 
 In the test environment, each result was produced in a fresh agent chat session without special user settings or cross-chat memory.
 
+<!-- AUTO-GENERATED: model-output-indexes:start -->
+### Integrated outputs by model
+
+These pages combine only the output sections for each model, making them easier to inspect manually or analyze with an AI assistant.
+
+| ChatGPT 5.5 | Gemini 3 Flash | Sonnet 4.6 |
+| --- | --- | --- |
+| [Integrated output](/comparisons/text-generation/02_model-self-compare/gpt-5-5-medium_codex/) | [Integrated output](/comparisons/text-generation/02_model-self-compare/gemini-3-flash_antigravity/) | [Integrated output](/comparisons/text-generation/02_model-self-compare/sonnet-4-6_claude-code/) |
+<!-- AUTO-GENERATED: model-output-indexes:end -->
+
 ### Baseline
 
 Output when the prompt is entered as-is, without applying MTP Skill.

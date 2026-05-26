@@ -6,9 +6,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run build:text-generation-indexes && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "build:text-generation-indexes": "python3 scripts/build_text_generation_model_indexes.py",
     "build:grid": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py > public/images/grids/mtp-grid-19x19.svg",
     "build:grid-37x37": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-37x37 > public/images/grids/mtp-grid-37x37.svg",
     "build:grid-28x28": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-28x28 > public/images/grids/mtp-grid-28x28.svg",

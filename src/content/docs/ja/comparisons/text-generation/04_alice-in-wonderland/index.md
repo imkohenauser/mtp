@@ -95,6 +95,16 @@ MTP Skill は、モデル固有の文体を消すものではありません。G
 
 テスト環境では、特別なユーザー設定や、横断的なチャット会話の記憶を含まない状態で、それぞれ、新しいエージェントチャットセッションを開始してテストを行った結果です。
 
+<!-- AUTO-GENERATED: model-output-indexes:start -->
+### モデル別統合出力
+
+各モデルの出力部分だけを統合した、AI 分析用ページです。
+
+| ChatGPT 5.5 | Gemini 3.5 Flash | Composer 2.5 | Sonnet 4.6 | Manus 1.6 Lite |
+| --- | --- | --- | --- | --- |
+| [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/gpt-5-5-medium_codex/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/gemini-3-5-flash_antigravity/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/composer-2-5_cursor-3-5/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/sonnet-4-6_claude-ai/) | [統合出力](/ja/comparisons/text-generation/04_alice-in-wonderland/manus-1-6-lite_manus-im/) |
+<!-- AUTO-GENERATED: model-output-indexes:end -->
+
 ### ベースライン
 
 MTP Skill を適用せずに、プロンプトをそのまま入力した場合の出力です。
