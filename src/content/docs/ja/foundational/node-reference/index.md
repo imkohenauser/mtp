@@ -1,6 +1,6 @@
 ---
 title: ノードリファレンス
-description: MTP の 9 つのノードと Side A / Side B の振る舞いを、設計意図と出力傾向に沿って整理します。
+description: MTP の 9 つの軸と Side A / Side B のノードの振る舞いを、設計意図と出力傾向に沿って整理します。
 head:
   - tag: meta
     attrs:
@@ -15,12 +15,47 @@ lastUpdated: true
 
 ## はじめに
 
-従来のプロンプトエンジニアリングでは、トーンや振る舞いを調整する際に「専門家として振る舞って」「ステップ・バイ・ステップで考えて」といった自然言語の修飾表現に頼ることがよくあります。こうした表現は曖昧になりやすく、タスクそのものとは別に、メタ指示のノイズを持ち込みがちです。
+従来のプロンプトエンジニアリングでは、トーンや振る舞いを調整する際に「専門家として振る舞って」「ステップ・バイ・ステップで考えて」といった自然言語の修飾表現に頼ることがよくあります。こうした表現は曖昧になりやすく、タスクそのものとは別に、プロンプトの不要なノイズを持ち込みがちです。
 
-**MTP** では、その種の制御の多くを、**座標と軸ラベル** という非言語的なメタデータに置き換え、段階的な制約としてコンパイルします。このページでは、フレームワーク内で**各ノードをどう解釈する想定か**を説明します。
+**MTP** では、その種の制御の多くを、**座標と軸ラベル** という非言語的なメタデータに置き換え、段階的な制約としてコンパイルします。このページでは、フレームワーク内で**Side A / Side B の各ノードラベルをどう解釈する想定か**を説明します。
 
-> [!NOTE]
-> MTP はモデル内部の仕組みや、あらゆるモデル・プロンプトで同一の挙動になることを保証するものではありません。
+---
+
+## ノードクイックリファレンス
+
+MTP の各色軸には、Side A と Side B の2つのノードがあります。
+Side A は正方向のノードで、`power:70` のようにノード名で指定できます。Side B は逆方向のノードで、`void:70` のようにノード名で指定できます。
+
+色名で指定する場合は、正の値が Side A、負の値が Side B に対応します。たとえば `red:70` は Power、`red:-70` は Void として働きます。
+同じ極性の規則はノード名にも適用され、`power:-70` も Red 軸を Void 側として有効化します。
+
+### Side A クイックリファレンス
+
+| | 色 / Axis | ノード | 指定例 | 主な特徴 | 向いている用途 |
+|---|---|---|---|---|---|
+| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow | Open | `open:70` / `yellow:70` | 可能性、発散、余白 | ブレスト、選択肢出し、企画初期、問いの拡張 |
+| <div class="dot-sm bg-power" aria-label="red"></div> | Red | Power | `power:70` / `red:70` | 主張、判断、推進力 | 提案、意思決定、プレゼン、強い結論が必要な回答 |
+| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta | Return | `return:70` / `magenta:70` | 反転、批評、再構成 | 批評、リフレーミング、逆張り検討、思考の転換 |
+| <div class="dot-sm bg-grow" aria-label="green"></div> | Green | Grow | `grow:70` / `green:70` | 拡張、層化、展開 | 解説、学習、企画展開、アイデアの肉付け |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | Helix | `helix:70` / `transparent:70` | 構造、追跡性、道筋 | 複雑な説明、検討メモ、設計判断、推論過程の可視化 |
+| <div class="dot-sm bg-focus" aria-label="white"></div> | White | Focus | `focus:70` / `white:70` | 精度、定義、根拠 | 調査、仕様確認、レビュー、正確性が必要な回答 |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan | Enter | `enter:70` / `cyan:70` | 導入、枠組み、範囲 | チュートリアル、オンボーディング、手順書、初学者向け説明 |
+| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue | Flow | `flow:70` / `blue:70` | 連続性、リズム、読みやすさ | エッセイ、記事、自然な説明文、読み心地を重視する文章 |
+| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple | Close | `close:70` / `purple:70` | 収束、要約、次の行動 | 要約、提案書、締めの文章、CTA が必要な回答 |
+
+### Side B クイックリファレンス
+
+| | 色 / Axis | ノード | 指定例 | 主な特徴 | 向いている用途 |
+|---|---|---|---|---|---|
+| <div class="dot-sm bg-still" aria-label="yellow"></div> | Dark Yellow | Still | `still:70` / `yellow:-70` | 抑制、保持、静止 | 整形、校正、変換、余計な提案を避けたい作業 |
+| <div class="dot-sm bg-void" aria-label="red"></div> | Dark Red | Void | `void:70` / `red:-70` | 削減、沈黙、最小化 | 短縮、無駄の削除、淡々とした回答、最小応答 |
+| <div class="dot-sm bg-surge" aria-label="magenta"></div> | Dark Magenta | Surge | `surge:70` / `magenta:-70` | 勢い、密度、圧力 | 熱量のある文章、勢いのある草稿、強い表現、詰め込み型の出力 |
+| <div class="dot-sm bg-wither" aria-label="green"></div> | Dark Green | Wither | `wither:70` / `green:-70` | 刈り込み、核心、抑制 | 要点整理、簡潔な説明、短い結論、ミニマルな文章 |
+| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Transparent | Collapse | `collapse:70` / `transparent:-70` | 圧縮、簡略化、終点 | 長文の圧縮、結論だけ欲しい回答、構造を簡略化した要約 |
+| <div class="dot-sm bg-haze" aria-label="white"></div> | Dark Grey (White) | Haze | `haze:70` / `white:-70` | 曖昧さ、柔らかさ、雰囲気 | 詩的表現、雰囲気づくり、抽象的な文章、印象重視の表現 |
+| <div class="dot-sm bg-drift" aria-label="cyan"></div> | Dark Cyan | Drift | `drift:70` / `cyan:-70` | 逸脱、連想、寄り道 | 随筆、創作、自由連想、発想の横展開 |
+| <div class="dot-sm bg-abyss" aria-label="blue"></div> | Dark Blue | Abyss | `abyss:70` / `blue:-70` | 深さ、重み、内省 | 深い考察、批評、思想的文章、表層ではない分析 |
+| <div class="dot-sm bg-fade" aria-label="purple"></div> | Dark Purple | Fade | `fade:70` / `purple:-70` | 余韻、減衰、残像 | 文芸的な終わり方、余白のある文章、読後感を重視する出力 |
 
 ---
 
@@ -35,76 +70,7 @@ lastUpdated: true
 
 ![MTP の座標系とノード配置を示す図。左に Side A / Side B の色とノードの対応、右に D:4 や A:19 などの座標ペアの例が示されています。](/images/pages/mtp-coordinate-system-and-node-layout.png)
 
-*ノード配置は、3x3 の Side A / Side B マップとしても、19x19 グリッド上の座標位置としても読むことができます。*
-
----
-
-## ノードごとの特徴
-
-各ノードは、コンパイラが挿入する**制約テキスト**に対応します。以下はあくまで**設計意図**と**観察ベースの傾向**を整理したものです。実際の出力はベースモデル、タスク、プロンプトによって変わります。
-
-9 つのノードの配置は次の通りです。
-
-```text
-+-----------------+-----------------+-----------------+
-| Yellow          | Red             | Magenta         |
-+-----------------+-----------------+-----------------+
-| Green           | Transparent     | White           |
-+-----------------+-----------------+-----------------+
-| Cyan            | Blue            | Purple          |
-+-----------------+-----------------+-----------------+
-```
-
-### プライマリー軸（十字の骨格）
-
-#### <div class="dot-md bg-power" aria-label="red"></div> Red (Power)
-
-- **特徴:** 断定、結論先行の並べ方、構造の明瞭さ。
-- **傾向:** より直接的で歯切れのよい語り口に寄りやすく、中立設定に比べて留保表現が少なめに出ることがあります。
-
-#### <div class="dot-md bg-flow" aria-label="blue"></div> Blue (Flow)
-
-- **特徴:** 連続性、文脈の維持、複数の見方を受け止める姿勢。
-- **傾向:** アイデア同士や話題転換のつながりを、より滑らかに見せやすくなります。
-
-#### <div class="dot-md bg-grow" aria-label="green"></div> Green (Grow)
-
-- **特徴:** ゆるやかな展開、輪郭の維持、慎重な広がり。
-- **傾向:** 与えられたタスクの枠組みにとどまりつつ、合う場面では箇条書きよりも流れのある文章になりやすくなります。
-
-#### <div class="dot-md bg-focus" aria-label="white"></div> White (Focus)
-
-- **特徴:** 集中、精査、論理の引き締まり。
-- **傾向:** スコープを狭めて正確さを重視し、気軽な脱線を抑える方向に働きやすくなります。
-
-### 四角のノード
-
-#### <div class="dot-md bg-open" aria-label="yellow"></div> Yellow (Open)
-
-- **特徴:** 探索、ゆるやかな構え、視野の広さ。
-- **傾向:** 選択肢を多めに出したり、ブレインストーミング寄りの幅広い発想を促したりしやすくなります。
-
-#### <div class="dot-md bg-close" aria-label="purple"></div> Purple (Close)
-
-- **特徴:** 収束、締めくくり、要約。
-- **傾向:** 単一の結論や締めの姿勢へ向けて、内容をまとめる方向に寄りやすくなります。
-
-#### <div class="dot-md bg-return" aria-label="magenta"></div> Magenta (Return)
-
-- **特徴:** 対比、反転、既定路線への揺さぶり。
-- **傾向:** 必要に応じて、反論や見方の切り替え、「一方で」に近い対置を加えやすくなります。
-
-#### <div class="dot-md bg-enter" aria-label="cyan"></div> Cyan (Enter)
-
-- **特徴:** 深掘り志向、専門家的な構え。
-- **傾向:** 領域固有の細部や、対象の内側に入っていくような視点に寄りやすくなります。
-
-### 中央のノード
-
-#### <div class="dot-md bg-helix" aria-label="transparent"></div> Transparent (Helix)
-
-- **特徴:** 極端さのあいだをつなぐ、中立的な媒介。
-- **傾向:** 反対方向の強いノードと組み合わせたとき、言い回しを和らげ、極端さを抑える方向に働きます。
+*軸配置は、3x3 の Side A / Side B マップとしても、19x19 グリッド上の座標位置としても読むことができます。*
 
 ---
 
@@ -116,21 +82,19 @@ lastUpdated: true
 
 ---
 
-## Side B のノード
+## Side B の解釈
 
 **チェビシェフ距離に基づく径方向のルール**では、外周フレーム上の座標は、そのゾーンにおいて **Side B** に反転します。制約設計では、Side B は同じ軸の**反転極**（陰陽の対極）として表現されます（例: Power → Void、Focus → Haze、Grow → Wither）。
-
-以下は一例です：
-
-- **Void（Power の反転）:** 出力の文面を最小限まで圧縮する方向に寄りやすくなります。
-- **Haze（Focus の反転）:** 反転極が強いとき、あえて拡散的で焦点の定まりにくいトーンになりやすくなります。
-- **Wither（Grow の反転）:** かなり保守的で、引いた語り口に寄りやすくなります。
 
 Side B は、その軸で極端に強めたい場合、または圧縮した表現を生成したい場合に向いています。ただし、Side A と同様に、モデルごとの差や揺れは残ります。
 
 ---
 
 ## ノードとプリセットの組み合わせ
+
+MTP では、複数のノードを同時に指定して出力傾向をブレンドすることもできます。単一のノードで出力を切り替えるだけでなく、たとえば断定性（`power:20`）と精度（`focus:30`）を組み合わせたり、展開（`grow:20`）と読みやすさ（`flow:50`）を組み合わせたりするように、複数の軸を重ねてグラデーションのように調整できます。
+
+MTP のノードを感覚的に組み合わせることで、操作の負荷を下げながら、モデルの出力傾向を変えられるという発想です。
 
 複数の MTP トークンがあるとき、**各トークンは同じ Space / Intensity の規則**で個別に解決され、コンパイラは **書いた順（パース順）** に、トークンごとの制約ブロックを出力します。
 
