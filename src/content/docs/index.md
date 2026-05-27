@@ -40,11 +40,9 @@ MTP Skill is an Agent Skill for using the MTP framework through the `/mtp` comma
 
 Traditional prompts often adjust model behavior through natural-language instructions like these:
 
-```text
-Act as an expert.
-Be more concise.
-Think step by step.
-```
+> Act as an expert.  
+> Be more concise.  
+> Think step by step.
 
 MTP moves that behavioral steering into non-verbal parameters such as color, position, and intensity. It does not change the task itself; it adjusts qualities such as force, flow, depth, structure, openness, and focus.
 
@@ -59,8 +57,13 @@ MTP Skill supports three input modes. Internally, each mode resolves into the sa
 | **Preset** | `strategist`, `synthesizer`, `maverick`, `concierge` | You want a reusable blend of multiple coordinates. |
 
 ```text
+# Slider
 /mtp power:100 Summarize this article
-/mtp flow:70 Explain this concept
+
+# Grid
+/mtp J:4 Explain this concept
+
+# Preset
 /mtp strategist Compare these options
 ```
 
