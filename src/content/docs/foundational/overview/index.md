@@ -18,6 +18,18 @@ It controls model tone and style through a **coordinate-based compilation step**
 
 This page summarizes **core terms** and a lightweight description of the two layers behind MTP's controls. In practical terms, those layers are **grid position** and **intensity / polarity**; in the formal model they are called **Space** and **Intensity**. Full equations and zone boundaries are covered in Grid and Coordinate System; per-node behavior is summarized in Node Reference.
 
+The 3x3 color arrangement used by Space is:
+
+```text
++-----------------+-----------------+-----------------+
+| Yellow          | Red             | Magenta         |
++-----------------+-----------------+-----------------+
+| Green           | Transparent     | White           |
++-----------------+-----------------+-----------------+
+| Cyan            | Blue            | Purple          |
++-----------------+-----------------+-----------------+
+```
+
 ---
 
 ## Core terms

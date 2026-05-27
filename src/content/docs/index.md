@@ -22,17 +22,11 @@ lastUpdated: true
 
 MTP (Mapping the Prompt) is a framework for steering LLM output with grids and sliders instead of long natural-language behavior instructions. It is designed to make the ideas and concepts in a prompt easier to express intuitively, helping the user and the LLM align with fewer instructions.
 
-Its core is a 3x3 color arrangement made of nine nodes. The relationships between color, position, polarity, and intensity are defined from this arrangement.
+Its core is a 3x3 color arrangement made of nine nodes. The relationships between color, position, polarity, and intensity are defined from this arrangement. Each color in the 3x3 arrangement defines nodes for the Side A and Side B polarities. For example, Yellow in the upper-left corresponds to Open on Side A and Still on Side B.
 
-```text
-+-----------------+-----------------+-----------------+
-| Yellow          | Red             | Magenta         |
-+-----------------+-----------------+-----------------+
-| Green           | Transparent     | White           |
-+-----------------+-----------------+-----------------+
-| Cyan            | Blue            | Purple          |
-+-----------------+-----------------+-----------------+
-```
+![Diagram showing the MTP coordinate system and node layout. The left side shows the relationship between Side A / Side B colors and nodes, and the right side shows examples of coordinate pairs such as D:4 and A:19.](/images/pages/mtp-coordinate-system-and-node-layout.png)
+
+The `column:row` color grid on the right shows an image for unifying Side A and Side B nodes and treating them as coordinates in a UI. It shows an example using the `D:4` and `A:19` coordinates.
 
 MTP Skill is an Agent Skill for using the MTP framework through the `/mtp` command.
 
