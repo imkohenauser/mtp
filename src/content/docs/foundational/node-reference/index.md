@@ -23,9 +23,10 @@ In conventional prompt engineering, adjusting tone and behavior often relies on 
 
 ## Node quick reference
 
-MTP has nine color axes. Each axis has two usable node labels: Side A and Side B.
-Side A is the positive-side node and can be called directly with a node slider, such as `power:70`.
-Side B is the inverse-side node and can also be called directly, such as `void:70`.
+Each color axis in MTP has two nodes: Side A and Side B (each referred to as `<node>`).
+Intensity (`<intensity>`) can be specified in the range `0` to `100`.
+
+Side A is the positive-side node and can be specified by node name, such as `power:70` (`<node>:<intensity>`). Side B is the inverse-side node and can be specified by node name, such as `void:70`.
 
 When using a color name instead of a node name, positive values activate Side A and negative values activate Side B.
 For example, `red:70` activates Power, while `red:-70` activates Void.
@@ -33,31 +34,31 @@ The same polarity rule applies to node names: `power:-70` also activates the Red
 
 ### Side A quick reference
 
-| | Color / Axis | Node | Example | Main behavior | Good for |
+| | Color / Axis | Node | Usage example | Example behaviors | Example use cases |
 |---|---|---|---|---|---|
-| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow | Open | `open:70` / `yellow:70` | Possibility, divergence, margin | Brainstorming, option generation, early planning, expanding a question |
-| <div class="dot-sm bg-power" aria-label="red"></div> | Red | Power | `power:70` / `red:70` | Assertion, judgment, drive | Proposals, decisions, presentations, answers that need a firm conclusion |
-| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta | Return | `return:70` / `magenta:70` | Reversal, critique, reframing | Critique, reframing, contrarian review, perspective shifts |
-| <div class="dot-sm bg-grow" aria-label="green"></div> | Green | Grow | `grow:70` / `green:70` | Expansion, layering, development | Explanations, learning, planning, developing an idea |
-| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | Helix | `helix:70` / `transparent:70` | Structure, traceability, path | Complex explanations, review notes, design decisions, traceable reasoning summaries |
-| <div class="dot-sm bg-focus" aria-label="white"></div> | White | Focus | `focus:70` / `white:70` | Precision, definition, evidence | Research, specification checks, reviews, accuracy-sensitive answers |
-| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan | Enter | `enter:70` / `cyan:70` | Entry, framing, scope | Tutorials, onboarding, procedures, beginner-friendly explanations |
-| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue | Flow | `flow:70` / `blue:70` | Continuity, rhythm, readability | Essays, articles, natural explanations, prose where readability matters |
-| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple | Close | `close:70` / `purple:70` | Closure, summary, next action | Summaries, proposals, closing sections, answers that need a CTA |
+| <div class="dot-md bg-open" aria-label="yellow"></div> | Yellow | Open | `open:100` / `yellow:100` / `D:4` | Possibility, divergence, margin | Brainstorming, option generation, early planning, expanding a question |
+| <div class="dot-md bg-power" aria-label="red"></div> | Red | Power | `power:100` / `red:100` / `J:4` | Assertion, judgment, drive | Proposals, decisions, presentations, answers that need a firm conclusion |
+| <div class="dot-md bg-return" aria-label="magenta"></div> | Magenta | Return | `return:100` / `magenta:100` / `P:4` | Reversal, critique, reframing | Critique, reframing, contrarian review, perspective shifts |
+| <div class="dot-md bg-grow" aria-label="green"></div> | Green | Grow | `grow:100` / `green:100` / `D:10` | Expansion, layering, development | Explanations, learning, planning, developing an idea |
+| <div class="dot-md bg-helix" aria-label="transparent"></div> | Transparent | Helix | `helix:100` / `transparent:100` | Structure, traceability, path | Complex explanations, review notes, design decisions, traceable reasoning summaries |
+| <div class="dot-md bg-focus" aria-label="white"></div> | White | Focus | `focus:100` / `white:100` / `P:10` | Precision, definition, evidence | Research, specification checks, reviews, accuracy-sensitive answers |
+| <div class="dot-md bg-enter" aria-label="cyan"></div> | Cyan | Enter | `enter:100` / `cyan:100` / `D:16` | Entry, framing, scope | Tutorials, onboarding, procedures, beginner-friendly explanations |
+| <div class="dot-md bg-flow" aria-label="blue"></div> | Blue | Flow | `flow:100` / `blue:100` / `J:16` | Continuity, rhythm, readability | Essays, articles, natural explanations, prose where readability matters |
+| <div class="dot-md bg-close" aria-label="purple"></div> | Purple | Close | `close:100` / `purple:100` / `P:16` | Closure, summary, next action | Summaries, proposals, closing sections, answers that need a CTA |
 
 ### Side B quick reference
 
-| | Color / Axis | Node | Example | Main behavior | Good for |
+| | Color / Axis | Node | Usage example | Example behaviors | Example use cases |
 |---|---|---|---|---|---|
-| <div class="dot-sm bg-still" aria-label="yellow"></div> | Dark Yellow | Still | `still:70` / `yellow:-70` | Restraint, preservation, stillness | Formatting, proofreading, conversion, tasks where extra suggestions are unwanted |
-| <div class="dot-sm bg-void" aria-label="red"></div> | Dark Red | Void | `void:70` / `red:-70` | Reduction, silence, minimum | Shortening, removing noise, dry answers, minimal responses |
-| <div class="dot-sm bg-surge" aria-label="magenta"></div> | Dark Magenta | Surge | `surge:70` / `magenta:-70` | Momentum, density, force | High-energy writing, forceful drafts, intense expression, dense output |
-| <div class="dot-sm bg-wither" aria-label="green"></div> | Dark Green | Wither | `wither:70` / `green:-70` | Pruning, core, reserve | Key-point summaries, concise explanations, short conclusions, minimal prose |
-| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Transparent | Collapse | `collapse:70` / `transparent:-70` | Compression, simplification, endpoint | Compressing long text, direct answers, simplified summaries |
-| <div class="dot-sm bg-haze" aria-label="white"></div> | Dark Grey (White) | Haze | `haze:70` / `white:-70` | Ambiguity, softness, atmosphere | Poetic language, atmosphere, abstract writing, impression-driven expression |
-| <div class="dot-sm bg-drift" aria-label="cyan"></div> | Dark Cyan | Drift | `drift:70` / `cyan:-70` | Deviation, association, tangent | Essays, creative writing, free association, lateral idea development |
-| <div class="dot-sm bg-abyss" aria-label="blue"></div> | Dark Blue | Abyss | `abyss:70` / `blue:-70` | Depth, weight, reflection | Deep analysis, criticism, theoretical writing, non-surface-level reflection |
-| <div class="dot-sm bg-fade" aria-label="purple"></div> | Dark Purple | Fade | `fade:70` / `purple:-70` | Resonance, taper, afterimage | Literary endings, open-ended prose, afterimage, mood-focused writing |
+| <div class="dot-md bg-still" aria-label="yellow"></div> | Dark Yellow | Still | `still:100` / `yellow:-100` / `A:1` | Restraint, preservation, stillness | Formatting, proofreading, conversion, tasks where extra suggestions are unwanted |
+| <div class="dot-md bg-void" aria-label="red"></div> | Dark Red | Void | `void:100` / `red:-100` / `J:1` | Reduction, silence, minimum | Shortening, removing noise, dry answers, minimal responses |
+| <div class="dot-md bg-surge" aria-label="magenta"></div> | Dark Magenta | Surge | `surge:100` / `magenta:-100` / `S:1` | Momentum, density, force | High-energy writing, forceful drafts, intense expression, dense output |
+| <div class="dot-md bg-wither" aria-label="green"></div> | Dark Green | Wither | `wither:100` / `green:-100` / `A:10` | Pruning, core, reserve | Key-point summaries, concise explanations, short conclusions, minimal prose |
+| <div class="dot-md bg-collapse" aria-label="transparent"></div> | Transparent | Collapse | `collapse:100` / `transparent:-100` | Compression, simplification, endpoint | Compressing long text, direct answers, simplified summaries |
+| <div class="dot-md bg-haze" aria-label="white"></div> | Dark Grey (White) | Haze | `haze:100` / `white:-100` / `S:10` | Ambiguity, softness, atmosphere | Poetic language, atmosphere, abstract writing, impression-driven expression |
+| <div class="dot-md bg-drift" aria-label="cyan"></div> | Dark Cyan | Drift | `drift:100` / `cyan:-100` / `A:19` | Deviation, association, tangent | Essays, creative writing, free association, lateral idea development |
+| <div class="dot-md bg-abyss" aria-label="blue"></div> | Dark Blue | Abyss | `abyss:100` / `blue:-100` / `J:19` | Depth, weight, reflection | Deep analysis, criticism, theoretical writing, non-surface-level reflection |
+| <div class="dot-md bg-fade" aria-label="purple"></div> | Dark Purple | Fade | `fade:100` / `purple:-100` / `S:19` | Resonance, taper, afterimage | Literary endings, open-ended prose, afterimage, mood-focused writing |
 
 ---
 

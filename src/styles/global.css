@@ -47,7 +47,6 @@
     }
   }
 
-  /* Homepage */
   .hero {
     padding-top: 2rem;
   }
@@ -60,9 +59,12 @@
     font-size: var(--sl-text-5xl);
   }
 
-  /* Starlight overrides */
   .sl-markdown-content :is(th:first-child):not(:where(.not-content *)) {
     white-space: nowrap;
+  }
+
+  .sl-markdown-content :is(th:not(:first-child)):not(:where(.not-content *)) {
+    min-width: 8rem;
   }
 
   .expressive-code .frame {
