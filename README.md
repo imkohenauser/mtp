@@ -1,3 +1,5 @@
+![MTP Doc OGP Image](public/ogp.png)
+
 # MTP (Mapping the Prompt)
 
 MTP is a framework for steering LLM output with grids, sliders, and presets instead of long natural-language behavior instructions.
@@ -29,14 +31,6 @@ MTP currently works through the `/mtp` command, but its arguments can be underst
 The slider form, `/mtp <node:intensity>`, sets the intensity of a named node such as `power:70` or `flow:100`. The grid form, `/mtp <column:row>`, selects a point on the 19×19 MTP coordinate plane, such as `J:4` or `D:16`.
 
 Both forms describe the same underlying node system: sliders express movement by named direction and intensity, while grid coordinates express position.
-
-**MTP Slider Arguments:**
-![MTP Slider Arguments: /mtp <node:intensity>](public/images/pages/mtp-slider-arguments-mtp-node-intensity.png)
-
-**MTP Grid Arguments:**
-![MTP Grid Arguments: /mtp <column:row>](public/images/pages/mtp-grid-arguments-mtp-column-row.png)
-
-The planned MTP Interactive UI may expose these same controls visually in the future.
 
 ---
 
