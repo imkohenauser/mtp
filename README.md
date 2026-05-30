@@ -32,6 +32,12 @@ The slider form, `/mtp <node:intensity>`, sets the intensity of a named node suc
 
 Both forms describe the same underlying node system: sliders express movement by named direction and intensity, while grid coordinates express position.
 
+#### Node layout and coordinate-plane UI
+
+![MTP coordinate system and node layout diagram](public/images/pages/mtp-coordinate-system-and-node-layout.png)
+
+*Left: the 3×3 MTP node layout, including the paired Side A and Side B directions for each axis. Right: a UI concept for representing the same node space through color and 19×19 grid coordinates, allowing output tendencies to be selected by position rather than by node name.*
+
 ---
 
 ## MTP Skill quick start
