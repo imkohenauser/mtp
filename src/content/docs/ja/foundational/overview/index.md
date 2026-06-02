@@ -59,12 +59,12 @@ Space の基準となる 3x3 の色配置は次のとおりです。
 
 | | 色 / 軸 | Side A ノード | Side B ノード   |
 | --- | ----------- | ------ | -------- |
-| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow      | Open   | Still    |
-| <div class="dot-sm bg-power" aria-label="red"></div> | Red         | Power  | Void     |
-| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta     | Return | Surge    |
-| <div class="dot-sm bg-grow" aria-label="green"></div> | Green       | Grow   | Wither   |
-| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | Helix  | Collapse |
-| <div class="dot-sm bg-focus" aria-label="white"></div> | White       | Focus  | Haze     |
-| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan        | Enter  | Drift    |
-| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue        | Flow   | Abyss    |
-| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple      | Close  | Fade     |
+| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow      | `open`   | `still`    |
+| <div class="dot-sm bg-power" aria-label="red"></div> | Red         | `power`  | `void`     |
+| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta     | `return` | `surge`    |
+| <div class="dot-sm bg-grow" aria-label="green"></div> | Green       | `grow`   | `wither`   |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | `helix`  | `collapse` |
+| <div class="dot-sm bg-focus" aria-label="white"></div> | White       | `focus`  | `haze`     |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan        | `enter`  | `drift`    |
+| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue        | `flow`   | `abyss`     |
+| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple      | `close`  | `fade`     |

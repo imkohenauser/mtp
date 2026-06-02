@@ -35,29 +35,29 @@ Side A は正方向のノードで、`power:70`（`<node>:<intensity>`） のよ
 
 | | 色 / Axis | ノード | 指定例 | 主な特徴 | 向いている用途 |
 |---|---|---|---|---|---|
-| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow | Open | `open:100` / `yellow:100` / `D:4` | 可能性、発散、余白 | ブレスト、選択肢出し、企画初期、問いの拡張 |
-| <div class="dot-sm bg-power" aria-label="red"></div> | Red | Power | `power:100` / `red:100` / `J:4` | 主張、判断、推進力 | 提案、意思決定、プレゼン、強い結論が必要な回答 |
-| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta | Return | `return:100` / `magenta:100` / `P:4` | 反転、批評、再構成 | 批評、リフレーミング、逆張り検討、思考の転換 |
-| <div class="dot-sm bg-grow" aria-label="green"></div> | Green | Grow | `grow:100` / `green:100` / `D:10` | 拡張、層化、展開 | 解説、学習、企画展開、アイデアの肉付け |
-| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | Helix | `helix:100` / `transparent:100` | 構造、追跡性、道筋 | 複雑な説明、検討メモ、設計判断、推論過程の可視化 |
-| <div class="dot-sm bg-focus" aria-label="white"></div> | White | Focus | `focus:100` / `white:100` / `P:10` | 精度、定義、根拠 | 調査、仕様確認、レビュー、正確性が必要な回答 |
-| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan | Enter | `enter:100` / `cyan:100` / `D:16` | 導入、枠組み、範囲 | チュートリアル、オンボーディング、手順書、初学者向け説明 |
-| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue | Flow | `flow:100` / `blue:100` / `J:16` | 連続性、リズム、読みやすさ | エッセイ、記事、自然な説明文、読み心地を重視する文章 |
-| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple | Close | `close:100` / `purple:100` / `P:16` | 収束、要約、次の行動 | 要約、提案書、締めの文章、CTA が必要な回答 |
+| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow | `open` | `open:100` / `yellow:100` / `D:4` | 可能性、発散、余白 | ブレスト、選択肢出し、企画初期、問いの拡張 |
+| <div class="dot-sm bg-power" aria-label="red"></div> | Red | `power` | `power:100` / `red:100` / `J:4` | 主張、判断、推進力 | 提案、意思決定、プレゼン、強い結論が必要な回答 |
+| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta | `return` | `return:100` / `magenta:100` / `P:4` | 反転、批評、再構成 | 批評、リフレーミング、逆張り検討、思考の転換 |
+| <div class="dot-sm bg-grow" aria-label="green"></div> | Green | `grow` | `grow:100` / `green:100` / `D:10` | 拡張、層化、展開 | 解説、学習、企画展開、アイデアの肉付け |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | `helix` | `helix:100` / `transparent:100` | 構造、追跡性、道筋 | 複雑な説明、検討メモ、設計判断、推論過程の可視化 |
+| <div class="dot-sm bg-focus" aria-label="white"></div> | White | `focus` | `focus:100` / `white:100` / `P:10` | 精度、定義、根拠 | 調査、仕様確認、レビュー、正確性が必要な回答 |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan | `enter` | `enter:100` / `cyan:100` / `D:16` | 導入、枠組み、範囲 | チュートリアル、オンボーディング、手順書、初学者向け説明 |
+| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue | `flow` | `flow:100` / `blue:100` / `J:16` | 連続性、リズム、読みやすさ | エッセイ、記事、自然な説明文、読み心地を重視する文章 |
+| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple | `close` | `close:100` / `purple:100` / `P:16` | 収束、要約、次の行動 | 要約、提案書、締めの文章、CTA が必要な回答 |
 
 ### Side B クイックリファレンス
 
 | | 色 / Axis | ノード | 指定例 | 主な特徴 | 向いている用途 |
 |---|---|---|---|---|---|
-| <div class="dot-sm bg-still" aria-label="yellow"></div> | Dark Yellow | Still | `still:100` / `yellow:-100` / `A:1` | 抑制、保持、静止 | 整形、校正、変換、余計な提案を避けたい作業 |
-| <div class="dot-sm bg-void" aria-label="red"></div> | Dark Red | Void | `void:100` / `red:-100` / `J:1` | 削減、沈黙、最小化 | 短縮、無駄の削除、淡々とした回答、最小応答 |
-| <div class="dot-sm bg-surge" aria-label="magenta"></div> | Dark Magenta | Surge | `surge:100` / `magenta:-100` / `S:1` | 勢い、密度、圧力 | 熱量のある文章、勢いのある草稿、強い表現、詰め込み型の出力 |
-| <div class="dot-sm bg-wither" aria-label="green"></div> | Dark Green | Wither | `wither:100` / `green:-100` / `A:10` | 刈り込み、核心、抑制 | 要点整理、簡潔な説明、短い結論、ミニマルな文章 |
-| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Transparent | Collapse | `collapse:100` / `transparent:-100` | 圧縮、簡略化、終点 | 長文の圧縮、結論だけ欲しい回答、構造を簡略化した要約 |
-| <div class="dot-sm bg-haze" aria-label="white"></div> | Dark Grey (White) | Haze | `haze:100` / `white:-100` / `S:10` | 曖昧さ、柔らかさ、雰囲気 | 詩的表現、雰囲気づくり、抽象的な文章、印象重視の表現 |
-| <div class="dot-sm bg-drift" aria-label="cyan"></div> | Dark Cyan | Drift | `drift:100` / `cyan:-100` / `A:19` | 逸脱、連想、寄り道 | 随筆、創作、自由連想、発想の横展開 |
-| <div class="dot-sm bg-abyss" aria-label="blue"></div> | Dark Blue | Abyss | `abyss:100` / `blue:-100` / `J:19` | 深さ、重み、内省 | 深い考察、批評、思想的文章、表層ではない分析 |
-| <div class="dot-sm bg-fade" aria-label="purple"></div> | Dark Purple | Fade | `fade:100` / `purple:-100` / `S:19` | 余韻、減衰、残像 | 文芸的な終わり方、余白のある文章、読後感を重視する出力 |
+| <div class="dot-sm bg-still" aria-label="yellow"></div> | Dark Yellow | `still` | `still:100` / `yellow:-100` / `A:1` | 抑制、保持、静止 | 整形、校正、変換、余計な提案を避けたい作業 |
+| <div class="dot-sm bg-void" aria-label="red"></div> | Dark Red | `void` | `void:100` / `red:-100` / `J:1` | 削減、沈黙、最小化 | 短縮、無駄の削除、淡々とした回答、最小応答 |
+| <div class="dot-sm bg-surge" aria-label="magenta"></div> | Dark Magenta | `surge` | `surge:100` / `magenta:-100` / `S:1` | 勢い、密度、圧力 | 熱量のある文章、勢いのある草稿、強い表現、詰め込み型の出力 |
+| <div class="dot-sm bg-wither" aria-label="green"></div> | Dark Green | `wither` | `wither:100` / `green:-100` / `A:10` | 刈り込み、核心、抑制 | 要点整理、簡潔な説明、短い結論、ミニマルな文章 |
+| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Transparent | `collapse` | `collapse:100` / `transparent:-100` | 圧縮、簡略化、終点 | 長文の圧縮、結論だけ欲しい回答、構造を簡略化した要約 |
+| <div class="dot-sm bg-haze" aria-label="white"></div> | Dark Grey (White) | `haze` | `haze:100` / `white:-100` / `S:10` | 曖昧さ、柔らかさ、雰囲気 | 詩的表現、雰囲気づくり、抽象的な文章、印象重視の表現 |
+| <div class="dot-sm bg-drift" aria-label="cyan"></div> | Dark Cyan | `drift` | `drift:100` / `cyan:-100` / `A:19` | 逸脱、連想、寄り道 | 随筆、創作、自由連想、発想の横展開 |
+| <div class="dot-sm bg-abyss" aria-label="blue"></div> | Dark Blue | `abyss` | `abyss:100` / `blue:-100` / `J:19` | 深さ、重み、内省 | 深い考察、批評、思想的文章、表層ではない分析 |
+| <div class="dot-sm bg-fade" aria-label="purple"></div> | Dark Purple | `fade` | `fade:100` / `purple:-100` / `S:19` | 余韻、減衰、残像 | 文芸的な終わり方、余白のある文章、読後感を重視する出力 |
 
 ---
 

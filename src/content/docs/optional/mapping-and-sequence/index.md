@@ -84,12 +84,12 @@ Example alignment:
 
 | | Node | Character | Character reading |
 | --- | --- | --- | --- |
-| <div class="dot-group" role="img" aria-label="Open, Return, Enter, and Close: the four corner nodes on the MTP grid"><div class="dot-sm bg-open" aria-hidden="true"></div><div class="dot-sm bg-return" aria-hidden="true"></div><div class="dot-sm bg-enter" aria-hidden="true"></div><div class="dot-sm bg-close" aria-hidden="true"></div></div> | Open, Return, Enter, Close | Joy       | Joy opens possibility, reframes experience with hope, and carries it toward bright completion. |
-| <div class="dot-sm bg-power" aria-label="red"></div>         | Power | Anger     | Anger and assertion drive impulsive but forceful action. |
-| <div class="dot-sm bg-grow" aria-label="green"></div>        | Grow  | Disgust   | Disgust and sorting tune pleasant–unpleasant boundaries and self-defense. |
-| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Helix | Riley     | Many emotions pass through; the person’s neutral hub. |
-| <div class="dot-sm bg-focus" aria-label="white"></div>       | Focus | Fear      | Anxiety and vigilance turn attention toward danger and uncertainty. |
-| <div class="dot-sm bg-flow" aria-label="blue"></div>         | Flow  | Sadness   | Sadness and acceptance deepen emotional flow and meaning. |
+| <div class="dot-group" role="img" aria-label="Open, Return, Enter, and Close: the four corner nodes on the MTP grid"><div class="dot-sm bg-open" aria-hidden="true"></div><div class="dot-sm bg-return" aria-hidden="true"></div><div class="dot-sm bg-enter" aria-hidden="true"></div><div class="dot-sm bg-close" aria-hidden="true"></div></div> | `open`, `return`, `enter`, `close` | Joy       | Joy opens possibility, reframes experience with hope, and carries it toward bright completion. |
+| <div class="dot-sm bg-power" aria-label="red"></div>         | `power` | Anger     | Anger and assertion drive impulsive but forceful action. |
+| <div class="dot-sm bg-grow" aria-label="green"></div>        | `grow`  | Disgust   | Disgust and sorting tune pleasant–unpleasant boundaries and self-defense. |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | `helix` | Riley     | Many emotions pass through; the person’s neutral hub. |
+| <div class="dot-sm bg-focus" aria-label="white"></div>       | `focus` | Fear      | Anxiety and vigilance turn attention toward danger and uncertainty. |
+| <div class="dot-sm bg-flow" aria-label="blue"></div>         | `flow`  | Sadness   | Sadness and acceptance deepen emotional flow and meaning. |
 
 
 **Side B** (*Inside Out 2*):
@@ -108,15 +108,15 @@ Example alignment:
 
 | | Node | Character | Character reading |
 | --- | --- | --- | --- |
-| <div class="dot-sm bg-still" aria-label="yellow"></div>         | Still    | Bloofy             | A childhood imaginary comfort character stills real motion into consolation. |
-| <div class="dot-sm bg-void" aria-label="red"></div>             | Void     | Lance Slashblade   | Heroic fantasy hardens into empty, unusable force. |
-| <div class="dot-sm bg-surge" aria-label="magenta"></div>        | Surge    | Anxiety            | Anxiety peaks, heightening thought and bodily response excessively. |
-| <div class="dot-sm bg-wither" aria-label="green"></div>         | Wither   | Embarrassment      | Shame weakens boundary defense, shrinking the self under self-consciousness. |
-| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Collapse | Riley              | The neutral hub overloads and collapses; emotional integration briefly fails. |
-| <div class="dot-sm bg-haze" aria-label="white"></div>           | Haze     | Ennui              | Indifference and irony diffuse vigilance and cloud attention. |
-| <div class="dot-sm bg-drift" aria-label="cyan"></div>           | Drift    | Envy               | Craving loses direction, repeating insatiable want for what others have. |
-| <div class="dot-sm bg-abyss" aria-label="blue"></div>           | Abyss    | Deep Dark Secret   | Buried secrets sink, pulling self-understanding toward the bottom. |
-| <div class="dot-sm bg-fade" aria-label="purple"></div>          | Fade     | Nostalgia          | After closure, faint regret lingers, turning toward longing for the past. |
+| <div class="dot-sm bg-still" aria-label="yellow"></div>         | `still`    | Bloofy             | A childhood imaginary comfort character stills real motion into consolation. |
+| <div class="dot-sm bg-void" aria-label="red"></div>             | `void`     | Lance Slashblade   | Heroic fantasy hardens into empty, unusable force. |
+| <div class="dot-sm bg-surge" aria-label="magenta"></div>        | `surge`    | Anxiety            | Anxiety peaks, heightening thought and bodily response excessively. |
+| <div class="dot-sm bg-wither" aria-label="green"></div>         | `wither`   | Embarrassment      | Shame weakens boundary defense, shrinking the self under self-consciousness. |
+| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | `collapse` | Riley              | The neutral hub overloads and collapses; emotional integration briefly fails. |
+| <div class="dot-sm bg-haze" aria-label="white"></div>           | `haze`     | Ennui              | Indifference and irony diffuse vigilance and cloud attention. |
+| <div class="dot-sm bg-drift" aria-label="cyan"></div>           | `drift`    | Envy               | Craving loses direction, repeating insatiable want for what others have. |
+| <div class="dot-sm bg-abyss" aria-label="blue"></div>           | `abyss`    | Deep Dark Secret   | Buried secrets sink, pulling self-understanding toward the bottom. |
+| <div class="dot-sm bg-fade" aria-label="purple"></div>          | `fade`     | Nostalgia          | After closure, faint regret lingers, turning toward longing for the past. |
 
 Each cell can also be read as the **inverted pole** of the Side A node at the same coordinates (for example, Open’s optimism becomes Still’s arrest; Power’s thrust becomes Void’s hollowing-out).
 

@@ -65,15 +65,15 @@ The nine macro zones correspond to a hue cycle and also carry a generation trans
 
 |                                                              | Color           | Node        | Keywords                                      |
 | ------------------------------------------------------------ | --------------- | ----------- | --------------------------------------------- |
-| <div class="dot-sm bg-open" aria-label="yellow"></div>       | **Yellow**      | Open        | divergence, openness, margin                  |
-| <div class="dot-sm bg-power" aria-label="red"></div>         | **Red**         | Power       | force, assertion, rise                        |
-| <div class="dot-sm bg-return" aria-label="magenta"></div>    | **Magenta**     | Return      | return, flip, cycle                           |
-| <div class="dot-sm bg-grow" aria-label="green"></div>        | **Green**       | Grow        | growth, proliferation, layering               |
-| <div class="dot-sm bg-helix" aria-label="transparent"></div> | **Transparent** | Helix       | helix, unfold, neutral structure              |
-| <div class="dot-sm bg-focus" aria-label="white"></div>       | **White**       | Focus       | focus, convergence, precision                 |
-| <div class="dot-sm bg-enter" aria-label="cyan"></div>        | **Cyan**        | Enter       | entry, landing, structure                     |
-| <div class="dot-sm bg-flow" aria-label="blue"></div>         | **Blue**        | Flow        | flow, connection, rhythm                      |
-| <div class="dot-sm bg-close" aria-label="purple"></div>      | **Purple**      | Close       | close, completion, wrap                       |
+| <div class="dot-sm bg-open" aria-label="yellow"></div>       | **Yellow**      | `open`      | divergence, openness, margin                  |
+| <div class="dot-sm bg-power" aria-label="red"></div>         | **Red**         | `power`     | force, assertion, rise                        |
+| <div class="dot-sm bg-return" aria-label="magenta"></div>    | **Magenta**     | `return`    | return, flip, cycle                           |
+| <div class="dot-sm bg-grow" aria-label="green"></div>        | **Green**       | `grow`      | growth, proliferation, layering               |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | **Transparent** | `helix`     | helix, unfold, neutral structure              |
+| <div class="dot-sm bg-focus" aria-label="white"></div>       | **White**       | `focus`     | focus, convergence, precision                 |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div>        | **Cyan**        | `enter`     | entry, landing, structure                     |
+| <div class="dot-sm bg-flow" aria-label="blue"></div>         | **Blue**        | `flow`      | flow, connection, rhythm                      |
+| <div class="dot-sm bg-close" aria-label="purple"></div>      | **Purple**      | `close`     | close, completion, wrap                       |
 
 ---
 
@@ -90,15 +90,15 @@ Negative values activate Side B, while positive values activate Side A. Across t
 
 | Side B (-1)  | Center (0)  | Side A (+1) | Spatial Position |
 | ------------ | ----------- | ----------- | ---------------- |
-| **Still**    | Yellow      | **Open**    | Upper left       |
-| **Void**     | Red         | **Power**   | Top              |
-| **Surge**    | Magenta     | **Return**  | Upper right      |
-| **Wither**   | Green       | **Grow**    | Left             |
-| **Collapse** | Transparent | **Helix**   | Center           |
-| **Haze**     | White       | **Focus**   | Right            |
-| **Drift**    | Cyan        | **Enter**   | Lower left       |
-| **Abyss**    | Blue        | **Flow**    | Bottom           |
-| **Fade**     | Purple      | **Close**   | Lower right      |
+| `still`      | Yellow      | `open`      | Upper left       |
+| `void`       | Red         | `power`     | Top              |
+| `surge`      | Magenta     | `return`    | Upper right      |
+| `wither`     | Green       | `grow`      | Left             |
+| `collapse`   | Transparent | `helix`     | Center           |
+| `haze`       | White       | `focus`     | Right            |
+| `drift`      | Cyan        | `enter`     | Lower left       |
+| `abyss`      | Blue        | `flow`      | Bottom           |
+| `fade`       | Purple      | `close`     | Lower right      |
 
 
 ---

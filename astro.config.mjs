@@ -25,6 +25,7 @@ const llmsTxtSourceDirectories = [
   'src/content/docs/foundational',
   'src/content/docs/optional',
   'src/content/docs/skills',
+  'src/content/docs/ja/skills',
 ];
 
 const llmsTxtComparisonSourcePages = [
@@ -279,8 +280,29 @@ export default defineConfig({
           items: [
             {
               label: 'MTP Skill (beta)',
-              slug: 'skills/mtp',
               translations: { ja: 'MTP Skill (beta)' },
+              items: [
+                {
+                  label: 'MTP Skill',
+                  slug: 'skills/mtp',
+                  translations: { ja: 'MTP Skill' },
+                },
+                {
+                  label: 'Installation',
+                  slug: 'skills/mtp/install',
+                  translations: { ja: 'インストール' },
+                },
+                {
+                  label: 'Command Reference',
+                  slug: 'skills/mtp/reference',
+                  translations: { ja: 'コマンド仕様' },
+                },
+                {
+                  label: 'Customization',
+                  slug: 'skills/mtp/customize',
+                  translations: { ja: 'カスタマイズ' },
+                },
+              ],
             },
           ],
         },
@@ -289,9 +311,9 @@ export default defineConfig({
           translations: { ja: '比較' },
           items: [
             {
-              label: 'Overview',
+              label: 'Comparisons',
               slug: 'comparisons',
-              translations: { ja: '概要' },
+              translations: { ja: '比較' },
             },
             {
               label: 'Text Generation',
@@ -299,19 +321,14 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
-                  label: 'Overview',
+                  label: 'Text Generation',
                   slug: 'comparisons/text-generation',
-                  translations: { ja: '概要' },
+                  translations: { ja: 'テキスト生成' },
                 },
                 {
-                  label: '1. Explanatory Task',
-                  slug: 'comparisons/text-generation/01_origins-of-language',
-                  translations: { ja: '1. 説明課題' },
-                },
-                {
-                  label: '2. Comparison Task',
-                  slug: 'comparisons/text-generation/02_model-self-compare',
-                  translations: { ja: '2. 比較課題' },
+                  label: '4. Literary Task',
+                  slug: 'comparisons/text-generation/04_alice-in-wonderland',
+                  translations: { ja: '4. 文学課題' },
                 },
                 {
                   label: '3. Design Task',
@@ -319,9 +336,14 @@ export default defineConfig({
                   translations: { ja: '3. 設計課題' },
                 },
                 {
-                  label: '4. Literary Task',
-                  slug: 'comparisons/text-generation/04_alice-in-wonderland',
-                  translations: { ja: '4. 文学課題' },
+                  label: '2. Comparison Task',
+                  slug: 'comparisons/text-generation/02_model-self-compare',
+                  translations: { ja: '2. 比較課題' },
+                },
+                {
+                  label: '1. Explanatory Task',
+                  slug: 'comparisons/text-generation/01_origins-of-language',
+                  translations: { ja: '1. 説明課題' },
                 },
               ],
             },
@@ -331,14 +353,14 @@ export default defineConfig({
               collapsed: false,
               items: [
                 {
-                  label: 'Overview',
+                  label: 'Image Generation',
                   slug: 'comparisons/image-generation',
-                  translations: { ja: '概要' },
+                  translations: { ja: '画像生成' },
                 },
                 {
-                  label: '1. Mona Lisa Portrait',
-                  slug: 'comparisons/image-generation/01_mona-lisa-portrait',
-                  translations: { ja: '1. モナ・リザのポートレート' },
+                  label: '3. Geometric Billiards Painting',
+                  slug: 'comparisons/image-generation/03_geometric-billiards-painting',
+                  translations: { ja: '3. 幾何学的なビリヤードの絵画' },
                 },
                 {
                   label: '2. Editorial Fashion Photography',
@@ -346,9 +368,9 @@ export default defineConfig({
                   translations: { ja: '2. ファッション雑誌の写真' },
                 },
                 {
-                  label: '3. Geometric Billiards Painting',
-                  slug: 'comparisons/image-generation/03_geometric-billiards-painting',
-                  translations: { ja: '3. 幾何学的なビリヤードの絵画' },
+                  label: '1. Mona Lisa Portrait',
+                  slug: 'comparisons/image-generation/01_mona-lisa-portrait',
+                  translations: { ja: '1. モナ・リザのポートレート' },
                 },
               ],
             },
