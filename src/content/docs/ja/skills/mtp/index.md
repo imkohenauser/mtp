@@ -93,7 +93,7 @@ npx skills add imkohenauser/mtp --skill mtp
 | 入力の種別     | パターン                                       | 例                                |
 | ----------- | ------------------------------------------ | -------------------------------- |
 | **スライダー**  | `node:intensity`（強度は 0 – 100）          | `power:100`、`void:80`、`grow:50`  |
-| **グリッド**    | `column:row` または `列-行`（19×19 グリッド、列 A–S × 行 1–19）          | `J:4`, `J:1`, `F:10`              |
+| **グリッド**    | `column:row`（19×19 グリッド、列 A–S × 行 1–19）          | `J:4`, `J:1`, `F:10`              |
 | **プリセット**  | あらかじめ定義された座標の組み合わせを、名前で呼び出す             | `strategist`、`synthesizer`、`maverick`、`concierge`（4 種類） |
 
 ノード名のほか、**軸の色名**で書くこともできます（例: `yellow:70` は `open:70` と同じ対応）。負の強度はその軸の Side B のノードに解決されます（例: `yellow:-70` は `still:70` と同じ扱い）。これらの例は `skills/mtp/USAGE.md` にあります。
@@ -110,7 +110,6 @@ npx skills add imkohenauser/mtp --skill mtp
 
 スライダー `power` を強度 `100` で指定しています。この例では、結論先行で断定的な構造の出力に寄ります。
 
-![/mtp node:intensity によるMTP Slider Argumentsを説明する図。左はSide AとSide Bのノードスライダーを示し、Powerが70に設定されている。右はOpen、Power、Focus、Flow、Close、Surge、Collapse、Fadeなどの方向を、3Dチェビシェフ距離として示している。](/images/pages/mtp-slider-arguments-mtp-node-intensity.png)
 
 **グリッド**
 
@@ -120,7 +119,6 @@ npx skills add imkohenauser/mtp --skill mtp
 
 19×19 グリッド上の 1 点を指定します。位置から軸が決まり、中心からの距離で強度と極性が決まります。（`J:4` は `power:100` とコンパイル結果が同じです。）
 
-![/mtp column:row によるMTP Grid Argumentsを説明する図。左は3×3の色グリッドを19×19座標上に単純化して示し、J:4、D:10、P:10、J:16などの例を表示している。右は19×19全体のRGBA値の分布を示している。](/images/pages/mtp-grid-arguments-mtp-column-row.png)
 
 **プリセット**
 
