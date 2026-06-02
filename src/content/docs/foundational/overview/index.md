@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/foundational_overview.png
+lastUpdated: true
 ---
 
 MTP (Mapping the Prompt) is a framework for steering LLM output through structured controls — sliders, grid coordinates, and presets — instead of long natural-language behavior instructions.
@@ -20,15 +21,11 @@ This page summarizes **core terms** and a lightweight description of the two lay
 
 The 3x3 color arrangement used by Space is:
 
-```text
-+-----------------+-----------------+-----------------+
-| Yellow          | Red             | Magenta         |
-+-----------------+-----------------+-----------------+
-| Green           | Transparent     | White           |
-+-----------------+-----------------+-----------------+
-| Cyan            | Blue            | Purple          |
-+-----------------+-----------------+-----------------+
-```
+| Position | Left        | Center        | Right     |
+| -------- | ----------- | ------------- | --------- |
+| Top      | Yellow      | Red           | Magenta   |
+| Middle   | Green       | Transparent   | White     |
+| Bottom   | Cyan        | Blue          | Purple    |
 
 ---
 
@@ -61,6 +58,18 @@ The following terms recur throughout MTP documentation. Together they describe t
 
 
 All input paths ultimately converge on the same internal representation: **(axis, polarity, intensity)**. Inputs such as `power:100`, `red:100`, and `J:4` resolve to the same three components and therefore extract the same constraints.
+
+| | Color / Axis | Side A Node | Side B Node   |
+| --- | ----------- | ------ | -------- |
+| <div class="dot-sm bg-open" aria-label="yellow"></div> | Yellow      | Open   | Still    |
+| <div class="dot-sm bg-power" aria-label="red"></div> | Red         | Power  | Void     |
+| <div class="dot-sm bg-return" aria-label="magenta"></div> | Magenta     | Return | Surge    |
+| <div class="dot-sm bg-grow" aria-label="green"></div> | Green       | Grow   | Wither   |
+| <div class="dot-sm bg-helix" aria-label="transparent"></div> | Transparent | Helix  | Collapse |
+| <div class="dot-sm bg-focus" aria-label="white"></div> | White       | Focus  | Haze     |
+| <div class="dot-sm bg-enter" aria-label="cyan"></div> | Cyan        | Enter  | Drift    |
+| <div class="dot-sm bg-flow" aria-label="blue"></div> | Blue        | Flow   | Abyss    |
+| <div class="dot-sm bg-close" aria-label="purple"></div> | Purple      | Close  | Fade     |
 
 ---
 
