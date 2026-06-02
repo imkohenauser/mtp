@@ -62,8 +62,8 @@ npx skills add imkohenauser/mtp --skill mtp
 After adding MTP Skill, try this prompt:
 
 ```text
-/mtp power:70
-Summarize this text in a shorter form.
+/mtp power:100
+Compared with other major AI models from competing companies, please explain your strengths.
 ```
 
 If the host exposes skill execution logs, confirm that the MTP compiler ran and that the response does not mention the internal constraint application process.

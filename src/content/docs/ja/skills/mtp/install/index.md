@@ -37,10 +37,6 @@ Claude.ai は、アップロード形式のカスタム Skill に対応してい
 
 ZIP の追加操作は、通常デスクトップアプリまたは Web 版で行います。Skill をアカウントへ追加して有効化した後にモバイルアプリで利用できるかは、各ホストの同期仕様と対応クライアントに依存します。
 
-詳しい手順と iOS アプリでの利用例は、紹介記事でも説明しています。
-
-[AIの出力を調整する「Mapping the Prompt」の紹介と、ZIP追加したMTP SkillをClaude iOSアプリで使う](https://zenn.dev/imkohenauser/articles/llm-output-tuning-mtp-and-skills-zip-guide) ↗
-
 ## CLI
 
 ### GitHub CLI (`gh`)
@@ -66,8 +62,8 @@ npx skills add imkohenauser/mtp --skill mtp
 MTP Skill を追加した後、次のプロンプトを試してください。
 
 ```text
-/mtp power:70
-この文章を短く要約してください。
+/mtp power:100
+他社の主要なAIモデルと比較して、あなたの強みを教えてください。
 ```
 
 ホストが Skill 実行ログを表示する場合は、MTP コンパイラが実行されていることと、応答内で内部の制約適用処理に言及していないことを確認してください。
