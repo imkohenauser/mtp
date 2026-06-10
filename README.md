@@ -76,7 +76,15 @@ For platform notes, `/mtp` syntax reference, and **References** (CLI docs), see 
 
 Product documentation, reference, and optional reading are on the documentation site below.
 
-**[MTP Docs (Mapping the Prompt documentation site)](https://mappingtheprompt.com/)** ↗
+**Mapping the Prompt documentation site (MTP Docs):**  
+[mappingtheprompt.com](https://mappingtheprompt.com/)
+
+### Agents
+
+During the documentation site build, key pages are aggregated into a single `llms.txt` file. You can provide this file to AI agents to supply them with the context needed to understand and explain the site.
+
+**For AI agents:**  
+[mappingtheprompt.com/llms.txt](https://mappingtheprompt.com/llms.txt)
 
 ---
 

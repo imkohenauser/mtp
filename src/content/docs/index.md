@@ -22,11 +22,9 @@ lastUpdated: true
 
 MTP (Mapping the Prompt) is a framework for steering LLM output with grids and sliders instead of long natural-language behavior instructions. It is designed to make the ideas and concepts in a prompt easier to express intuitively, helping the user and the LLM align with fewer instructions.
 
+![MTP key visual. The left panel shows node sliders for Side A and Side B, such as Open–Still and Power–Void, with Power set to 70. The right panel shows the 19x19 column:row color grid labeled A–S and 1–19.](/ogp.png)
+
 Its core is a 3x3 color arrangement made of nine nodes. The relationships between color, position, polarity, and intensity are defined from this arrangement. Each color in the 3x3 arrangement defines nodes for the Side A and Side B polarities. For example, Yellow in the upper-left corresponds to Open on Side A and Still on Side B.
-
-![Diagram showing the MTP coordinate system and node layout. The left side shows the relationship between Side A / Side B colors and nodes, and the right side shows examples of coordinate pairs such as D:4 and A:19.](/images/pages/mtp-coordinate-system-and-node-layout.png)
-
-The `column:row` color grid on the right shows an image for unifying Side A and Side B nodes and treating them as coordinates in a UI. It shows an example using the `D:4` and `A:19` coordinates.
 
 MTP Skill is an Agent Skill for using the MTP framework through the `/mtp` command.
 
@@ -81,4 +79,9 @@ In the grid UI, position is intended to be selected as if placing a point on the
 
 ---
 
-[Go to the MTP Skill documentation](/skills/mtp/) →
+## For AI Agents
+
+During the documentation site build, key pages are aggregated into a single `llms.txt` file. You can provide this file to AI agents to supply them with the context needed to understand and explain this site.
+
+**For AI agents:**  
+[mappingtheprompt.com/llms.txt](https://mappingtheprompt.com/llms.txt)
