@@ -79,11 +79,17 @@ Product documentation, reference, and optional reading are on the documentation 
 **Mapping the Prompt documentation site (MTP Docs):**  
 [mappingtheprompt.com](https://mappingtheprompt.com/)
 
-### Agents
+### Articles
+
+Medium articles by the author, covering the framework and the engineering behind this repository.
+
+- [Mapping the Prompt: Steering LLM Output with a 3x3 Color Grid](https://medium.com/@imkohenauser/mapping-the-prompt-steering-llm-output-with-a-3x3-color-grid-a565452b7022) — an introduction to the MTP framework
+- [Packaging an Open Source Agent Skill: CLI Install, ZIP Releases, and Astro/Starlight Docs](https://medium.com/@imkohenauser/packaging-an-open-source-agent-skill-cli-install-zip-releases-and-astro-starlight-docs-8a57e75d8a0c) — how this repository is structured, released, and documented
+
+### For AI agents
 
 During the documentation site build, key pages are aggregated into a single `llms.txt` file. You can provide this file to AI agents to supply them with the context needed to understand and explain the site.
 
-**For AI agents:**  
 [mappingtheprompt.com/llms.txt](https://mappingtheprompt.com/llms.txt)
 
 ---
