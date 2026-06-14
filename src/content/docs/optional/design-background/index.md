@@ -118,7 +118,10 @@ On HSV/HSL, Yellow sits between Green and Red (roughly 60°), and Cyan between G
 
 ## Structural properties of the grid
 
-The preceding rationale can also be restated in structural terms.
+The same design rationale can also be read structurally: the nine-node color layout forms both a conceptual map and a directional control surface.
+
+![MTP user interface concept diagram showing a prism-centered color map and an interactive control map for adjusting color instructions by direction and intensity.](/images/pages/mtp-ui-concepts.png)
+*The 3x3 MTP color layout can be read both as a prism-centered conceptual map and as a control surface where direction selects a node and distance sets intensity.*
 
 ### Lattice embedding of the hue cycle
 
