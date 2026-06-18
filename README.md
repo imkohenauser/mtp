@@ -32,6 +32,18 @@ The slider form, `/mtp <node:intensity>`, sets the intensity of a named node suc
 
 Both forms describe the same underlying node system: sliders express movement by named direction and intensity, while grid coordinates express position.
 
+#### Color-node files and directional control
+
+![Diagram showing eight Markdown color-node files arranged around a central origin, with Red, Green, White, and Blue defining the cardinal directions.](public/images/pages/mtp-interface-background-from-color-nodes-to-directional-control.png)
+
+*Each direction is defined by a Markdown node file. The center uses `TRANSPARENT.md` as the origin and mediating node.*
+
+| Position | Left        | Center           | Right        |
+| -------- | ----------- | ---------------- | ------------ |
+| Top      | `YELLOW.md` | `RED.md`         | `MAGENTA.md` |
+| Middle   | `GREEN.md`  | `TRANSPARENT.md` | `WHITE.md`   |
+| Bottom   | `CYAN.md`   | `BLUE.md`        | `PURPLE.md`  |
+
 #### Node layout and coordinate-plane UI
 
 ![MTP coordinate system and node layout diagram](public/images/pages/mtp-coordinate-system-and-node-layout.png)
