@@ -11,18 +11,18 @@ head:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp.png
 hero:
-  title: MTP Is a Framework for Tuning LLM Output
+  title: Mapping the Prompt Is a Color-Grid Framework for Steering LLM Output
   tagline: It uses sliders, grid coordinates, and presets to shape responses without rewriting the task itself.
-  actions:
-    - text: Start with MTP Skill
-      link: /skills/mtp/
-      icon: right-arrow
+  # actions:
+  #   - text: Start with MTP Skill
+  #     link: /skills/mtp/
+  #     icon: right-arrow
 lastUpdated: true
 ---
 
-MTP (Mapping the Prompt) is a framework for steering LLM output with grids and sliders instead of long natural-language behavior instructions. It is designed to make the ideas and concepts in a prompt easier to express intuitively, helping the user and the LLM align with fewer instructions.
-
 ![MTP key visual. The left panel shows node sliders for Side A and Side B, such as Open–Still and Power–Void, with Power set to 70. The right panel shows the 19x19 column:row color grid labeled A–S and 1–19.](/ogp.png)
+
+MTP (Mapping the Prompt) is a framework for steering LLM output with grids and sliders instead of long natural-language behavior instructions. It is designed to make the ideas and concepts in a prompt easier to express intuitively, helping the user and the LLM align with fewer instructions.
 
 Its core is a 3x3 color arrangement made of nine nodes. The relationships between color, position, polarity, and intensity are defined from this arrangement. Each color in the 3x3 arrangement defines nodes for the Side A and Side B polarities. For example, Yellow in the upper-left corresponds to Open on Side A and Still on Side B.
 

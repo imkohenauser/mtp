@@ -48,8 +48,8 @@
   }
 
   .hero {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 
   .hero .copy {
@@ -57,7 +57,19 @@
   }
 
   .hero .copy h1 {
-    font-size: var(--sl-text-5xl);
+    font-size: var(--sl-text-4xl);
+  }
+
+  @media (min-width: 50rem) {
+    .hero {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      grid-template-columns: 1fr 10rem;
+    }
+
+    .hero .copy h1 {
+      font-size: var(--sl-text-5xl);
+    }
   }
 
   .sl-markdown-content :is(th:first-child):not(:where(.not-content *)) {
@@ -126,7 +138,6 @@
     font-size: var(--sl-text-xs) !important;
   }
 
-  /* Utilities */
   .opacity-50 {
     opacity: 0.5;
   }
