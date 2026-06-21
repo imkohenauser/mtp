@@ -14,9 +14,6 @@ head:
 
 This page introduces output comparisons to show what changes when MTP Skill is applied.
 
-> [!NOTE]
-> In Google Antigravity, use Agent Skills by typing `/` and selecting `/mtp` from the suggestion list. When selected from the list, the input field shows `@[/mtp]`, and Antigravity interprets it internally as a Skill reference. Depending on the environment or model, copying and pasting `/mtp` alone may not apply MTP Skill.
-
 ---
 
 ## Text Generation
@@ -34,3 +31,8 @@ Results are compared across major models including ChatGPT, Claude, and Gemini.
 Similar to the text generation section, this section lines up image outputs generated from the same prompt using the `/mtp <args>` command (MTP Skill). You can visually inspect the differences. The comparisons here mainly focus on ChatGPT and Gemini image generation outputs.
 
 [Image Generation](/comparisons/image-generation/) →
+
+---
+
+> [!NOTE]
+> In Google Antigravity, use Agent Skills by typing `/` and selecting `/mtp` from the suggestion list. When selected from the list, the input field shows `@[/mtp]`, and Antigravity interprets it internally as a Skill reference. Depending on the environment or model, copying and pasting `/mtp` alone may not apply MTP Skill.
