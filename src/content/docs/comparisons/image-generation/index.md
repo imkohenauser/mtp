@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/comparisons_image-generation.png
+lastUpdated: true
 ---
 
 Each block below compares image generation outputs produced with the same prompt and `/mtp <args>` commands, similar to the text-generation comparisons. You can inspect each command’s behavior and differences across MTP nodes (such as `power` and `flow`). Tests use several distinct prompts across different models.

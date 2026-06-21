@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/ja_comparisons_image-generation.png
+lastUpdated: true
 ---
 
 以下の各ブロックは、「テキスト生成」と同様に、同一のプロンプトと `/mtp <args>` コマンドを使った画像生成の出力結果を比較します。各コマンドの挙動と、MTP のノード（`power` や `flow` など）ごとの違いを確認できます。いくつかの異なるプロンプトで、モデルごとにテストを行っています。
