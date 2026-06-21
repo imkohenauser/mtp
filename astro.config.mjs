@@ -28,6 +28,12 @@ const llmsTxtSourceDirectories = [
   'src/content/docs/ja/skills',
 ];
 
+const llmsTxtOptionalSourcePages = [
+  'src/content/docs/optional/design-background/index.md',
+  'src/content/docs/optional/mapping-and-sequence/index.md',
+  'src/content/docs/optional/color-grid-visualization/index.md',
+];
+
 const llmsTxtComparisonSourcePages = [
   'src/content/docs/comparisons/index.md',
   'src/content/docs/comparisons/text-generation/index.md',
@@ -73,7 +79,9 @@ function unique(values) {
 function getLlmsTxtSourcePages() {
   return unique([
     'src/content/docs/index.md',
-    ...llmsTxtSourceDirectories.flatMap((dir) => collectSourceMarkdownFiles(dir)),
+    ...llmsTxtSourceDirectories.flatMap((dir) =>
+      dir === 'src/content/docs/optional' ? llmsTxtOptionalSourcePages : collectSourceMarkdownFiles(dir),
+    ),
     ...llmsTxtComparisonSourcePages,
   ]);
 }
@@ -263,14 +271,14 @@ export default defineConfig({
               translations: { ja: '設計上の背景' },
             },
             {
-              label: 'Color Grid Visualization',
-              slug: 'optional/color-grid-visualization',
-              translations: { ja: '色グリッド可視化' },
-            },
-            {
               label: 'Mapping and Sequence',
               slug: 'optional/mapping-and-sequence',
               translations: { ja: '分類と順序' },
+            },
+            {
+              label: 'Color Grid Visualization',
+              slug: 'optional/color-grid-visualization',
+              translations: { ja: '色グリッド可視化' },
             },
           ],
         },
