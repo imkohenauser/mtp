@@ -53,7 +53,7 @@ Wu Xing directions and hue-cycle corners are combined in one layout. This is **n
 
 ---
 
-## Why the center is Transparent
+## Why MTP's center is Transparent
 
 The key to the center is the role of **Earth (土)** within Wu Xing — in the Five-Elements palette often associated with yellow or brown. Wood, Fire, Metal, and Water occupy directional positions; Earth occupies the **center**. Here, Earth is not read as another outward-moving element, but as a **medium** or **field** that makes transition and balance possible.
 
