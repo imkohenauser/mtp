@@ -15,11 +15,12 @@ lastUpdated: true
 
 MTP Skill は、ZIP ファイルまたは CLI から追加できます。利用するホストが対応している方法を選択してください。
 
-## ZIP
+## ZIP ファイル
 
 [`mtp-skill.zip` をダウンロード](/downloads/mtp-skill.zip)
 
-ZIP 形式のカスタム Agent Skill に対応したホストで利用できます。この ZIP には、リポジトリ内の `skills/mtp` から生成された `mtp` Skill パッケージが含まれています。
+ZIP 形式のカスタム Agent Skill に対応したホストで利用できます。  
+この ZIP には、リポジトリ内の `skills/mtp` から生成された `mtp` Skill パッケージが含まれています。
 
 ### Claude.ai
 
@@ -35,13 +36,15 @@ Claude.ai は、アップロード形式のカスタム Skill に対応してい
 
 [Claudeでスキルを使用する](https://support.claude.com/ja/articles/12512180-claude%E3%81%A7%E3%82%B9%E3%82%AD%E3%83%AB%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B) ↗
 
-ZIP の追加操作は、通常デスクトップアプリまたは Web 版で行います。Skill をアカウントへ追加して有効化した後にモバイルアプリで利用できるかは、各ホストの同期仕様と対応クライアントに依存します。
+ZIP の追加操作は、通常デスクトップアプリまたは Web 版で行います。
 
-## CLI
+Skill をアカウントへ追加して有効化した後にモバイルアプリで利用できるかは、各ホストの同期仕様と対応クライアントに依存します。
+
+## コマンドライン
 
 ### GitHub CLI (`gh`)
 
-GitHub CLI の `gh skill` は preview 扱いの機能であり、変更される可能性があります。
+GitHub CLI の `gh skill` はプレビュー扱いの機能であり、変更される可能性があります。
 
 ```bash
 gh skill install imkohenauser/mtp skills/mtp
@@ -63,7 +66,7 @@ MTP Skill を追加した後、次のプロンプトを試してください。
 
 ```text
 /mtp power:100
-他社の主要なAIモデルと比較して、あなたの強みを教えてください。
+他社の主要な AI モデルと比較して、このモデルの強みを教えてください。
 ```
 
 ホストが Skill 実行ログを表示する場合は、MTP コンパイラが実行されていることと、応答内で内部の制約適用処理に言及していないことを確認してください。
