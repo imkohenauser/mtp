@@ -1,69 +1,69 @@
 ---
 name: mtp
-description: "MTP controls LLM output tone, structure, and exploration depth via /mtp (e.g. /mtp power:100, /mtp yellow:70, /mtp G:10, /mtp synthesizer, /mtp D:16 A:1). Invoked only when the user runs /mtp — do not infer MTP parameters; run the compiler."
-argument-hint: "<node:intensity | axis-color:intensity | grid-coord | preset-name> ... (may appear anywhere in the message; multiple /mtp tokens are merged)"
-allowed-tools: Bash(python3 *)
+description: "Runs when the user invokes /mtp. Compiles slider, grid, or preset args into output constraints; guides usage from official MTP references when steering args or the task is missing."
+argument-hint: "power:100 Summarize this article - or leave empty for guided help"
+allowed-tools: Bash(python3 *), Read
 disable-model-invocation: true
-version: "1.0.0"
+version: "1.1.0"
 ---
 
 # MTP
 
-For installation and supported clients, see **README.md** in this directory.
+For installation, see **README.md**. This skill loads only on `/mtp`; otherwise suggest `/mtp` or `/mtp help`.
 
-When `/mtp` is invoked, **do not infer** MTP parameters from conversational wording; run the compiler and apply its **stdout** output per Step 2.
+Do not infer steering from chat wording, and never surface this skill's internal mechanics (step or mode names, routing, the compiler) to the user. When both steering args and a task prompt are present, compile and apply constraints (Steps 3–4). In guidance (Step 2), wait until both are explicit.
 
 ## Execution Steps
 
-### Step 1: Extract `/mtp` tokens and run the compiler
+### Step 1: Extract `/mtp` tokens
 
-Scan the entire user message for every occurrence of `/mtp <args>`. Each `/mtp` token extends to the next `/mtp` token or the end of the message, whichever comes first; the args are the MTP-recognizable tokens (sliders, grid coordinates, preset names, `help`, `list`) that immediately follow it. Collect all args, merge them in order into a single space-separated string, and pass the result to the compiler. The prompt is the remaining text after all `/mtp <args>` tokens are removed (preserving line breaks).
+Scan the message for `/mtp <args>` (each segment runs until the next `/mtp` or end). Collect two kinds of args:
 
-**The current directory must not be changed.** The script resolves its own paths. The compiler is run from the skill root (the directory containing this SKILL.md). The path to `scripts/mtp_compiler.py` is used relative to the skill root.
+- **Steering tokens:** sliders, grid coordinates, preset names.
+- **Compiler help/list commands:** `help`, `list`, and their subtopics (`help sliders`, `help grid`, `help presets`, `list presets`, `-h`) — take the full command phrase after `/mtp` as one args string; do not split `grid` / `sliders` / `presets` off as steering.
+
+Merge args from multiple `/mtp` segments in order; the prompt is the remaining text (line breaks preserved).
+
+Route: merged args start with `help`, `list`, or `-h` → Step 3; guidance conditions (Step 2) → Step 2; else → Step 3.
+
+### Step 2: Guidance mode
+
+When steering args or the task is missing:
+
+- No args, no prompt (`/mtp` alone)
+- No args, task prompt present (e.g. `/mtp Summarize this`)
+- No args, usage/how-to question about MTP in the prompt
+- Args present, no task (e.g. `/mtp power:100`)
+
+Ask for the missing piece: explicit steering args, a task prompt, or both. Use bundled refs and compiler help (`references/help_*.txt`, `USAGE.md`, `references/presets.yaml`, `python3 scripts/mtp_compiler.py --args "help"`; see Background). Suggest explicit args with examples when args are absent. Do not run Steps 3–4 until both args and task are present.
+
+### Step 3: Run the compiler
+
+Pass the merged args string to the compiler from the skill root (do not change cwd):
 
 ```bash
 python3 scripts/mtp_compiler.py --args "[merged args string]"
 ```
 
-*(If installed globally or in a different path, `mtp_compiler.py` is located within the skill directory and run via its path.)*
+**Platform note:** Cursor: `Bash(python3 *)`, `Read`. Claude Code: `${CLAUDE_SKILL_DIR}`, `$ARGUMENTS`. Other agents may differ.
 
-**Platform note:** The `allowed-tools` frontmatter uses Cursor's `Bash(python3 *)` syntax. **Claude Code:** use `${CLAUDE_SKILL_DIR}` and `$ARGUMENTS` instead of manual path resolution. Other agents (Codex, etc.) may use different tool names or permission models.
+**Examples:**
 
-**Extraction examples:**
+- `Summarize this /mtp power:100` → args `"power:100"`, prompt `"Summarize this"`
+- `/mtp power:70 /mtp haze:30` + prompt → args merged in order
+- `/mtp`, `/mtp Summarize this` (no args), `/mtp power:100` (no task), or MTP usage question without args → Step 2
+- `/mtp help`, `/mtp help grid`, `/mtp list presets` → Step 3; plain text output, no `<mtp_node_shot>`
+- `/mtp -h` → `--args="-h"` (use `=` for dash-prefixed args)
 
-- `/mtp open:50 flow:30 Summarize this` → args: `"open:50 flow:30"`, prompt: `"Summarize this"`
-- `Summarize this /mtp power:100` → args: `"power:100"`, prompt: `"Summarize this"`
-- `Summarize this /mtp power:70 /mtp haze:30` → args: `"power:70 haze:30"`, prompt: `"Summarize this"`
-- `/mtp D:16 Summarize this /mtp A:1` → args: `"D:16 A:1"`, prompt: `"Summarize this"`
+**Stream contract:** `<mtp_node_shot>` on **stdout** only; **stderr** is human summary/warnings — do not parse.
 
-Multi-line (args merged, `/mtp` lines removed from prompt):
+### Step 4: Apply constraints
 
-```
-Summarize this article.
-/mtp power:70
-Focus on the conclusion.
-/mtp haze:30
-```
-→ args: `"power:70 haze:30"`, prompt: `"Summarize this article.\nFocus on the conclusion."`
-
-**Special cases:**
-
-- `/mtp help` → `--args "help"`; `/mtp help grid` → `--args "help grid"`; `/mtp list` → `--args "list"` — plain text to the user; no `<mtp_node_shot>` tags.
-- `/mtp -h` → `--args="-h"` (dash-prefixed args must use `=` syntax to avoid shell flag parsing).
-
-**Stream contract:** Constraints (`<mtp_node_shot>` XML) are written to **stdout** only. **stderr** carries a one-line human summary when active constraints remain after resolution, plus any warnings. It is not part of the constraint output and should not be parsed by the agent.
-
-### Step 2: Apply the output constraints silently
-
-Follow the `<mtp_node_shot>` XML from Step 1’s **stdout** strictly:
-
-1. **Apply:** Interpret the rules as structural parameters for the current task (code, writing, Q&A, image prompts, etc.).
-2. **Silent:** Do not describe the MTP step or meta-comment on tone.
-3. **Output only:** Return only the task result; do not echo the constraint XML.
+Skip in guidance mode. Apply Step 3 **stdout** silently — no echo of the constraint XML.
 
 ## Input formats
 
-Token shapes the compiler accepts as args (merged as in Step 1):
+Token shapes (see Step 2 when args or task is missing):
 
 | Format | Example | Description |
 |--------|---------|-------------|
@@ -90,9 +90,9 @@ Slider names, axis colors, presets, and grid columns are **case-insensitive** (e
 
 ## Background
 
-Constraints come from **scripted** extraction over `nodes/` and intensity tiers—not from guessing what “Power” or “Flow” should mean in chat. Run the compiler; do not override its output with improvised tone rules.
+Constraints come from scripted extraction over `nodes/` — not from guessing tone in chat. Do not override compiler output.
 
-For usage examples and expected behavior, see `USAGE.md`. Help text: `references/help_main.txt`, `help_sliders.txt`, `help_grid.txt`. Presets: `references/presets.yaml`.
+References: `USAGE.md`; `references/help_main.txt`, `help_sliders.txt`, `help_grid.txt`, `presets.yaml`; compiler `--args "help"` / `help sliders` / `help grid` / `help presets` / `list presets`. Site link: **README.md**.
 
 ## Node authoring rules
 
