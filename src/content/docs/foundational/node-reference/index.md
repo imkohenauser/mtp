@@ -54,11 +54,13 @@ The same polarity rule applies to node names: `power:-70` also activates the Red
 | <div class="dot-sm bg-void" aria-label="red"></div> | Dark Red | `void` | `void:100` / `red:-100` / `J:1` | Reduction, silence, minimum | Shortening, removing noise, dry answers, minimal responses |
 | <div class="dot-sm bg-surge" aria-label="magenta"></div> | Dark Magenta | `surge` | `surge:100` / `magenta:-100` / `S:1` | Momentum, density, force | High-energy writing, forceful drafts, intense expression, dense output |
 | <div class="dot-sm bg-wither" aria-label="green"></div> | Dark Green | `wither` | `wither:100` / `green:-100` / `A:10` | Pruning, core, reserve | Key-point summaries, concise explanations, short conclusions, minimal prose |
-| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Transparent | `collapse` | `collapse:100` / `transparent:-100` | Compression, simplification, endpoint | Compressing long text, direct answers, simplified summaries |
+| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Translucent (Transparent) | `collapse` | `collapse:100` / `transparent:-100` | Compression, simplification, endpoint | Compressing long text, direct answers, simplified summaries |
 | <div class="dot-sm bg-haze" aria-label="white"></div> | Dark Grey (White) | `haze` | `haze:100` / `white:-100` / `S:10` | Ambiguity, softness, atmosphere | Poetic language, atmosphere, abstract writing, impression-driven expression |
 | <div class="dot-sm bg-drift" aria-label="cyan"></div> | Dark Cyan | `drift` | `drift:100` / `cyan:-100` / `A:19` | Deviation, association, tangent | Essays, creative writing, free association, lateral idea development |
 | <div class="dot-sm bg-abyss" aria-label="blue"></div> | Dark Blue | `abyss` | `abyss:100` / `blue:-100` / `J:19` | Depth, weight, reflection | Deep analysis, criticism, theoretical writing, non-surface-level reflection |
 | <div class="dot-sm bg-fade" aria-label="purple"></div> | Dark Purple | `fade` | `fade:100` / `purple:-100` / `S:19` | Resonance, taper, afterimage | Literary endings, open-ended prose, afterimage, mood-focused writing |
+
+*Side B color names are not the opposite color (White does not flip to Black); they restate the axis color to match each node's meaning. Haze is White growing hazy toward grey, shown as "Dark Grey (White)," and Collapse is Transparent breaking down, shown as "Translucent (Transparent)."*
 
 ---
 

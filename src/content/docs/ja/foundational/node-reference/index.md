@@ -57,11 +57,14 @@ Side B は逆方向のノードで、`void:70` のようにノード名で指定
 | <div class="dot-sm bg-void" aria-label="red"></div> | Dark Red | `void` | `void:100` / `red:-100` / `J:1` | 削減、沈黙、最小化 | 短縮、無駄の削除、淡々とした回答、最小応答 |
 | <div class="dot-sm bg-surge" aria-label="magenta"></div> | Dark Magenta | `surge` | `surge:100` / `magenta:-100` / `S:1` | 勢い、密度、圧力 | 熱量のある文章、勢いのある草稿、強い表現、詰め込み型の出力 |
 | <div class="dot-sm bg-wither" aria-label="green"></div> | Dark Green | `wither` | `wither:100` / `green:-100` / `A:10` | 刈り込み、核心、抑制 | 要点整理、簡潔な説明、短い結論、ミニマルな文章 |
-| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Transparent | `collapse` | `collapse:100` / `transparent:-100` | 圧縮、簡略化、終点 | 長文の圧縮、結論だけ欲しい回答、構造を簡略化した要約 |
+| <div class="dot-sm bg-collapse" aria-label="transparent"></div> | Translucent (Transparent) | `collapse` | `collapse:100` / `transparent:-100` | 圧縮、簡略化、終点 | 長文の圧縮、結論だけ欲しい回答、構造を簡略化した要約 |
 | <div class="dot-sm bg-haze" aria-label="white"></div> | Dark Grey (White) | `haze` | `haze:100` / `white:-100` / `S:10` | 曖昧さ、柔らかさ、雰囲気 | 詩的表現、雰囲気づくり、抽象的な文章、印象重視の表現 |
 | <div class="dot-sm bg-drift" aria-label="cyan"></div> | Dark Cyan | `drift` | `drift:100` / `cyan:-100` / `A:19` | 逸脱、連想、寄り道 | 随筆、創作、自由連想、発想の横展開 |
 | <div class="dot-sm bg-abyss" aria-label="blue"></div> | Dark Blue | `abyss` | `abyss:100` / `blue:-100` / `J:19` | 深さ、重み、内省 | 深い考察、批評、思想的文章、表層ではない分析 |
 | <div class="dot-sm bg-fade" aria-label="purple"></div> | Dark Purple | `fade` | `fade:100` / `purple:-100` / `S:19` | 余韻、減衰、残像 | 文芸的な終わり方、余白のある文章、読後感を重視する出力 |
+
+Side B の色名は、軸の色を正反対の色へ反転させたものではなく、ノードの意味に沿って言い換えた呼び名です。  
+haze は White が霞んでいく様として「Dark Grey (White)」、collapse は Transparent が崩れた様として「Translucent (Transparent)」と表します。
 
 ---
 
