@@ -24,14 +24,6 @@ MTP color nodes are not labels for assigning a fixed role or persona to an AI. T
 
 ---
 
-## Reading world models as a design metaphor
-
-Some ancient world models organize hard-to-observe relationships into correspondences among direction, action, and center, making those relationships easier for people to work with. MTP draws on this idea of turning an invisible structure into an operable arrangement as a design metaphor for working with LLM output tendencies.
-
-These ancient world models are not the same concept as **World Models** in modern AI research. Nor does MTP reproduce Yin–Yang and Five-Elements thought or derive its grid from color science. It uses their directional and functional correspondences as cues for understanding which semantic direction each node faces.
-
----
-
 ## 3×3 grid
 
 The core of MTP is a 3×3 grid of nine cells (nodes). Each cell carries both a color identity and a semantic role.
