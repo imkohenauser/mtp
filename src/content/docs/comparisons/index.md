@@ -10,6 +10,7 @@ head:
     attrs:
       name: twitter:image
       content: https://mappingtheprompt.com/ogp/comparisons.png
+lastUpdated: true
 ---
 
 This page introduces output comparisons to show what changes when MTP Skill is applied.
