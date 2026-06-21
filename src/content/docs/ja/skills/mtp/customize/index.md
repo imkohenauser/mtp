@@ -13,7 +13,8 @@ head:
 lastUpdated: true
 ---
 
-このページは、MTP Skill の挙動をカスタマイズしたい開発者向けの資料です。通常の利用では、これらのファイルを編集しなくても `/mtp` を利用できます。
+このページは、MTP Skill の挙動をカスタマイズしたい開発者向けの資料です。  
+通常の利用では、これらのファイルを編集しなくても `/mtp` を利用できます。
 
 ## 対象ファイル
 
@@ -23,11 +24,13 @@ skills/mtp/references/presets.yaml
 skills/mtp/scripts/mtp_compiler.py
 ```
 
-ノード定義とプリセットは、コンパイラが読むソースです。これらを編集すると、MTP Skill が出力する制約が変わります。
+ノード定義とプリセットは、コンパイラが読むソースです。  
+これらを編集すると、MTP Skill が出力する制約が変わります。
 
 ## ノード定義
 
-各軸は `skills/mtp/nodes/` 配下の Markdown ファイルで定義されています。これらのファイルは説明資料であるだけでなく、コンパイラが読み取る制約ソースです。
+各軸は `skills/mtp/nodes/` 配下の Markdown ファイルで定義されています。  
+これらのファイルは説明資料であるだけでなく、コンパイラが読み取る制約ソースです。
 
 ファイル先頭には、単純な frontmatter を置きます。
 
@@ -50,7 +53,9 @@ description: "Axis of force and void. Controls whether to push output and assert
 
 - `description`
 
-frontmatter は単純な形式にしてください。1 行につき `key: value` を 1 つだけ書きます。リスト、ネストした YAML、複数行の値は使わないでください。
+frontmatter は単純な形式にしてください。  
+1 行につき `key: value` を 1 つだけ書きます。  
+リスト、ネストした YAML、複数行の値は使わないでください。
 
 ## 本文構造
 
@@ -86,7 +91,7 @@ frontmatter は単純な形式にしてください。1 行につき `key: value
 - ...
 ```
 
-tier の抽出は累積されます。
+tier の抽出は累積的に行われます。
 
 | 強度 | 抽出される tier |
 | --- | --- |
@@ -94,11 +99,12 @@ tier の抽出は累積されます。
 | `31-70` | Low + Mid |
 | `71-100` | Low + Mid + High |
 
-上位 tier は、下位 tier を強めるか補足する内容にしてください。下位 tier と矛盾する制約は避けてください。
+上位 tier は、下位 tier を強めるか補足する内容にしてください。  
+下位 tier と矛盾する制約は避けてください。
 
-## Preset
+## プリセット
 
-Preset は `skills/mtp/references/presets.yaml` で定義します。
+プリセットは `skills/mtp/references/presets.yaml` で定義します。
 
 ```yaml
 synthesizer: "D:16 A:1"
@@ -107,7 +113,9 @@ maverick: "D:4 A:19"
 concierge: "J:13 D:10"
 ```
 
-各値は、空白区切りの MTP トークン列です。Slider と Grid を組み合わせることもできます。Preset はパース前に展開されるため、同一軸の競合解決は展開後の最後のトークン順に従います。
+各値は、空白区切りの MTP トークン列です。  
+スライダーとグリッドを組み合わせることもできます。  
+プリセットはパース前に展開されるため、同一軸の競合解決は展開後の最後のトークン順に従います。
 
 ## 検証
 
@@ -119,6 +127,7 @@ python3 scripts/mtp_compiler.py --args "D:16 A:1"
 python3 scripts/mtp_compiler.py --args "synthesizer yellow:30"
 ```
 
-コンパイラは stdout に制約 XML を出力します。警告と短い要約は stderr に出力されます。
+コンパイラは stdout に制約 XML を出力します。  
+警告と短い要約は stderr に出力されます。
 
 詳しいテストケースは GitHub の [`skills/mtp/USAGE.md`](https://github.com/imkohenauser/mtp/blob/main/skills/mtp/USAGE.md) を参照してください。
