@@ -29,7 +29,7 @@ Use lowercase kebab-case for `{slug}` based on the theme, artist, album, era, or
 
 ## Tracklist fields
 
-- `Copy List`  : Plain-text list for copying into playlist tools. Format each row as `{number}. {Node}: {track} - {artist}`. For artist-themed playlists, use `{number}. {Node}: {track} ({source})`.
+- `Copy List`  : Plain-text list for copying into playlist tools. Start with `title: MTP: {short title}`, then format each row as `{number}. {track} - {artist}`. Node assignments belong in `Details`, not in `Copy List`. For artist-themed playlists, use `{number}. {track} ({source})`.
 - `Details`    : Rendered Markdown table. Do not wrap this table in a code fence in the generated artifact.
 - `#`          : MTP node number. Preserve original MTP node numbers for sparse source-limited mappings.
 - `Node`       : MTP node name.
@@ -73,7 +73,9 @@ The following block is fenced only because this file documents the template. In 
 ### Copy List
 
 ```text
-1. Start: {track} - {artist}
+title: MTP: {short title}
+
+1. {track} - {artist}
 ```
 
 ### Details
@@ -92,7 +94,9 @@ The following block is fenced only because this file documents the template. In 
 For artist-themed playlists, use `Source` instead of `Artist` in `Details`, and use source context in `Copy List`.
 
 ```text
-1. Start: {track} ({source})
+title: MTP: {short title}
+
+1. {track} ({source})
 ```
 
 ```markdown

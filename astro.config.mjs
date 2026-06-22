@@ -25,7 +25,6 @@ const llmsTxtSourceDirectories = [
   'src/content/docs/foundational',
   'src/content/docs/optional',
   'src/content/docs/skills',
-  'src/content/docs/ja/skills',
 ];
 
 const llmsTxtOptionalSourcePages = [
@@ -287,8 +286,13 @@ export default defineConfig({
           translations: { ja: 'スキル' },
           items: [
             {
-              label: 'MTP Skill (beta)',
-              translations: { ja: 'MTP Skill (beta)' },
+              label: 'Installation',
+              slug: 'skills',
+              translations: { ja: 'インストール' },
+            },
+            {
+              label: 'MTP Skill',
+              translations: { ja: 'MTP Skill' },
               items: [
                 {
                   label: 'MTP Skill',
@@ -296,19 +300,20 @@ export default defineConfig({
                   translations: { ja: 'MTP Skill' },
                 },
                 {
-                  label: 'Installation',
-                  slug: 'skills/mtp/install',
-                  translations: { ja: 'インストール' },
-                },
-                {
-                  label: 'Command Reference',
-                  slug: 'skills/mtp/reference',
-                  translations: { ja: 'コマンド仕様' },
-                },
-                {
                   label: 'Customization',
                   slug: 'skills/mtp/customize',
                   translations: { ja: 'カスタマイズ' },
+                },
+              ],
+            },
+            {
+              label: 'MTP Playlist Skill',
+              translations: { ja: 'MTP Playlist Skill' },
+              items: [
+                {
+                  label: 'MTP Playlist',
+                  slug: 'skills/mtp-playlist',
+                  translations: { ja: 'MTP Playlist' },
                 },
               ],
             },

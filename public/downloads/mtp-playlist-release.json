@@ -1,0 +1,13 @@
+{
+  "skill": "mtp-playlist",
+  "name": "MTP Playlist Skill",
+  "family": "v1",
+  "version": "1.0.0",
+  "tag": "mtp-playlist-v1.0.0",
+  "source": "skills/mtp-playlist",
+  "versionSource": "skills/mtp-playlist/SKILL.md",
+  "zip": "/downloads/mtp-playlist-skill.zip",
+  "release": "https://github.com/imkohenauser/mtp/releases/tag/mtp-playlist-v1.0.0",
+  "repository": "https://github.com/imkohenauser/mtp",
+  "updatedAt": "2026-06-22T16:23:51.729258+00:00"
+}

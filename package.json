@@ -15,7 +15,8 @@
     "build:grid-28x28": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-28x28 > public/images/grids/mtp-grid-28x28.svg",
     "build:grid-10x10": "mkdir -p public/images/grids && python3 scripts/mtp_grid_generator.py --grid-10x10 > public/images/grids/mtp-grid-10x10.svg",
     "build:grids": "npm run build:grid && npm run build:grid-37x37 && npm run build:grid-28x28 && npm run build:grid-10x10",
-    "build:skill:mtp": "python3 scripts/build_skill_release.py --skill mtp --family v1"
+    "build:skill:mtp": "python3 scripts/build_skill_release.py --skill mtp --family v1",
+    "build:skill:mtp-playlist": "python3 scripts/build_skill_release.py --skill mtp-playlist --family v1"
   },
   "keywords": [
     "mtp",
