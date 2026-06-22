@@ -24,6 +24,23 @@ It outputs a readable playlist deliverable in Markdown.
 
 ---
 
+## Read tracks as placement
+
+MTP Playlist treats a playlist like a card deck or a tarot spread.  
+The left side is Side A (Start and nine nodes); the right is Side B (nine nodes and End). Each track has a distinct role at its position.
+
+**Start** and **End** are not nodes on the grid; they are virtual frame nodes (conceptual slots) added for sequence reading.  
+In MTP Playlist, they are handled as semi-transparent glass nodes that float, shifting toward surrounding nodes according to the assigned track's character.  
+For example, if the track at Start is forceful, it drifts toward the Power direction on the Red axis.
+
+Placement itself builds the playlist's meaning.
+
+![Structure diagram for MTP Playlist. Side A on the left and Side B on the right. Each cell shows a record-like circle on a color-coded background; Start and End appear as semi-transparent glass nodes floating above the layout.](/images/pages/mtp-playlist-reading-songs-as-placement.png)
+
+*`1+9+9+1` Side A (left) and Side B (right).*
+
+---
+
 ## Basic usage
 
 Call the skill explicitly by writing a theme after `/mtp-playlist`.
