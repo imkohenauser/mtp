@@ -52,23 +52,32 @@ Both forms describe the same underlying node system: sliders express movement by
 
 ---
 
-## MTP Skill quick start
+## Agent Skills quick start
 
 ### Install
+
+Download the skill ZIP you want to add:
+
+- [`mtp-skill.zip`](public/downloads/mtp-skill.zip)
+- [`mtp-playlist-skill.zip`](public/downloads/mtp-playlist-skill.zip)
+
+Or install from the command line:
 
 ```bash
 # GitHub CLI
 gh skill install imkohenauser/mtp skills/mtp
+gh skill install imkohenauser/mtp skills/mtp-playlist
 
 # Vercel Skills CLI
 npx skills add imkohenauser/mtp --skill mtp
+npx skills add imkohenauser/mtp --skill mtp-playlist
 ```
 
-Any **Agent Skills**–compatible host can load the skill; **import steps** differ by vendor — follow your client’s current documentation.
+Any **Agent Skills**–compatible host can load the skills; import steps differ by vendor, so follow your client's current documentation.
 
-**Requirement:** Python 3 (standard library only — no extra packages).
+For shared installation steps, see [Skills Installation](https://mappingtheprompt.com/skills/).
 
-### Usage
+### MTP Skill
 
 Control the model with sliders, grid coordinates, or presets.
 
@@ -80,7 +89,21 @@ Control the model with sliders, grid coordinates, or presets.
 /mtp strategist                 → Preset blend
 ```
 
-For platform notes, `/mtp` syntax reference, and **References** (CLI docs), see [skills/mtp/README.md](./skills/mtp/README.md).
+**Requirement:** Python 3 (standard library only, no extra packages).
+
+For platform notes, `/mtp` syntax reference, and references, see [skills/mtp/README.md](./skills/mtp/README.md).
+
+### MTP Playlist Skill
+
+Build a deliberately sequenced music arc from a theme, genre, artist, album, era, scene, or sound world.
+
+```text
+/mtp-playlist Madonna from present to past
+/mtp-playlist Modern Jazz with Vibraphone
+/mtp-playlist Marvin Gaye "Inner City Blues" at Abyss, 70s Soul
+```
+
+For usage details and playlist format notes, see [MTP Playlist Skill](https://mappingtheprompt.com/skills/mtp-playlist/) and [skills/mtp-playlist/README.md](./skills/mtp-playlist/README.md).
 
 ---
 
@@ -111,7 +134,7 @@ During the documentation site build, key pages are aggregated into a single `llm
 - [x] MTP Framework concept [alpha] — 2025-09-01
 - [x] MTP Skill [beta] — 2026-03-15
 - [x] MTP Docs (Mapping the Prompt documentation site) — 2026-05-05
-- [ ] MTP Playlist Skill [in progress]
+- [x] MTP Playlist Skill — 2026-06-23
 - [ ] MTP Interactive UI [planned]
 
 ---
