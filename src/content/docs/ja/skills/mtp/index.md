@@ -236,6 +236,7 @@ MTP のグリッドは 19×19 です。
 
 - [インストール](/ja/skills/): ZIP または CLI から MTP Skill を追加します。
 - [カスタマイズ](/ja/skills/mtp/customize/): ノード定義とプリセットを編集し、独自の挙動へ調整します。
+- [MTP Playlist Skill](/ja/skills/mtp-playlist/): テーマから、ノードに対応づけた音楽シーケンスを作成します。
 - [MTP の概要](/ja/foundational/overview/): MTP の基本用語と考え方を説明します。
 - [比較](/ja/comparisons/): MTP Skill 適用時の出力比較を確認できます。
 

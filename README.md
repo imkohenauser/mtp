@@ -5,6 +5,10 @@
 MTP is a framework for steering LLM output with grids, sliders, and presets instead of long natural-language behavior instructions.
 It is designed to make the ideas and concepts in a prompt easier to express intuitively, helping the user and the LLM align with fewer instructions.
 
+This repository publishes two Agent Skills:
+
+- **MTP Skill**: steer LLM output with `/mtp` sliders, grid coordinates, and presets.
+- **MTP Playlist Skill**: build a node-mapped music sequence with `/mtp-playlist` from a theme, genre, artist, album, era, scene, or sound world.
 
 ## What is MTP?
 
@@ -99,11 +103,14 @@ Build a deliberately sequenced music arc from a theme, genre, artist, album, era
 
 ```text
 /mtp-playlist Madonna from present to past
-/mtp-playlist Modern Jazz with Vibraphone
-/mtp-playlist Marvin Gaye "Inner City Blues" at Abyss, 70s Soul
+/mtp-playlist Moonlit 80s Heavy Metal
+/mtp-playlist Mobb Deep "Shook Ones Pt. II" at Start, 90s New York Rap
 ```
 
 For usage details and playlist format notes, see [MTP Playlist Skill](https://mappingtheprompt.com/skills/mtp-playlist/) and [skills/mtp-playlist/README.md](./skills/mtp-playlist/README.md).
+
+![Diagram of the MTP Playlist structure, showing Start and Side A on the left, Side B and End on the right, and record-like track slots across color-coded MTP positions.](public/images/pages/mtp-playlist-reading-songs-as-placement.png)
+*MTP Playlist reads the `1+9+9+1` arc as Start + Side A (left), then Side B + End (right).*
 
 ---
 

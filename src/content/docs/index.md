@@ -1,6 +1,6 @@
 ---
 title: MTP Docs
-description: Documentation for MTP, a framework for steering LLM output through grids, sliders, and presets.
+description: Documentation for MTP, a framework for steering LLM output and building node-mapped playlist sequences through Agent Skills.
 head:
   - tag: meta
     attrs:
@@ -13,10 +13,6 @@ head:
 hero:
   title: Mapping the Prompt Is a Color-Grid Framework for Steering LLM Output
   tagline: It uses sliders, grid coordinates, and presets to shape responses without rewriting the task itself.
-  # actions:
-  #   - text: Start with MTP Skill
-  #     link: /skills/mtp/
-  #     icon: right-arrow
 lastUpdated: true
 ---
 
@@ -27,6 +23,13 @@ MTP (Mapping the Prompt) is a framework for steering LLM output with grids and s
 Its core is a 3x3 color arrangement made of nine nodes. The relationships between color, position, polarity, and intensity are defined from this arrangement. Each color in the 3x3 arrangement defines nodes for the Side A and Side B polarities. For example, Yellow in the upper-left corresponds to Open on Side A and Still on Side B.
 
 MTP Skill is an Agent Skill for using the MTP framework through the `/mtp` command.
+
+MTP Playlist Skill applies the same node system to track selection and sequencing. It turns a theme, genre, artist, album, era, scene, or sound world into a node-mapped playlist sequence.
+
+## Agent Skills
+
+- [MTP Skill](/skills/mtp/): steer LLM output with `/mtp`, sliders, grid coordinates, and presets.
+- [MTP Playlist Skill](/skills/mtp-playlist/): use with `/mtp-playlist` to map tracks to MTP nodes and explain why each track works at its position.
 
 ## What is MTP?
 

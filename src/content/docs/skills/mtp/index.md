@@ -232,6 +232,7 @@ Detailed examples and compiler checks are available in [`skills/mtp/USAGE.md`](h
 
 - [Installation](/skills/): add MTP Skill by ZIP or CLI.
 - [Customization](/skills/mtp/customize/): edit node definitions and presets for custom skill behavior.
+- [MTP Playlist Skill](/skills/mtp-playlist/): build a node-mapped music sequence from a theme.
 - [MTP overview](/foundational/overview/): learn the framework terms behind MTP.
 - [Comparisons](/comparisons/): review qualitative output comparisons.
 

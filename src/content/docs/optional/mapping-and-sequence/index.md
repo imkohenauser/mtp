@@ -173,6 +173,8 @@ Overall, the sequence forms a two-part arc:
 - **Side A**: expansion, energy, unfoldment, arrival
 - **Side B**: inversion, depletion, dismantling, attenuation
 
+This sequence model is the basic form of [MTP Playlist Skill](/skills/mtp-playlist/). The 20 slots are where tracks are placed, and each track is chosen to fit the role it takes on at that position.
+
 ---
 
 ## Generality of classification and order
@@ -180,5 +182,4 @@ Overall, the sequence forms a two-part arc:
 These readings help when:
 
 - building an intuitive picture of **MTP Skill** from character placement
-- mapping a 20-track AI-chosen music playlist onto the 20-node sequence
-
+- building a [20-track MTP Playlist](/skills/mtp-playlist/) on the 20-node sequence
