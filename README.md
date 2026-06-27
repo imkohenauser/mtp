@@ -65,7 +65,7 @@ Download the skill ZIP you want to add:
 - [`mtp-skill.zip`](public/downloads/mtp-skill.zip)
 - [`mtp-playlist-skill.zip`](public/downloads/mtp-playlist-skill.zip)
 
-Or install from the command line:
+Or install from the command line (GitHub CLI is usually faster for this repository):
 
 ```bash
 # GitHub CLI
