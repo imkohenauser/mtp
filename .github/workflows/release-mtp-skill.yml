@@ -121,8 +121,6 @@ jobs:
 
           ### Install from CLI
 
-          The GitHub CLI \`gh skill\` command is currently a preview feature.
-
           \`\`\`bash
           gh skill install imkohenauser/mtp skills/${SKILL}
           \`\`\`

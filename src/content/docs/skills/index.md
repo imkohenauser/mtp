@@ -44,8 +44,6 @@ ZIP upload is usually performed in a desktop or web client. After the skill is a
 
 ### GitHub CLI (`gh`)
 
-The GitHub CLI `gh skill` command is a preview feature and may change.
-
 ```bash
 gh skill install imkohenauser/mtp skills/mtp
 ```
@@ -57,6 +55,8 @@ gh skill install imkohenauser/mtp skills/mtp-playlist
 [GitHub CLI `gh skill` documentation](https://cli.github.com/manual/gh_skill) ↗
 
 ### Vercel Skills CLI (`npx skills`)
+
+`npx skills` clones the entire repository. GitHub CLI, which fetches only the files under the skill directory, is faster to install and is recommended.
 
 ```bash
 npx skills add imkohenauser/mtp --skill mtp
